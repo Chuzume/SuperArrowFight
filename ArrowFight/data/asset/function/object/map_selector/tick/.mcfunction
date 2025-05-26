@@ -9,7 +9,3 @@
         execute if data entity @s[tag=map_selector.Closed] interaction run function asset:object/map_selector/tick/map_open/
     # 閉じ
         execute if data entity @s[tag=map_selector.Open] interaction run function asset:object/map_selector/tick/map_close/
-
-# Tick処理
-    # 開き
-        execute if entity @s[tag=map_selector.Open] run function asset:object/map_selector/tick/map_open/tick
