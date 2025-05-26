@@ -436,7 +436,7 @@
                 },
                 {
                     "type": "file",
-                    "rel": "data/asset/function/mob/alias/%id%/register.mcfunction",
+                    "rel": "data/asset/function/mob/_alias/%id%/register.mcfunction",
                     "content": [
                         "#> asset:mob/_alias/%id%/register",
                         "#",
@@ -478,7 +478,7 @@
                 },
                 {
                     "type": "file",
-                    "rel": "data/asset/function/mob/alias/%id%/summon.mcfunction",
+                    "rel": "data/asset/function/mob/_alias/%id%/summon.mcfunction",
                     "content": [
                         "#> asset:mob/_alias/%id%/summon",
                         "#",
@@ -523,7 +523,7 @@
                 },
                 {
                     "type": "file",
-                    "rel": "data/asset/function/mob/alias/%id%/tick.mcfunction",
+                    "rel": "data/asset/function/mob/_alias/%id%/tick.mcfunction",
                     "content": [
                         "#> asset:mob/_alias/%id%/tick",
                         "#",
@@ -562,7 +562,7 @@
                 },
                 {
                     "type": "file",
-                    "rel": "data/asset/function/mob/alias/%id%/init.mcfunction",
+                    "rel": "data/asset/function/mob/_alias/%id%/init.mcfunction",
                     "content": [
                         "#> asset:mob/_alias/%id%/init",
                         "#",
@@ -601,7 +601,7 @@
                 },
                 {
                     "type": "file",
-                    "rel": "data/asset/function/mob/alias/%id%/attack.mcfunction",
+                    "rel": "data/asset/function/mob/_alias/%id%/attack.mcfunction",
                     "content": [
                         "#> asset:mob/_alias/%id%/attack",
                         "#",
@@ -640,7 +640,7 @@
                 },
                 {
                     "type": "file",
-                    "rel": "data/asset/function/mob/alias/%id%/hurt.mcfunction",
+                    "rel": "data/asset/function/mob/_alias/%id%/hurt.mcfunction",
                     "content": [
                         "#> asset:mob/_alias/%id%/hurt",
                         "#",
@@ -701,7 +701,7 @@
             "generates": [
                 {
                     "type": "file",
-                    "rel": "data/asset/function/mob/alias/%id%index.d.mcfunction",
+                    "rel": "data/asset/function/mob/_alias/%id%index.d.mcfunction",
                     "content": [
                         "#> asset:mob/_alias/%id%index.d",
                         "# @private",
@@ -730,7 +730,7 @@
                 },
                 {
                     "type": "file",
-                    "rel": "data/asset/function/mob/alias/%id%/%method_name%.mcfunction",
+                    "rel": "data/asset/function/mob/_alias/%id%/%method_name%.mcfunction",
                     "content": [
                         "#> asset:mob/_alias/%id%/%method_name%",
                         "#",
