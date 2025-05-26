@@ -1,0 +1,9 @@
+#> asset_manager:mob/summon/summon.m
+#
+# 与えられたIDを使ってエイリアスを実行
+#
+# @within function asset_manager:mob/summon/
+
+$function asset:mob/_alias/$(id)/summon
+$execute store success storage asset:mob Implement byte 1 run schedule function asset:mob/_alias/$(id)/summon 2147483647t
+$schedule clear asset:mob/_alias/$(id)/summon
