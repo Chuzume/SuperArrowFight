@@ -51,11 +51,26 @@
         scoreboard objectives add Lib dummy {"text":"ライブラリの引数/返り値用"}
         scoreboard objectives add ForwardTargetMobUUID dummy {"text":"ダメージを転送する対象"}
 
-# チーム作成
-    team add TrueCrafterEnemy
-    team modify TrueCrafterEnemy friendlyFire false
-    team modify TrueCrafterEnemy nametagVisibility never
-    
+# チーム作成と設定
+    # 赤チーム
+        team add Team.Red
+        team modify Team.Red displayName {"color":"red","text":"赤チーム","underlined":true}
+        team modify Team.Red prefix [{"color":"red","text":"[Red] "}]
+        team modify Team.Red seeFriendlyInvisibles true
+        team modify Team.Red nametagVisibility hideForOtherTeams
+        team modify Team.Red friendlyFire false
+        team modify Team.Red collisionRule pushOtherTeams
+        team modify Team.Red color red
+    # 青チーム
+        team add Team.Blue
+        team modify Team.Blue displayName {"color":"aqua","text":"青チーム","underlined":true}
+        team modify Team.Blue prefix [{"color":"aqua","text":"[Blue] "}]
+        team modify Team.Blue seeFriendlyInvisibles true
+        team modify Team.Blue nametagVisibility hideForOtherTeams
+        team modify Team.Blue friendlyFire false
+        team modify Team.Blue collisionRule pushOtherTeams
+        team modify Team.Blue color aqua
+
 # フォースロード
     forceload add 0 0 0 0
 
