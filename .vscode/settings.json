@@ -419,11 +419,11 @@
                         "#",
                         "# Mobのデータを指定",
                         "#",
-                        "# @within function asset:mob/alias/%id%/register",
+                        "# @within function asset:mob/_alias/%id%/register",
                         "",
                         "# 継承(オプション)",
                         "    # data modify storage asset:mob Extends append value ",
-                        "    # function asset:mob/extends",
+                        "    # function asset:mob/_extends",
                         "# 他のモブに継承されることを許可するか (boolean) (オプション)",
                         "    # data modify storage asset:mob ExtendsSafe set value ",
                         "# 継承されることを前提とした、抽象的なモブであるかどうか(boolean)",
@@ -438,7 +438,7 @@
                     "type": "file",
                     "rel": "data/asset/function/mob/alias/%id%/register.mcfunction",
                     "content": [
-                        "#> asset:mob/alias/%id%/register",
+                        "#> asset:mob/_alias/%id%/register",
                         "#",
                         "# Mobのデータ指定処理のエイリアス",
                         "#",
@@ -453,8 +453,8 @@
                 {
                     "name": "id",
                     "question": "MobのID",
-                    "pattern": "[1-9][0-9]*",
-                    "patternErrorMessage": "数値のみが許されるよ"
+                    "pattern": "[a-z0-9/_-]*",
+                    "patternErrorMessage": "使用できない文字が入っているようです"
                 }
             ]
         },
@@ -469,7 +469,7 @@
                         "#",
                         "# Mob召喚処理の呼び出し時の処理のエイリアス",
                         "#",
-                        "# @within asset:mob/alias/%id%/summon",
+                        "# @within asset:mob/_alias/%id%/summon",
                         "",
                         "# 元となるEntityを召喚する",
                         "    summon %entity% ~ ~ ~ {Tags:[\"MobInit\"]}",
@@ -480,7 +480,7 @@
                     "type": "file",
                     "rel": "data/asset/function/mob/alias/%id%/summon.mcfunction",
                     "content": [
-                        "#> asset:mob/alias/%id%/summon",
+                        "#> asset:mob/_alias/%id%/summon",
                         "#",
                         "# Mob召喚処理のエイリアス",
                         "#",
@@ -495,8 +495,8 @@
                 {
                     "name": "id",
                     "question": "MobのID",
-                    "pattern": "[1-9][0-9]*",
-                    "patternErrorMessage": "数値のみが許されるよ"
+                    "pattern": "[a-z0-9/_-]*",
+                    "patternErrorMessage": "使用できない文字が入っているようです"
                 },
                 {
                     "name": "entity",
@@ -517,7 +517,7 @@
                         "#",
                         "# Mobのtick時の処理",
                         "#",
-                        "# @within asset:mob/alias/%id%/tick",
+                        "# @within asset:mob/_alias/%id%/tick",
                         ""
                     ]
                 },
@@ -525,7 +525,7 @@
                     "type": "file",
                     "rel": "data/asset/function/mob/alias/%id%/tick.mcfunction",
                     "content": [
-                        "#> asset:mob/alias/%id%/tick",
+                        "#> asset:mob/_alias/%id%/tick",
                         "#",
                         "# Tick時処理のエイリアス",
                         "#",
@@ -540,8 +540,8 @@
                 {
                     "name": "id",
                     "question": "MobのID",
-                    "pattern": "[1-9][0-9]*",
-                    "patternErrorMessage": "数値のみが許されるよ"
+                    "pattern": "[a-z0-9/_-]*",
+                    "patternErrorMessage": "使用できない文字が入っているようです"
                 }
             ]
         },
@@ -556,7 +556,7 @@
                         "#",
                         "# Mobのinit時の処理",
                         "#",
-                        "# @within asset:mob/alias/%id%/init",
+                        "# @within asset:mob/_alias/%id%/init",
                         ""
                     ]
                 },
@@ -564,7 +564,7 @@
                     "type": "file",
                     "rel": "data/asset/function/mob/alias/%id%/init.mcfunction",
                     "content": [
-                        "#> asset:mob/alias/%id%/init",
+                        "#> asset:mob/_alias/%id%/init",
                         "#",
                         "# Init処理のエイリアス",
                         "#",
@@ -579,8 +579,8 @@
                 {
                     "name": "id",
                     "question": "MobのID",
-                    "pattern": "[1-9][0-9]*",
-                    "patternErrorMessage": "数値のみが許されるよ"
+                    "pattern": "[a-z0-9/_-]*",
+                    "patternErrorMessage": "使用できない文字が入っているようです"
                 }
             ]
         },
@@ -595,7 +595,7 @@
                         "#",
                         "# Mobの攻撃時の処理",
                         "#",
-                        "# @within function asset:mob/alias/%id%/attack",
+                        "# @within function asset:mob/_alias/%id%/attack",
                         ""
                     ]
                 },
@@ -603,7 +603,7 @@
                     "type": "file",
                     "rel": "data/asset/function/mob/alias/%id%/attack.mcfunction",
                     "content": [
-                        "#> asset:mob/alias/%id%/attack",
+                        "#> asset:mob/_alias/%id%/attack",
                         "#",
                         "# Mobの攻撃時の処理のエイリアス",
                         "#",
@@ -618,8 +618,8 @@
                 {
                     "name": "id",
                     "question": "MobのID",
-                    "pattern": "[1-9][0-9]*",
-                    "patternErrorMessage": "数値のみが許されるよ"
+                    "pattern": "[a-z0-9/_-]*",
+                    "patternErrorMessage": "使用できない文字が入っているようです"
                 }
             ]
         },
@@ -634,7 +634,7 @@
                         "#",
                         "# Mobのダメージ時の処理",
                         "#",
-                        "# @within function asset:mob/alias/%id%/hurt",
+                        "# @within function asset:mob/_alias/%id%/hurt",
                         ""
                     ]
                 },
@@ -642,7 +642,7 @@
                     "type": "file",
                     "rel": "data/asset/function/mob/alias/%id%/hurt.mcfunction",
                     "content": [
-                        "#> asset:mob/alias/%id%/hurt",
+                        "#> asset:mob/_alias/%id%/hurt",
                         "#",
                         "# Mobのダメージ時の処理のエイリアス",
                         "#",
@@ -657,8 +657,8 @@
                 {
                     "name": "id",
                     "question": "MobのID",
-                    "pattern": "[1-9][0-9]*",
-                    "patternErrorMessage": "数値のみが許されるよ"
+                    "pattern": "[a-z0-9/_-]*",
+                    "patternErrorMessage": "使用できない文字が入っているようです"
                 }
             ]
         },
@@ -703,7 +703,7 @@
                     "type": "file",
                     "rel": "data/asset/function/mob/alias/%id%index.d.mcfunction",
                     "content": [
-                        "#> asset:mob/alias/%id%index.d",
+                        "#> asset:mob/_alias/%id%index.d",
                         "# @private",
                         "",
                         "#> tag",
@@ -724,7 +724,7 @@
                         "#",
                         "# 継承先などから実行される処理",
                         "#",
-                        "# @within asset:mob/alias/%id%/%method_name%",
+                        "# @within asset:mob/_alias/%id%/%method_name%",
                         ""
                     ]
                 },
@@ -732,7 +732,7 @@
                     "type": "file",
                     "rel": "data/asset/function/mob/alias/%id%/%method_name%.mcfunction",
                     "content": [
-                        "#> asset:mob/alias/%id%/%method_name%",
+                        "#> asset:mob/_alias/%id%/%method_name%",
                         "#",
                         "# メソッド処理のエイリアス",
                         "#",
@@ -753,8 +753,8 @@
                 {
                     "name": "id",
                     "question": "MobのID",
-                    "pattern": "[1-9][0-9]*",
-                    "patternErrorMessage": "数値のみが許されるよ"
+                    "pattern": "[a-z0-9/_-]*",
+                    "patternErrorMessage": "使用できない文字が入っているようです"
                 }
             ]
         },
@@ -897,8 +897,8 @@
                 {
                     "name": "id",
                     "question": "ObjectのID",
-                    "pattern": "[1-9][0-9]*",
-                    "patternErrorMessage": "数値のみが許されるよ"
+                    "pattern": "[1-9][0-9][a-z]*",
+                    "patternErrorMessage": "使用できない文字が入っているようです"
                 }
             ]
         },
