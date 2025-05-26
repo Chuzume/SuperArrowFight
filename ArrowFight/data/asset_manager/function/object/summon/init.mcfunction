@@ -21,6 +21,9 @@
 # 共通タグ付与
     tag @s add AssetObject
 
+# ID代わりのタグを付与
+    function asset_manager:object/summon/give_id_tag.m with storage api: Argument
+
 # Tickしたくないようであれば
     execute if data storage asset:object {IsTicking:false} run tag @s add Object.DisableTicking
 
