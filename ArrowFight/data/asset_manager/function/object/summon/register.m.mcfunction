@@ -6,4 +6,5 @@
 #   api:object/core/summon
 #   asset:object/extends/foreach
 
-$function asset:object/alias/$(id)/register
+$function asset:object/_alias/$(id)/register
+$say function asset:object/_alias/$(id)/register
