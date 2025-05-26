@@ -7,4 +7,3 @@
 #   asset:object/extends/foreach
 
 $function asset:object/_alias/$(id)/register
-$say function asset:object/_alias/$(id)/register
