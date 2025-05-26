@@ -1,0 +1,3 @@
+playsound minecraft:block.note_block.bell master @s ~ ~ ~ 0.5
+
+tellraw @s ["",{"text":"-----------------","bold":true,"strikethrough":true,"color":"gray"},{"text":"\n"},{"text":"Map made by;","color":"yellow"},{"text":"\n\n"},{"text":" » PvPqnda\n » Hielke","bold":true,"color":"gold"},{"text":"\n\n"},{"text":"Graphics:","color":"yellow"},{"text":"\n\n"},{"text":" » iWacky","bold":true,"color":"gold"},{"text":"\n\n"},{"text":"Testing:","color":"yellow"},{"text":"\n\n"},{"text":" » audio_file\n » Over_Heat\n » IZZE341","bold":true,"color":"gold"},{"text":"\n"},{"text":"-----------------","bold":true,"strikethrough":true,"color":"gray"}]

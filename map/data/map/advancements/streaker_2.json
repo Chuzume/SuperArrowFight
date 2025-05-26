@@ -1,0 +1,27 @@
+{
+    "display": {
+        "title": {
+            "text": "Streaker II",
+            "color": "dark_aqua",
+            "bold": true
+        },
+        "description": {
+            "text": "Win 5 games in a row",
+            "color": "gray",
+            "bold": false
+        },
+        "icon": {
+            "item": "minecraft:packed_ice"
+        },
+        "frame": "task",
+        "show_toast": true,
+        "announce_to_chat": false,
+        "hidden": false
+    },
+    "criteria": {
+        "streaker_2": {
+            "trigger": "minecraft:impossible"
+        }
+    },
+    "parent": "map:streaker_1"
+}

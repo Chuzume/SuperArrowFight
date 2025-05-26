@@ -1,0 +1,2 @@
+execute if block 500 148 491 #buttons[powered=true] if score PressedStart value matches 0 run function map:spawn/start/check
+execute if block 500 148 491 #buttons[powered=false] run scoreboard players set PressedStart value 0

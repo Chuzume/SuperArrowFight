@@ -1,0 +1,29 @@
+{
+    "display": {
+        "title": {
+            "text": "Arrow Fight",
+            "color": "gold",
+            "bold": true
+        },
+        "description": {
+            "text": "",
+            "color": "yellow",
+            "bold": false,
+            "italic": false
+        },
+        "icon": {
+            "item": "minecraft:tipped_arrow",
+            "nbt": "{CustomModelData:10000006,Potion:\"minecraft:slow_falling\"}"
+        },
+        "frame": "challenge",
+        "show_toast": false,
+        "announce_to_chat": false,
+        "hidden": false,
+        "background": "minecraft:textures/gui/advancements/backgrounds/arrow_fight.png"
+    },
+    "criteria": {
+        "root": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

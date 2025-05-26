@@ -1,0 +1,1 @@
+summon armor_stand ~ ~ ~ {NoGravity:1,Small:1,Marker:1,Invisible:1,NoBasePlate:1,Tags:["meteor"]}

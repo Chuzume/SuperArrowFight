@@ -1,0 +1,15 @@
+execute if entity @s[scores={wins=..0}] run tellraw @s [{"text":"Shop » ","color":"yellow","bold":"true"},{"text":"You need at least ","color":"red","bold":"false"},{"text":"1","color":"red","underlined":"true","bold":"false"},{"text":" token to purchase the Portal Particle Trail! You currently have ","color":"red","bold":"false"},{"score":{"name":"@s","objective":"wins"},"color":"gold"},{"text":" tokens.\nObtain tokens by winning games while still alive!","color":"red","bold":"false"}]
+execute if entity @s[scores={wins=..0}] run item replace entity @s enderchest.10 with ender_eye{unench:1b,display:{Lore:["{\"text\":\" \"}","{\"text\":\"  Click to purchase\",\"color\":\"gray\",\"italic\":\"false\"}","{\"text\":\"     for 1 token!\",\"color\":\"gray\",\"italic\":\"false\"}","{\"text\":\" \"}"],Name:"{\"text\":\"Portal Particle Trail\",\"color\":\"red\",\"italic\":\"false\"}"}}
+execute if entity @s[scores={wins=..0}] at @s run playsound minecraft:entity.villager.no ambient @s
+
+execute if entity @s[scores={wins=1..}] run advancement grant @s only map:cosmetic_character
+execute if entity @s[scores={wins=1..}] run tag @s add buyEye
+execute if entity @s[scores={wins=1..}] run tellraw @s [{"text":"Shop » ","color":"yellow","bold":"true"},{"text":"You purchased the ","color":"gray","bold":"false"},{"text":"Portal","color":"light_purple","bold":"false"},{"text":" Particle Trail!","color":"gray","bold":"false"}]
+execute if entity @s[scores={wins=1..}] run tellraw @a[tag=!buyEye,scores={ingame=0}] [{"text":"Shop » ","color":"yellow","bold":"true"},{"selector":"@s","bold":"false"},{"text":" purchased the ","color":"gray","bold":"false"},{"text":"Portal","color":"light_purple","bold":"false"},{"text":" Particle Trail!","color":"gray","bold":"false"}]
+execute if entity @s[scores={wins=1..}] run tag @s remove buyEye
+execute if entity @s[scores={wins=1..}] run item replace entity @s enderchest.10 with ender_eye{ench:1b,HideFlags:1,Enchantments:[{id:"unbreaking",lvl:0}],display:{Lore:["{\"text\":\" \"}","[{\"text\":\"   Click to \",\"color\":\"gray\",\"italic\":false},{\"text\":\"Disable\",\"color\":\"red\",\"italic\":false},{\"text\":\"!\",\"color\":\"gray\",\"italic\":false}]","{\"text\":\" \"}","{\"text\":\"    Particles are\",\"color\":\"dark_gray\"}","{\"text\":\"    disabled while\",\"color\":\"dark_gray\"}","{\"text\":\"    holding sneak\",\"color\":\"dark_gray\"}","{\"text\":\" \"}"],Name:"{\"text\":\"Portal Particle Trail\",\"color\":\"green\",\"italic\":\"false\"}"}}
+execute if entity @s[scores={wins=1..}] run scoreboard players set @s boughtEyeP 1
+execute if entity @s[scores={wins=1..}] at @s run playsound minecraft:entity.player.levelup ambient @s
+execute if entity @s[scores={wins=1..}] run tag @s remove shop_eyeEnch
+execute if entity @s[scores={wins=1..}] run title @s actionbar [{"text":"Enabled ","color":"green"},{"text":"Portal","color":"light_purple"},{"text":" Particle Trail","color":"gray"}]
+execute if entity @s[scores={wins=1..}] run scoreboard players remove @s wins 1

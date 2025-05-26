@@ -1,0 +1,5 @@
+#Enable glow
+item replace entity @s enderchest.20 with firework_rocket{ench:1b,HideFlags:1,Enchantments:[{id:"unbreaking",lvl:0}],display:{Lore:["{\"text\":\" \"}","[{\"text\":\"   Click to \",\"color\":\"gray\",\"italic\":false},{\"text\":\"Disable\",\"color\":\"red\",\"italic\":false},{\"text\":\"!\",\"color\":\"gray\",\"italic\":false}]","{\"text\":\" \"}","{\"text\":\"    Particles are\",\"color\":\"dark_gray\"}","{\"text\":\"    disabled while\",\"color\":\"dark_gray\"}","{\"text\":\"    holding sneak\",\"color\":\"dark_gray\"}","{\"text\":\" \"}"],Name:"{\"text\":\"Rocket Particle Trail\",\"color\":\"green\",\"italic\":\"false\"}"}}
+tag @s remove shop_rocketEnch
+execute as @s at @s run playsound minecraft:entity.arrow.hit_player master @s ~ ~ ~ 0.2 1.5
+title @s actionbar [{"text":"Enabled ","color":"green"},{"text":"Rocket","color":"white"},{"text":" Particle Trail","color":"gray"}]

@@ -1,0 +1,16 @@
+{
+    "values": [
+        "minecraft:grass_block",
+        "minecraft:farmland",
+        "minecraft:dirt_path",
+        "minecraft:dirt",
+		"minecraft:cobblestone",
+        "minecraft:stone",
+        "minecraft:andesite",
+        "minecraft:sand",
+        "minecraft:red_sand",
+        "minecraft:sandstone",
+        "minecraft:gravel",
+        "minecraft:clay"
+    ]
+}

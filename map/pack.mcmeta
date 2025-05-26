@@ -1,0 +1,14 @@
+{
+    "pack": {
+        "description": "Data pack for Arrow Fight",
+        "pack_format": 18
+    },
+    "filter": {
+        "block": [
+            {
+                "namespace": "minecraft",
+                "path": "advancements/.*"
+            }
+        ]
+    }
+}

@@ -1,0 +1,4 @@
+scoreboard players add @e[type=area_effect_cloud,tag=creators] creatorsTimer 1
+data merge entity @e[type=area_effect_cloud,limit=1,tag=creators,scores={creatorsTimer=1..20}] {CustomName:"[{\"text\":\" >\",\"color\":\"yellow\",\"bold\":\"true\"},{\"text\":\"Map Creators\",\"color\":\"gold\",\"bold\":\"true\"},{\"text\":\"< \",\"color\":\"yellow\",\"bold\":\"true\"}]"}
+data merge entity @e[type=area_effect_cloud,limit=1,tag=creators,scores={creatorsTimer=21..40}] {CustomName:"[{\"text\":\"> \",\"color\":\"yellow\",\"bold\":\"true\"},{\"text\":\"Map Creators\",\"color\":\"gold\",\"bold\":\"true\"},{\"text\":\" <\",\"color\":\"yellow\",\"bold\":\"true\"}]"}
+scoreboard players set @e[type=area_effect_cloud,tag=creators,scores={creatorsTimer=41..}] creatorsTimer 0

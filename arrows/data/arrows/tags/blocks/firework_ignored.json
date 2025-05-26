@@ -1,0 +1,16 @@
+{
+	"values": [
+		"minecraft:air",
+		"minecraft:cave_air",
+		"minecraft:void_air",
+		"minecraft:moving_piston",
+		"#minecraft:flowers",
+		"minecraft:water",
+		"minecraft:lava",
+		"minecraft:lily_pad",
+		"minecraft:sugar_cane",
+		"minecraft:ladder",
+		"minecraft:snow",
+		"minecraft:vine"
+	]
+}
