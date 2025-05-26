@@ -30,6 +30,9 @@
 # エフェクト処理
     execute as @e[type=#lib:living,tag=HasAssetEffect] at @s run function asset_manager:effect/tick
 
+# ワールドギミック
+    function world_manager:gimmick/
+
 # asset:contextの明示的な全削除
 #    function asset_manager:common/reset_all_context
 
