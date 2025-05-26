@@ -2,7 +2,7 @@
 #
 # Object召喚処理の呼び出し時に実行されるfunction
 #
-# @within asset:object/alias/2/summon
+# @within asset:object/_alias/2/summon
 
 # 元となるEntityを召喚する
     summon armor_stand ~ ~ ~ {Silent:1b,Small:1b,Invisible:1b,Tags:["ObjectInit"],attributes:[{id:"minecraft:scale",base:0.0625}]}

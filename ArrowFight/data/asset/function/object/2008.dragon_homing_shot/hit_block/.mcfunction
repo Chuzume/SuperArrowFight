@@ -2,7 +2,7 @@
 #
 # 継承先などから実行される処理
 #
-# @within asset:object/alias/2008/hit_block
+# @within asset:object/_alias/2008/hit_block
 
 # 演出
     playsound entity.dragon_fireball.explode neutral @a ~ ~ ~ 1.5 1

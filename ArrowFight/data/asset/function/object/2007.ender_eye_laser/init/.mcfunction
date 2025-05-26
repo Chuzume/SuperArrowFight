@@ -2,7 +2,7 @@
 #
 # Objectのinit時の処理
 #
-# @within asset:object/alias/2007/init
+# @within asset:object/_alias/2007/init
 
 # 出現演出
     particle explosion ~ ~ ~ 0 0 0 0 1 force @a[distance=..32]

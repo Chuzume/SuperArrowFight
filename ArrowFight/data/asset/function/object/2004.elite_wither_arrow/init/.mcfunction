@@ -2,7 +2,7 @@
 #
 # Objectのinit時の処理
 #
-# @within asset:object/alias/2004/init
+# @within asset:object/_alias/2004/init
 
 # データ設定
     data modify entity @s Fire set value 0s

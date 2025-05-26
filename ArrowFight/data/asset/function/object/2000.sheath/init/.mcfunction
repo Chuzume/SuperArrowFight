@@ -2,7 +2,7 @@
 #
 # Objectのinit時の処理
 #
-# @within asset:object/alias/2000/init
+# @within asset:object/_alias/2000/init
 
 # データを取得
     data modify entity @s item set from storage asset:context this.Item

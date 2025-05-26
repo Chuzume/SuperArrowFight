@@ -2,7 +2,7 @@
 #
 # Objectのtick時の処理
 #
-# @within asset:object/alias/2004/tick
+# @within asset:object/_alias/2004/tick
 
 # パーティクル
     execute at @s run particle dust{color:[0.5,0.5,0.5],scale:0.5} ~ ~ ~ 0.1 0.1 0.1 1 10

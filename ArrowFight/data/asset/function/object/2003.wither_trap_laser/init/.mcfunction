@@ -2,7 +2,7 @@
 #
 # Objectのinit時の処理
 #
-# @within asset:object/alias/2003/init
+# @within asset:object/_alias/2003/init
 
 #> 行き先マーカー
 # @private

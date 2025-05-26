@@ -2,7 +2,7 @@
 #
 # Objectのtick時の処理
 #
-# @within asset:object/alias/1001/tick
+# @within asset:object/_alias/1001/tick
 
 # 演出
     particle minecraft:spit ~ ~ ~ 0 0 0 0 1

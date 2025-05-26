@@ -2,7 +2,7 @@
 #
 # Objectのtick時の処理
 #
-# @within asset:object/alias/2000/tick
+# @within asset:object/_alias/2000/tick
 
 # 自分の持ち主にタグ付与
     execute on vehicle run tag @s add TMCM.SheathOwner

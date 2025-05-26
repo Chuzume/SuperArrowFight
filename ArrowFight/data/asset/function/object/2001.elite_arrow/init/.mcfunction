@@ -2,7 +2,7 @@
 #
 # Objectのinit時の処理
 #
-# @within asset:object/alias/2001/init
+# @within asset:object/_alias/2001/init
 
 # 弾速を設定して飛ばす
     data modify storage lib: Argument.VectorMagnitude set from storage asset:context this.Speed

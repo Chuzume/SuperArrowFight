@@ -769,7 +769,7 @@
                         "#",
                         "# Objectのデータを指定",
                         "#",
-                        "# @within function asset:object/alias/%id%/register",
+                        "# @within function asset:object/_alias/%id%/register",
                         "",
                         "# 継承(オプション)",
                         "    # data modify storage asset:object Extends append value ",
@@ -787,9 +787,9 @@
                 },
                 {
                     "type": "file",
-                    "rel": "data/asset/function/object/alias/%id%/register.mcfunction",
+                    "rel": "data/asset/function/object/_alias/%id%/register.mcfunction",
                     "content": [
-                        "#> asset:object/alias/%id%/register",
+                        "#> asset:object/_alias/%id%/register",
                         "#",
                         "# Objectのデータ指定処理のエイリアス",
                         "#",
@@ -804,8 +804,8 @@
                 {
                     "name": "id",
                     "question": "ObjectのID",
-                    "pattern": "[1-9][0-9]*",
-                    "patternErrorMessage": "数値のみが許されるよ"
+                    "pattern": "[a-z0-9/_-]*",
+                    "patternErrorMessage": "使用できない文字が入っているようです"
                 }
             ]
         },
@@ -820,7 +820,7 @@
                         "#",
                         "# Object召喚処理の呼び出し時の処理のエイリアス",
                         "#",
-                        "# @within asset:object/alias/%id%/summon",
+                        "# @within asset:object/_alias/%id%/summon",
                         "",
                         "# 元となるEntityを召喚する",
                         "    summon %entity% ~ ~ ~ {Tags:[\"ObjectInit\"]}",
@@ -829,9 +829,9 @@
                 },
                 {
                     "type": "file",
-                    "rel": "data/asset/function/object/alias/%id%/summon.mcfunction",
+                    "rel": "data/asset/function/object/_alias/%id%/summon.mcfunction",
                     "content": [
-                        "#> asset:object/alias/%id%/summon",
+                        "#> asset:object/_alias/%id%/summon",
                         "#",
                         "# Object召喚処理のエイリアス",
                         "#",
@@ -846,8 +846,8 @@
                 {
                     "name": "id",
                     "question": "ObjectのID",
-                    "pattern": "[1-9][0-9]*",
-                    "patternErrorMessage": "数値のみが許されるよ"
+                    "pattern": "[a-z0-9/_-]*",
+                    "patternErrorMessage": "使用できない文字が入っているようです"
                 },
                 {
                     "name": "entity",
@@ -868,7 +868,7 @@
                         "#",
                         "# Objectのtick時の処理",
                         "#",
-                        "# @within asset:object/alias/%id%/tick",
+                        "# @within asset:object/_alias/%id%/tick",
                         "",
                         "# Tick加算",
                         "    scoreboard players add @s General.Object.Tick 1",
@@ -880,9 +880,9 @@
                 },
                 {
                     "type": "file",
-                    "rel": "data/asset/function/object/alias/%id%/tick.mcfunction",
+                    "rel": "data/asset/function/object/_alias/%id%/tick.mcfunction",
                     "content": [
-                        "#> asset:object/alias/%id%/tick",
+                        "#> asset:object/_alias/%id%/tick",
                         "#",
                         "# Tick時処理のエイリアス",
                         "#",
@@ -913,15 +913,15 @@
                         "#",
                         "# Objectのinit時の処理",
                         "#",
-                        "# @within asset:object/alias/%id%/init",
+                        "# @within asset:object/_alias/%id%/init",
                         ""
                     ]
                 },
                 {
                     "type": "file",
-                    "rel": "data/asset/function/object/alias/%id%/init.mcfunction",
+                    "rel": "data/asset/function/object/_alias/%id%/init.mcfunction",
                     "content": [
-                        "#> asset:object/alias/%id%/init",
+                        "#> asset:object/_alias/%id%/init",
                         "#",
                         "# Init処理のエイリアス",
                         "#",
@@ -980,9 +980,9 @@
             "generates": [
                 {
                     "type": "file",
-                    "rel": "data/asset/function/object/alias/%id%index.d.mcfunction",
+                    "rel": "data/asset/function/object/_alias/%id%index.d.mcfunction",
                     "content": [
-                        "#> asset:object/alias/%id%index.d",
+                        "#> asset:object/_alias/%id%index.d",
                         "# @private",
                         "",
                         "#> tag",
@@ -1003,15 +1003,15 @@
                         "#",
                         "# 継承先などから実行される処理",
                         "#",
-                        "# @within asset:object/alias/%id%/%method_name%",
+                        "# @within asset:object/_alias/%id%/%method_name%",
                         ""
                     ]
                 },
                 {
                     "type": "file",
-                    "rel": "data/asset/function/object/alias/%id%/%method_name%.mcfunction",
+                    "rel": "data/asset/function/object/_alias/%id%/%method_name%.mcfunction",
                     "content": [
-                        "#> asset:object/alias/%id%/%method_name%",
+                        "#> asset:object/_alias/%id%/%method_name%",
                         "#",
                         "# メソッド処理のエイリアス",
                         "#",
@@ -1032,8 +1032,8 @@
                 {
                     "name": "id",
                     "question": "ObjectのID",
-                    "pattern": "[1-9][0-9]*",
-                    "patternErrorMessage": "数値のみが許されるよ"
+                    "pattern": "[a-z0-9/_-]*",
+                    "patternErrorMessage": "使用できない文字が入っているようです"
                 }
             ]
         },

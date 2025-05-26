@@ -2,7 +2,7 @@
 #
 # ターゲットマーカーを狙って放つ
 #
-# @within asset:object/alias/2/init
+# @within asset:object/_alias/2/init
 
 # 飛ばす
     execute facing entity @n[type=marker,tag=TMCM.Marker.Aim] eyes run function true_crafter_mode:entity/motion

@@ -2,7 +2,7 @@
 #
 # Objectのtick時の処理
 #
-# @within asset:object/alias/2/tick
+# @within asset:object/_alias/2/tick
 
 # エンティティへの衝突
     # 判定

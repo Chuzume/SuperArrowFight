@@ -2,7 +2,7 @@
 #
 # 継承先などから実行される処理
 #
-# @within asset:object/alias/1/range_over
+# @within asset:object/_alias/1/range_over
 
 # 消失
     function asset:object/call.m {method:kill}

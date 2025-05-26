@@ -2,7 +2,7 @@
 #
 # Objectのtick時の処理
 #
-# @within asset:object/alias/2002/tick
+# @within asset:object/_alias/2002/tick
 
 # Tick加算
     scoreboard players add @s General.Object.Tick 1

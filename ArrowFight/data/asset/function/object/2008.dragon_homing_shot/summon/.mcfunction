@@ -2,7 +2,7 @@
 #
 # Object召喚処理の呼び出し時の処理のエイリアス
 #
-# @within asset:object/alias/2008/summon
+# @within asset:object/_alias/2008/summon
 
 # 元となるEntityを召喚する
     execute as 0-0-0-0-0 in minecraft:overworld positioned as @s run tp @s ~ ~ ~ ~ ~

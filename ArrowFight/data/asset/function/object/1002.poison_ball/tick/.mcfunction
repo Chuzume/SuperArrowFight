@@ -2,7 +2,7 @@
 #
 # Objectのtick時の処理
 #
-# @within asset:object/alias/1002/tick
+# @within asset:object/_alias/1002/tick
 
 # 演出
     particle minecraft:item_slime ~ ~ ~ 0 0 0 0 1
