@@ -419,7 +419,7 @@
                         "#",
                         "# Mobのデータを指定",
                         "#",
-                        "# @within function asset:mob/_alias/%id%/register",
+                        "# @within function asset:mob/_alias/%namespace%/register",
                         "",
                         "# 継承(オプション)",
                         "    # data modify storage asset:mob Extends append value ",
@@ -429,16 +429,16 @@
                         "# 継承されることを前提とした、抽象的なモブであるかどうか(boolean)",
                         "    data modify storage asset:mob IsAbstract set value false",
                         "# ID (int)",
-                        "    data modify storage asset:mob ID set value %id%",
+                        "    data modify storage asset:mob ID set value \"%namespace%\"",
                         "# フィールド(オプション)",
                         "    # data modify storage asset:mob Field.myValue set value "
                     ]
                 },
                 {
                     "type": "file",
-                    "rel": "data/asset/function/mob/_alias/%id%/register.mcfunction",
+                    "rel": "data/asset/function/mob/_alias/%namespace%/register.mcfunction",
                     "content": [
-                        "#> asset:mob/_alias/%id%/register",
+                        "#> asset:mob/_alias/%namespace%/register",
                         "#",
                         "# Mobのデータ指定処理のエイリアス",
                         "#",
@@ -447,14 +447,6 @@
                         "# 元の登録処理を呼び出す",
                         "    function asset:mob/%namespace%/register"
                     ]
-                }
-            ],
-            "customQuestion": [
-                {
-                    "name": "id",
-                    "question": "MobのID",
-                    "pattern": "[a-z0-9/_-]*",
-                    "patternErrorMessage": "使用できない文字が入っているようです"
                 }
             ]
         },
@@ -469,7 +461,7 @@
                         "#",
                         "# Mob召喚処理の呼び出し時の処理のエイリアス",
                         "#",
-                        "# @within asset:mob/_alias/%id%/summon",
+                        "# @within asset:mob/_alias/%namespace%/summon",
                         "",
                         "# 元となるEntityを召喚する",
                         "    summon %entity% ~ ~ ~ {Tags:[\"MobInit\"]}",
@@ -478,9 +470,9 @@
                 },
                 {
                     "type": "file",
-                    "rel": "data/asset/function/mob/_alias/%id%/summon.mcfunction",
+                    "rel": "data/asset/function/mob/_alias/%namespace%/summon.mcfunction",
                     "content": [
-                        "#> asset:mob/_alias/%id%/summon",
+                        "#> asset:mob/_alias/%namespace%/summon",
                         "#",
                         "# Mob召喚処理のエイリアス",
                         "#",
@@ -492,12 +484,6 @@
                 }
             ],
             "customQuestion": [
-                {
-                    "name": "id",
-                    "question": "MobのID",
-                    "pattern": "[a-z0-9/_-]*",
-                    "patternErrorMessage": "使用できない文字が入っているようです"
-                },
                 {
                     "name": "entity",
                     "question": "元となるentity",
@@ -517,15 +503,15 @@
                         "#",
                         "# Mobのtick時の処理",
                         "#",
-                        "# @within asset:mob/_alias/%id%/tick",
+                        "# @within asset:mob/_alias/%namespace%/tick",
                         ""
                     ]
                 },
                 {
                     "type": "file",
-                    "rel": "data/asset/function/mob/_alias/%id%/tick.mcfunction",
+                    "rel": "data/asset/function/mob/_alias/%namespace%/tick.mcfunction",
                     "content": [
-                        "#> asset:mob/_alias/%id%/tick",
+                        "#> asset:mob/_alias/%namespace%/tick",
                         "#",
                         "# Tick時処理のエイリアス",
                         "#",
@@ -534,14 +520,6 @@
                         "# 元のTick処理を呼び出す",
                         "    function asset:mob/%namespace%/tick/"
                     ]
-                }
-            ],
-            "customQuestion": [
-                {
-                    "name": "id",
-                    "question": "MobのID",
-                    "pattern": "[a-z0-9/_-]*",
-                    "patternErrorMessage": "使用できない文字が入っているようです"
                 }
             ]
         },
@@ -556,15 +534,15 @@
                         "#",
                         "# Mobのinit時の処理",
                         "#",
-                        "# @within asset:mob/_alias/%id%/init",
+                        "# @within asset:mob/_alias/%namespace%/init",
                         ""
                     ]
                 },
                 {
                     "type": "file",
-                    "rel": "data/asset/function/mob/_alias/%id%/init.mcfunction",
+                    "rel": "data/asset/function/mob/_alias/%namespace%/init.mcfunction",
                     "content": [
-                        "#> asset:mob/_alias/%id%/init",
+                        "#> asset:mob/_alias/%namespace%/init",
                         "#",
                         "# Init処理のエイリアス",
                         "#",
@@ -573,14 +551,6 @@
                         "# 元のInit処理を呼び出す",
                         "    function asset:mob/%namespace%/init/"
                     ]
-                }
-            ],
-            "customQuestion": [
-                {
-                    "name": "id",
-                    "question": "MobのID",
-                    "pattern": "[a-z0-9/_-]*",
-                    "patternErrorMessage": "使用できない文字が入っているようです"
                 }
             ]
         },
@@ -595,15 +565,15 @@
                         "#",
                         "# Mobの攻撃時の処理",
                         "#",
-                        "# @within function asset:mob/_alias/%id%/attack",
+                        "# @within function asset:mob/_alias/%namespace%/attack",
                         ""
                     ]
                 },
                 {
                     "type": "file",
-                    "rel": "data/asset/function/mob/_alias/%id%/attack.mcfunction",
+                    "rel": "data/asset/function/mob/_alias/%namespace%/attack.mcfunction",
                     "content": [
-                        "#> asset:mob/_alias/%id%/attack",
+                        "#> asset:mob/_alias/%namespace%/attack",
                         "#",
                         "# Mobの攻撃時の処理のエイリアス",
                         "#",
@@ -612,14 +582,6 @@
                         "# 本来の処理を呼び出す",
                         "   function asset:mob/%namespace%/attack/",
                     ]
-                }
-            ],
-            "customQuestion": [
-                {
-                    "name": "id",
-                    "question": "MobのID",
-                    "pattern": "[a-z0-9/_-]*",
-                    "patternErrorMessage": "使用できない文字が入っているようです"
                 }
             ]
         },
@@ -634,15 +596,15 @@
                         "#",
                         "# Mobのダメージ時の処理",
                         "#",
-                        "# @within function asset:mob/_alias/%id%/hurt",
+                        "# @within function asset:mob/_alias/%namespace%/hurt",
                         ""
                     ]
                 },
                 {
                     "type": "file",
-                    "rel": "data/asset/function/mob/_alias/%id%/hurt.mcfunction",
+                    "rel": "data/asset/function/mob/_alias/%namespace%/hurt.mcfunction",
                     "content": [
-                        "#> asset:mob/_alias/%id%/hurt",
+                        "#> asset:mob/_alias/%namespace%/hurt",
                         "#",
                         "# Mobのダメージ時の処理のエイリアス",
                         "#",
@@ -651,14 +613,6 @@
                         "# 本来の処理を呼び出す",
                         "   function asset:mob/%namespace%/hurt/",
                     ]
-                }
-            ],
-            "customQuestion": [
-                {
-                    "name": "id",
-                    "question": "MobのID",
-                    "pattern": "[a-z0-9/_-]*",
-                    "patternErrorMessage": "使用できない文字が入っているようです"
                 }
             ]
         },
@@ -701,9 +655,9 @@
             "generates": [
                 {
                     "type": "file",
-                    "rel": "data/asset/function/mob/_alias/%id%index.d.mcfunction",
+                    "rel": "data/asset/function/mob/_alias/%namespace%index.d.mcfunction",
                     "content": [
-                        "#> asset:mob/_alias/%id%index.d",
+                        "#> asset:mob/_alias/%namespace%index.d",
                         "# @private",
                         "",
                         "#> tag",
@@ -724,15 +678,15 @@
                         "#",
                         "# 継承先などから実行される処理",
                         "#",
-                        "# @within asset:mob/_alias/%id%/%method_name%",
+                        "# @within asset:mob/_alias/%namespace%/%method_name%",
                         ""
                     ]
                 },
                 {
                     "type": "file",
-                    "rel": "data/asset/function/mob/_alias/%id%/%method_name%.mcfunction",
+                    "rel": "data/asset/function/mob/_alias/%namespace%/%method_name%.mcfunction",
                     "content": [
-                        "#> asset:mob/_alias/%id%/%method_name%",
+                        "#> asset:mob/_alias/%namespace%/%method_name%",
                         "#",
                         "# メソッド処理のエイリアス",
                         "#",
@@ -749,12 +703,6 @@
                     "question": "メソッドの名前",
                     "pattern": "[a-z0-9./_-]*",
                     "patternErrorMessage": "使用できない文字が入っているようです"
-                },
-                {
-                    "name": "id",
-                    "question": "MobのID",
-                    "pattern": "[a-z0-9/_-]*",
-                    "patternErrorMessage": "使用できない文字が入っているようです"
                 }
             ]
         },
@@ -769,7 +717,7 @@
                         "#",
                         "# Objectのデータを指定",
                         "#",
-                        "# @within function asset:object/_alias/%id%/register",
+                        "# @within function asset:object/_alias/%namespace%/register",
                         "",
                         "# 継承(オプション)",
                         "    # data modify storage asset:object Extends append value ",
@@ -780,16 +728,16 @@
                         "    data modify storage asset:object IsAbstract set value false",
                         "",
                         "# ID (int)",
-                        "    data modify storage asset:object ID set value %id%",
+                        "    data modify storage asset:object ID set value \"%namespace%\"",
                         "# フィールド(オプション)",
                         "    # data modify storage asset:object Field.myValue set value "
                     ]
                 },
                 {
                     "type": "file",
-                    "rel": "data/asset/function/object/_alias/%id%/register.mcfunction",
+                    "rel": "data/asset/function/object/_alias/%namespace%/register.mcfunction",
                     "content": [
-                        "#> asset:object/_alias/%id%/register",
+                        "#> asset:object/_alias/%namespace%/register",
                         "#",
                         "# Objectのデータ指定処理のエイリアス",
                         "#",
@@ -798,14 +746,6 @@
                         "# 元の登録処理を呼び出す",
                         "    function asset:object/%namespace%/register"
                     ]
-                }
-            ],
-            "customQuestion": [
-                {
-                    "name": "id",
-                    "question": "ObjectのID",
-                    "pattern": "[a-z0-9/_-]*",
-                    "patternErrorMessage": "使用できない文字が入っているようです"
                 }
             ]
         },
@@ -820,7 +760,7 @@
                         "#",
                         "# Object召喚処理の呼び出し時の処理のエイリアス",
                         "#",
-                        "# @within asset:object/_alias/%id%/summon",
+                        "# @within asset:object/_alias/%namespace%/summon",
                         "",
                         "# 元となるEntityを召喚する",
                         "    summon %entity% ~ ~ ~ {Tags:[\"ObjectInit\"]}",
@@ -829,9 +769,9 @@
                 },
                 {
                     "type": "file",
-                    "rel": "data/asset/function/object/_alias/%id%/summon.mcfunction",
+                    "rel": "data/asset/function/object/_alias/%namespace%/summon.mcfunction",
                     "content": [
-                        "#> asset:object/_alias/%id%/summon",
+                        "#> asset:object/_alias/%namespace%/summon",
                         "#",
                         "# Object召喚処理のエイリアス",
                         "#",
@@ -843,12 +783,6 @@
                 }
             ],
             "customQuestion": [
-                {
-                    "name": "id",
-                    "question": "ObjectのID",
-                    "pattern": "[a-z0-9/_-]*",
-                    "patternErrorMessage": "使用できない文字が入っているようです"
-                },
                 {
                     "name": "entity",
                     "question": "元となるentity",
@@ -868,7 +802,7 @@
                         "#",
                         "# Objectのtick時の処理",
                         "#",
-                        "# @within asset:object/_alias/%id%/tick",
+                        "# @within asset:object/_alias/%namespace%/tick",
                         "",
                         "# Tick加算",
                         "    scoreboard players add @s General.Object.Tick 1",
@@ -880,9 +814,9 @@
                 },
                 {
                     "type": "file",
-                    "rel": "data/asset/function/object/_alias/%id%/tick.mcfunction",
+                    "rel": "data/asset/function/object/_alias/%namespace%/tick.mcfunction",
                     "content": [
-                        "#> asset:object/_alias/%id%/tick",
+                        "#> asset:object/_alias/%namespace%/tick",
                         "#",
                         "# Tick時処理のエイリアス",
                         "#",
@@ -891,14 +825,6 @@
                         "# 元のTick処理を呼び出す",
                         "    function asset:object/%namespace%/tick/"
                     ]
-                }
-            ],
-            "customQuestion": [
-                {
-                    "name": "id",
-                    "question": "ObjectのID",
-                    "pattern": "[a-z0-9/_-]*",
-                    "patternErrorMessage": "使用できない文字が入っているようです"
                 }
             ]
         },
@@ -913,15 +839,15 @@
                         "#",
                         "# Objectのinit時の処理",
                         "#",
-                        "# @within asset:object/_alias/%id%/init",
+                        "# @within asset:object/_alias/%namespace%/init",
                         ""
                     ]
                 },
                 {
                     "type": "file",
-                    "rel": "data/asset/function/object/_alias/%id%/init.mcfunction",
+                    "rel": "data/asset/function/object/_alias/%namespace%/init.mcfunction",
                     "content": [
-                        "#> asset:object/_alias/%id%/init",
+                        "#> asset:object/_alias/%namespace%/init",
                         "#",
                         "# Init処理のエイリアス",
                         "#",
@@ -930,14 +856,6 @@
                         "# 元のInit処理を呼び出す",
                         "    function asset:object/%namespace%/init/"
                     ]
-                }
-            ],
-            "customQuestion": [
-                {
-                    "name": "id",
-                    "question": "ObjectのID",
-                    "pattern": "[a-z0-9/_-]*",
-                    "patternErrorMessage": "使用できない文字が入っているようです"
                 }
             ]
         },
@@ -980,9 +898,9 @@
             "generates": [
                 {
                     "type": "file",
-                    "rel": "data/asset/function/object/_alias/%id%index.d.mcfunction",
+                    "rel": "data/asset/function/object/_alias/%namespace%index.d.mcfunction",
                     "content": [
-                        "#> asset:object/_alias/%id%index.d",
+                        "#> asset:object/_alias/%namespace%index.d",
                         "# @private",
                         "",
                         "#> tag",
@@ -1003,15 +921,15 @@
                         "#",
                         "# 継承先などから実行される処理",
                         "#",
-                        "# @within asset:object/_alias/%id%/%method_name%",
+                        "# @within asset:object/_alias/%namespace%/%method_name%",
                         ""
                     ]
                 },
                 {
                     "type": "file",
-                    "rel": "data/asset/function/object/_alias/%id%/%method_name%.mcfunction",
+                    "rel": "data/asset/function/object/_alias/%namespace%/%method_name%.mcfunction",
                     "content": [
-                        "#> asset:object/_alias/%id%/%method_name%",
+                        "#> asset:object/_alias/%namespace%/%method_name%",
                         "#",
                         "# メソッド処理のエイリアス",
                         "#",
@@ -1027,12 +945,6 @@
                     "name": "method_name",
                     "question": "メソッドの名前",
                     "pattern": "[a-z0-9./_-]*",
-                    "patternErrorMessage": "使用できない文字が入っているようです"
-                },
-                {
-                    "name": "id",
-                    "question": "ObjectのID",
-                    "pattern": "[a-z0-9/_-]*",
                     "patternErrorMessage": "使用できない文字が入っているようです"
                 }
             ]
