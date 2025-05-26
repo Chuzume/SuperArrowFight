@@ -4,8 +4,12 @@
 #
 # @within asset:object/_alias/1/tick
 
-# Tick加算
-    scoreboard players add @s General.Object.Tick 1
+# 触れられるとモード変更
+    # 開き
+        execute if data entity @s[tag=map_selector.Closed] interaction run function asset:object/map_selector/tick/map_open/
+    # 閉じ
+        execute if data entity @s[tag=map_selector.Open] interaction run function asset:object/map_selector/tick/map_close/
 
-# 消滅処理
-    kill @s[scores={General.Object.Tick=1000..}]
+# Tick処理
+    # 開き
+        execute if entity @s[tag=map_selector.Open] run function asset:object/map_selector/tick/map_open/tick
