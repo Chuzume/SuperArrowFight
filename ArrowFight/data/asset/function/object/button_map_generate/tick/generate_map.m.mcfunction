@@ -8,6 +8,9 @@
     $place template map:$(MapID) 495 100 581 180
     $place template map:$(MapID) 505 100 533
 
+# 鉱石生成
+    function asset:object/button_map_generate/tick/random_ores/
+
 # アイテム削除
     execute positioned 468 99 533 run kill @e[type=item,dx=64,dy=32,dz=49]
 
