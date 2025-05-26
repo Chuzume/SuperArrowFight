@@ -15,7 +15,7 @@
     tag @e[type=text_display,tag=Init,limit=1] remove Init
 
 # モデルを召喚、自分の向きにしたあと自分の上に乗せる
-    $summon item_display ~ ~ ~ {Tags:["Init","ProcessCommonTag","AutoKillWhenDieVehicle"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.5f,0f],scale:[0.2f,0.2f,0.2f]},item:{id:"$(MapIcon)",count:1}}
+    $summon item_display ~ ~ ~ {Tags:["Init","ProcessCommonTag","AutoKillWhenDieVehicle"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.5f,0f],scale:[0.5f,0.5f,0.5f]},item:{id:"$(MapIcon)",count:1}}
     tp @e[type=item_display,tag=Init,limit=1] ~ ~ ~ ~ ~
     ride @e[type=item_display,tag=Init,limit=1] mount @s
     tag @e[type=item_display,tag=Init,limit=1] remove Init

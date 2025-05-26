@@ -15,6 +15,6 @@
 # ID (int)
     data modify storage asset:object ID set value button_map_generate
 # フィールド(オプション)
-    data modify storage asset:object Field.Map set value Blank
+    data modify storage asset:object Field.MapID set value Blank
     data modify storage asset:object Field.MapIcon set value "minecraft:stone"
     data modify storage asset:object Field.MapName set value "マップ名"
