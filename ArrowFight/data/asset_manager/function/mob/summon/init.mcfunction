@@ -27,6 +27,9 @@
 # 共通タグ付与
     tag @s add AssetMob
 
+# ID代わりのタグを付与
+    function asset_manager:mob/summon/give_id_tag.m with storage api: Argument
+
 # データセット
 #    function asset_manager:mob/summon/set_data
 
