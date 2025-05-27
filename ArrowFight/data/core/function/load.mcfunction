@@ -51,6 +51,22 @@
         scoreboard objectives add Lib dummy {"text":"ライブラリの引数/返り値用"}
         scoreboard objectives add ForwardTargetMobUUID dummy {"text":"ダメージを転送する対象"}
 
+    #> イベントハンドラ用スコアボード
+    # @within function
+    #   asset_manager:artifact/triggers/**
+    #   core:load_once
+    #   core:handler/*
+    #   core:tick/**
+        scoreboard objectives add FirstJoinEvent custom:play_time {"text":"イベント: 初回Join"}
+        scoreboard objectives add RejoinEvent custom:leave_game {"text":"イベント: 再Join"}
+        scoreboard objectives add DeathEvent deathCount {"text":"イベント: 死亡"}
+        scoreboard objectives add RespawnEvent custom:time_since_death {"text":"イベント: リスポーン"}
+        scoreboard objectives add Sneak custom:sneak_time {"text":"イベント: スニーク"}
+        #scoreboard objectives add Elytra custom:aviate_one_cm {"text":"イベント: エリトラ"}
+        #scoreboard objectives add DropEvent custom:drop {"text":"イベント: アイテムドロップ"}
+        #scoreboard objectives add ClickCarrotEvent used:carrot_on_a_stick {"text":"イベント: クリック 人参棒"}
+        scoreboard objectives add UseBowEvent used:bow {"text":"イベント: 弓の使用"}
+
 # チーム作成と設定
     # 赤チーム
         team add Team.Red

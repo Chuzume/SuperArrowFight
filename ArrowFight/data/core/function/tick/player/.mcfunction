@@ -37,6 +37,7 @@
 #    execute if entity @s[scores={ClickCarrotEvent=1..}] run function core:handler/click.carrot
 #    execute if entity @s[scores={Elytra=1..}] run function core:handler/flying_elytra
 #    execute if entity @s[scores={DropEvent=1..}] run function core:handler/drop
+    execute if entity @s[scores={UseBowEvent=1..}] run function core:handler/use_bow
 
 # エリア処理
     function world_manager:area/
