@@ -4,4 +4,13 @@
 #
 # @within function core:handler/use_bow
 
-execute as @e[type=arrow,distance=..8] at @s run function player_manager:arrow/convert/as_arrow
+# 自身のデータを取得してストレージへ
+    data modify storage asset:temp ItemData set from entity @s item.components."minecraft:custom_data"
+
+# 取得データに"FullConvert"が含まれていたらこっち
+    execute if data storage asset:temp ItemData.FullConvert run function player_manager:arrow/convert/full.m with storage asset:temp ItemData
+# 含まれてないならこっち
+    execute unless data storage asset:temp ItemData.FullConvert run function player_manager:arrow/convert/m with storage asset:temp ItemData
+
+# リセット
+    data remove storage asset:temp ItemData

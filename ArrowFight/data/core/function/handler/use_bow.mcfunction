@@ -8,7 +8,7 @@
 #    tag @s add TriggerFlag.ClickCarrot
 
 # 矢の変換を行う
-    function player_manager:arrow/convert/
+    function player_manager:arrow/
 
 # Reset
     scoreboard players reset @s UseBowEvent
