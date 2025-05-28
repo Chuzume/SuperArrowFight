@@ -15,4 +15,4 @@
     function asset:object/super.tick
 
 # フェイルセーフ兼射程
-    execute if score @s General.Object.Tick matches 60.. run function asset:object/call.m {method:hit}
+    execute if score @s General.Object.Tick matches 600.. run function asset:object/call.m {method:hit}

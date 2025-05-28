@@ -14,5 +14,5 @@
 
 # ID (int)
     data modify storage asset:object ID set value "projectile.drill_ball"
-# フィールド: 速度倍率、100倍して使うこと
-    data modify storage asset:object Field.SpeedMultiPlier set value 70
+# フィールド: 速度倍率、100倍して使うこと。86で大体矢と同じくらいのところに落ちる。
+    data modify storage asset:object Field.SpeedMultiPlier set value 86

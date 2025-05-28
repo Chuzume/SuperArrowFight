@@ -4,6 +4,7 @@
 #
 # @within asset:object/_alias/projectile.drill_ball/hit
 
+particle explosion
 
 # super
     function asset:object/super.method

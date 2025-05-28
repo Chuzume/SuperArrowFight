@@ -11,5 +11,8 @@
     execute on vehicle run ride @e[type=item_display,tag=Init,sort=nearest,limit=1] mount @s
     tag @e[type=item_display,tag=Init,sort=nearest,limit=1] remove Init
 
+# 下の雪玉に場外で消す用のタグを付与
+    execute on vehicle run tag @s add VanishOnExitArena
+
 # Super
     function asset:object/super.init
