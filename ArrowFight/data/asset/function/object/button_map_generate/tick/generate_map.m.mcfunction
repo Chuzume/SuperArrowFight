@@ -20,7 +20,7 @@
     function asset:object/button_map_generate/tick/random_ores/
     
 # アイテム削除
-    execute positioned 468 99 533 run kill @e[type=item,dx=64,dy=32,dz=49]
+    execute positioned 468 99 533 run kill @e[type=item,distance=..128,predicate=world_manager:area/battle_field]
 
 # リセット
     data remove entity @s interaction
