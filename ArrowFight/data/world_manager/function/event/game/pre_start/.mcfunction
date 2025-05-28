@@ -4,6 +4,10 @@
 #
 # @within function world_manager:event/game/tick
 
+# チーム参加してる対象にタグを付与
+    execute if score $Game Game.Tick matches 1 run tag @a[team=Team.Blue,distance=..128] add GameJoinedPlayer
+    execute if score $Game Game.Tick matches 1 run tag @a[team=Team.Red,distance=..128] add GameJoinedPlayer
+
 # 参加者をフワ～っとさせる
     execute if score $Game Game.Tick matches 40 as @a[tag=GameJoinedPlayer,distance=..128] at @s run function world_manager:event/game/pre_start/levitation
 

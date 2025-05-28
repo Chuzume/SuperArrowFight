@@ -4,5 +4,6 @@
 #
 # @within function world_manager:event/game/pre_start/
 
-data modify storage world_manager: Game.State set value "OnGame"
-scoreboard players reset $Game Game.Tick
+# ゲーム開始フラグ立ててスコアを調整
+    data modify storage world_manager: Game.State set value "OnGame"
+    scoreboard players reset $Game Game.Tick

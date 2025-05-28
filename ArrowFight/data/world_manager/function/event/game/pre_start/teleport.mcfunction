@@ -31,6 +31,12 @@
     execute if entity @s[team=Team.Blue] at @s run tp @s ~ ~ ~ -90 0
     execute if entity @s[team=Team.Red] at @s run tp @s ~ ~ ~ 90 0
 
+# 初期装備
+    give @s bow[unbreakable={}]
+    give @s stone_pickaxe
+    give @s stone_axe
+    give @s stone_shovel
+
 # 演出
     execute at @s run function world_manager:event/game/pre_start/teleport_vfx
  
