@@ -17,7 +17,6 @@
     # @public
         scoreboard objectives add Global dummy
 
-
     #> 定数類用スコアボード **変更厳禁**
     # @public
         scoreboard objectives add Const dummy
@@ -32,6 +31,11 @@
     # @within function
     #   asset:mob/**
         scoreboard objectives add General.Mob.Tick dummy {"text":"MobAsset内で使用できるTick用スコア"}
+
+    #> 試合用スコア
+    # @within function
+    #   world_manager/event/
+        scoreboard objectives add Game.Tick dummy {"text":"試合のTick用スコア"}
 
     #> MobManager用スコアボード - 攻撃元
     # @within function
@@ -58,7 +62,7 @@
     #   core:handler/*
     #   core:tick/**
         scoreboard objectives add FirstJoinEvent custom:play_time {"text":"イベント: 初回Join"}
-        scoreboard objectives add RejoinEvent custom:leave_game {"text":"イベント: 再Join"}
+        scoreboard objectives add RejoinEvent custom:leave_game {"text":"イベント: ゲームから退出"}
         scoreboard objectives add DeathEvent deathCount {"text":"イベント: 死亡"}
         scoreboard objectives add RespawnEvent custom:time_since_death {"text":"イベント: リスポーン"}
         scoreboard objectives add Sneak custom:sneak_time {"text":"イベント: スニーク"}

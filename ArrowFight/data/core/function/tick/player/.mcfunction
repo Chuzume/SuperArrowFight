@@ -18,6 +18,10 @@
 # thisタグ付与
     tag @s add this
 
+# チーム参加してる場合はタグを付与
+    tag @s[team=Team.Blue] add GameJoinedPlayer
+    tag @s[team=Team.Red] add GameJoinedPlayer
+
 # Deathタグ付与
 #    execute if entity @s[scores={DeathEvent=1..}] run tag @s add Death
 
