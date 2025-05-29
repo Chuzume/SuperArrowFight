@@ -4,8 +4,4 @@
 #
 # @within asset:object/_alias/abstract.gravity_projectile/summon
 
-# 元となるEntityを召喚する
-    execute as 0-0-0-0-0 in minecraft:overworld positioned as @s run tp @s ~ ~ ~ ~ ~
-    data modify storage asset:temp Args.Rotation set from entity 0-0-0-0-0 Rotation
-    function asset:object/abstract.gravity_projectile/summon/m with storage asset:temp Args
-    data remove storage asset:temp Args
+summon ender_pearl ~ ~ ~ {NoGravity:1b,Item:{id:"minecraft:ender_pearl",count:1,components:{"minecraft:item_model":"minecraft:air"}},Tags:["abstract.gravity_projectile.Projectile"],Passengers:[{id:"marker",Tags:["ObjectInit"]}]}
