@@ -21,3 +21,5 @@
         data modify storage asset:object Field.Transformation set value {left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0.0f,0.0f,0f],scale:[1f,1f,1f]}
     # item
         data modify storage asset:object Field.Item set value {id:"minecraft:stone",count:1}
+    # item_display
+        data modify storage asset:object Field.ItemDisplay set value "none" 
