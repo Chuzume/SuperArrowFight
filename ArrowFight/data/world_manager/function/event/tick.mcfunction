@@ -6,3 +6,6 @@
 
 # 試合Tick
     execute if data storage world_manager: Game{Active:true} positioned 499 114 557 run function world_manager:event/game/tick
+
+# マップ生成
+    execute if data storage world_manager: GenerateMap{Active:true} run function world_manager:event/generate_map/ with storage world_manager: GenerateMap

@@ -11,5 +11,5 @@
 # しばらくすると帰る
     execute if score $Game Game.Tick matches 80 as @a[tag=GameJoinedPlayer,distance=..128] at @s run function world_manager:event/game/end_game/return/
 
-# データを終了後
+# 完全に終わり！片付けとかする
     execute if score $Game Game.Tick matches 80 run function world_manager:event/game/end_game/setdata
