@@ -1,5 +1,6 @@
 {
     "values": [
+        "asset:object/system.map_generate_button/load",
         "asset:object/projectile.drill_ball/load",
         "asset:object/abstract.gravity_projectile_3d/load"
     ]
