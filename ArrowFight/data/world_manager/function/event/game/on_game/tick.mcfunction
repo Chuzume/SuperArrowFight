@@ -15,3 +15,6 @@
 
 # 死亡したプレイヤーに実行させる
     execute as @a[tag=GameJoinedPlayer,scores={DeathEvent=1..},distance=..128] run function world_manager:event/game/on_game/death/
+
+# ボーダーを置く
+    function world_manager:event/game/on_game/set_border
