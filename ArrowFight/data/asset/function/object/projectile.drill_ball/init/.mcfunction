@@ -12,7 +12,10 @@
 #    tag @e[type=item_display,tag=Init,sort=nearest,limit=1] remove Init
 
 # 見た目召喚
-    summon item_display ~ ~ ~ {interpolation_duration:2,teleport_duration:1,Rotation:[0F,0F],Tags:["abstract.gravity_projectile_3d.Model","Init","AutoKillWhenDieVehicle","ProcessCommonTag"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,-0.707f,0f,0.707f],translation:[0f,0.07f,0f],scale:[2f,2f,2f]},item:{id:"minecraft:iron_axe",count:1}}
+    execute as 0-0-0-0-0 in minecraft:overworld positioned as @s run tp @s ~ ~ ~ ~ ~
+    data modify storage asset:temp Args.Rotation set from entity 0-0-0-0-0 Rotation
+    function asset:object/projectile.drill_ball/init/m with storage asset:temp Args
+    data remove storage asset:temp Args
 
 # 下の雪玉に場外で消す用のタグを付与
     execute on vehicle run tag @s add VanishOnExitArena
