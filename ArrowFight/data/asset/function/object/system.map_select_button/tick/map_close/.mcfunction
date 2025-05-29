@@ -1,8 +1,8 @@
-#> asset:object/map_selector/tick/map_close/
+#> asset:object/system.map_select_button/tick/map_close/
 #
 # 
 #
-# @within function asset:object/map_selector/tick/
+# @within function asset:object/system.map_select_button/tick/
 
 # 演出
     playsound minecraft:block.stone_button.click_off neutral @a ~ ~ ~ 1 1
@@ -11,8 +11,8 @@
     kill @e[type=interaction,tag=Object.system.map_generate_button,distance=..16]
 
 # 閉じモードにする
-    tag @s add map_selector.Closed
-    tag @s remove map_selector.Open
+    tag @s add system.map_select_button.Closed
+    tag @s remove system.map_select_button.Open
 
 # リセット
     data remove entity @s interaction

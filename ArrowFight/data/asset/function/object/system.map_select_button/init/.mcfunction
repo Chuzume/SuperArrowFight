@@ -1,4 +1,4 @@
-#> asset:object/map_selector/init/
+#> asset:object/system.map_select_button/init/
 #
 # Objectのinit時の処理
 #

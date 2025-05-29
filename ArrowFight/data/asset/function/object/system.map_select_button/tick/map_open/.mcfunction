@@ -1,8 +1,8 @@
-#> asset:object/map_selector/tick/map_open/
+#> asset:object/system.map_select_button/tick/map_open/
 #
 # 
 #
-# @within function asset:object/map_selector/tick/
+# @within function asset:object/system.map_select_button/tick/
 
 # 演出
     playsound minecraft:block.stone_button.click_on neutral @a ~ ~ ~ 1 1
@@ -34,8 +34,8 @@
         execute positioned ^-3 ^1 ^ rotated 180 0 run function api:object/summon.m {ID:system.map_generate_button}
 
 # 開きモードにする
-    tag @s add map_selector.Open
-    tag @s remove map_selector.Closed
+    tag @s add system.map_select_button.Open
+    tag @s remove system.map_select_button.Closed
 
 # リセット
     data remove entity @s interaction
