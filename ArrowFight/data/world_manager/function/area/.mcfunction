@@ -14,6 +14,7 @@
 
 # 各エリア処理
     # 赤チーム参加
-        execute if predicate world_manager:area/team_join_red unless entity @s[team=Team.Red] run function world_manager:area/team_join_red/
+        execute unless data storage world_manager: Game{Active:true} if predicate world_manager:area/team_join_red unless entity @s[team=Team.Red] run function world_manager:area/team_join_red/
+
     # 青チーム参加
-        execute if predicate world_manager:area/team_join_blue unless entity @s[team=Team.Blue] run function world_manager:area/team_join_blue/
+        execute unless data storage world_manager: Game{Active:true} if predicate world_manager:area/team_join_blue unless entity @s[team=Team.Blue] run function world_manager:area/team_join_blue/
