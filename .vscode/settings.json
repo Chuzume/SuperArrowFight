@@ -655,7 +655,7 @@
             "generates": [
                 {
                     "type": "file",
-                    "rel": "data/asset/function/mob/_alias/%namespace%index.d.mcfunction",
+                    "rel": "data/asset/function/mob/%namespace%/index.d.mcfunction",
                     "content": [
                         "#> asset:mob/_alias/%namespace%index.d",
                         "# @private",
@@ -898,7 +898,7 @@
             "generates": [
                 {
                     "type": "file",
-                    "rel": "data/asset/function/object/_alias/%namespace%index.d.mcfunction",
+                    "rel": "data/asset/function/object/%namespace%/index.d.mcfunction",
                     "content": [
                         "#> asset:object/_alias/%namespace%index.d",
                         "# @private",
