@@ -5,4 +5,4 @@
 # @within asset:object/_alias/1/summon
 
 # 元となるEntityを召喚する
-    summon interaction ~ ~ ~ {width:1.01f,height:1.01f,Tags:["ObjectInit","system.map_select_button.Closed"]}
+    summon interaction ~ ~ ~ {width:1.0f,height:0.2f,Tags:["ObjectInit","system.map_select_button.Closed"]}
