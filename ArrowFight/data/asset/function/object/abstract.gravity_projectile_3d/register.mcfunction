@@ -14,5 +14,10 @@
 
 # ID (int)
     data modify storage asset:object ID set value "abstract.gravity_projectile_3d"
-# フィールド(オプション)
-    # data modify storage asset:object Field.myValue set value 
+# フィールド
+    # interpolation_duration
+        data modify storage asset:object Field.InterpolationDuration set value 2
+    # transformation
+        data modify storage asset:object Field.Transformation set value {left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0.0f,0.0f,0f],scale:[1f,1f,1f]}
+    # item
+        data modify storage asset:object Field.Item set value {id:"minecraft:stone",count:1}
