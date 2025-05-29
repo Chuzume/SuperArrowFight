@@ -1,8 +1,8 @@
-#> asset:object/button_map_generate/init/m
+#> asset:object/system.map_generate_button/init/m
 #
 # フィールドから見た目と名前を取得する
 #
-# @within function asset:object/button_map_generate/init/
+# @within function asset:object/system.map_generate_button/init/
 
 #> Private
 # @private

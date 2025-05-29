@@ -1,8 +1,8 @@
-#> asset:object/button_map_generate/register
+#> asset:object/system.map_generate_button/register
 #
 # Objectのデータを指定
 #
-# @within function asset:object/_alias/button_map_generate/register
+# @within function asset:object/_alias/system.map_generate_button/register
 
 # 継承(オプション)
     # data modify storage asset:object Extends append value 
@@ -13,7 +13,7 @@
     data modify storage asset:object IsAbstract set value false
 
 # ID (int)
-    data modify storage asset:object ID set value button_map_generate
+    data modify storage asset:object ID set value system.map_generate_button
 # フィールド(オプション)
     data modify storage asset:object Field.MapID set value Blank
     data modify storage asset:object Field.MapIcon set value "minecraft:stone"

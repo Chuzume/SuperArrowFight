@@ -99,3 +99,4 @@
 
 # その他初期化が必要なもの
     function #asset:mob/load
+    function #asset:object/load
