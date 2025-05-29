@@ -5,7 +5,7 @@
 # @within function asset:object/_alias/projectile.drill_ball/register
 
 # 継承(オプション)
-    data modify storage asset:object Extends append value "abstract.gravity_projectile"
+    data modify storage asset:object Extends append value "abstract.gravity_projectile_3d"
     function asset:object/extends
 # 他のモブに継承されることを許可するか (boolean) (オプション)
     # data modify storage asset:object ExtendsSafe set value 

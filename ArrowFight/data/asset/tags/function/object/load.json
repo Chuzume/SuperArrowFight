@@ -1,0 +1,6 @@
+{
+    "values": [
+        "asset:object/projectile.drill_ball/load",
+        "asset:object/abstract.gravity_projectile_3d/load"
+    ]
+}
