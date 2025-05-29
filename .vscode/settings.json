@@ -879,7 +879,7 @@
                 },
                 {
                     "type": "file",
-                    "rel": "data/asset/function/tags/function/object/load.json",
+                    "rel": "data/asset/tags/function/object/load.json",
                     "content": {
                         "values": [
                             "asset:object/%namespace%/load"
