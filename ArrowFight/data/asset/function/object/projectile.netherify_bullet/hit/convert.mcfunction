@@ -13,6 +13,11 @@
     particle minecraft:ash ~ ~ ~ 2 2 2 0 100 force @a[distance=..64]
     particle minecraft:explosion ~ ~ ~ 2 2 2 1 10 force @a[distance=..64]
 
+# サウンド
+    playsound minecraft:entity.zombie.infect neutral @a ~ ~ ~ 3 0.8
+    playsound minecraft:entity.zombie.infect neutral @a ~ ~ ~ 3 1
+    playsound minecraft:entity.zombie_villager.converted neutral @a ~ ~ ~ 1 0.8
+
 # 周囲のブロックを変換する
     fill ~4 ~4 ~4 ~-4 ~-4 ~-4 air replace #asset:object/projectile.netherify_bullet/to_air
     fill ~4 ~4 ~4 ~-4 ~-4 ~-4 structure_void replace water
