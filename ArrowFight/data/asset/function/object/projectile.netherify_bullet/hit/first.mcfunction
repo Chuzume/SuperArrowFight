@@ -8,4 +8,4 @@
     playsound minecraft:entity.blaze.death neutral @a ~ ~ ~ 3 0.8
 
 # メッセージ
-    tellraw @a[distance=..5] [{"text":"⚠ ","color":"red"},{"text":"この辺りはネザー化してしまう！","color":"white"},{"text":" ⚠","color":"red"}]
+    tellraw @a[distance=..6] [{"text":"⚠ ","color":"red"},{"text":"この辺りはネザー化してしまう！","color":"white"},{"text":" ⚠","color":"red"}]

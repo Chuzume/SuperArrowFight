@@ -20,7 +20,7 @@
     scoreboard players reset $Interval Temporary
 
 # ネザー化発動
-    execute if score @s General.Object.Tick matches 60 run function asset:object/projectile.netherify_bullet/hit/convert
+    execute if score @s General.Object.Tick matches 40 run function asset:object/projectile.netherify_bullet/hit/convert
 
 # キル
-    execute if score @s General.Object.Tick matches 60 run kill @s
+    execute if score @s General.Object.Tick matches 40 run kill @s
