@@ -1,0 +1,71 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:arrow",
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "🏹 矢弾",
+                  "color": "gray",
+                  "italic": false
+                }
+              ],
+              "mode": "append"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": ""
+                }
+              ],
+              "mode": "append"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "着弾地点にゾンビの群れが出現する",
+                  "color": "white",
+                  "italic": false
+                }
+              ],
+              "mode": "append"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_data": {
+                  "ObjectID": "projectile.zombie_bullet",
+                  "FullConvert": true
+                },
+                "minecraft:item_model": "minecraft:zombie_head"
+              },
+              "conditions": []
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "ゾンビ弾",
+                "color": "white",
+                "italic": false,
+                "extra": [
+                  {
+                    "text": " [🏹]",
+                    "color": "gray"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
