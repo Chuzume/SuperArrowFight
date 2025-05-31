@@ -2,7 +2,7 @@
 #
 # Objectのinit時の処理
 #
-# @within asset:object/_alias/abstract.gravity_projectile_3d/init
+# @within asset_manager:object/init/init.m
 
 # 見た目召喚、フィールドのデータも使う
     execute as 0-0-0-0-0 in minecraft:overworld run tp @s ~ ~ ~ ~ ~

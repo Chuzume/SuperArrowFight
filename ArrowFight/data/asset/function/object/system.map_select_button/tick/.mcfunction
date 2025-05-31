@@ -2,7 +2,7 @@
 #
 # Objectのtick時の処理
 #
-# @within asset:object/_alias/1/tick
+# @within asset_manager:object/tick/tick.m
 
 # 触れられるとモード変更
     # 開き

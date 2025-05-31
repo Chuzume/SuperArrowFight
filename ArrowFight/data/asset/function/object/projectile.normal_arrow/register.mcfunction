@@ -2,7 +2,7 @@
 #
 # Objectのデータを指定
 #
-# @within function asset:object/_alias/projectile.normal_arrow/register
+# @within function asset_manager:object/summon/register.m
 
 # 継承(オプション)
     # data modify storage asset:object Extends append value 

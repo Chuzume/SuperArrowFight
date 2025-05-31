@@ -2,7 +2,7 @@
 #
 # 継承先などから実行される処理
 #
-# @within asset:object/_alias/projectile.poison_mist_bullet/hit
+# @within asset_manager:object/call_method/run_method.m
 
 # スコア加算
     scoreboard players add @s General.Object.Tick 1

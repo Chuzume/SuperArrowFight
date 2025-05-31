@@ -2,7 +2,7 @@
 #
 # Objectのtick時の処理
 #
-# @within asset:object/_alias/projectile.napalm_bullet/tick
+# @within asset_manager:object/tick/tick.m
 
 # パーティクル
     particle minecraft:crit ~ ~ ~ 0 0 0 0.05 1 force @a[distance=..32]

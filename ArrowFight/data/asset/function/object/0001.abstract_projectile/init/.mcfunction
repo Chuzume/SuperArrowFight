@@ -2,7 +2,7 @@
 #
 # Objectのinit時の処理
 #
-# @within asset:object/_alias/1/init
+# @within asset_manager:object/init/init.m
 
 # 上記が設定されてなければ、デフォルト値で0.5にする
     execute unless data storage asset:context this.MovePerStep run data modify storage asset:context this.MovePerStep set value 0.5

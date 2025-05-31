@@ -2,7 +2,7 @@
 #
 # Objectのtick時の処理
 #
-# @within asset:object/_alias/system.map_generate_button/tick
+# @within asset_manager:object/tick/tick.m
 
 # クールタイム減算
     scoreboard players remove @s system.map_generate_button.CoolTime 1

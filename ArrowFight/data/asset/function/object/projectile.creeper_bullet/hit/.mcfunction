@@ -2,7 +2,7 @@
 #
 # 継承先などから実行される処理
 #
-# @within asset:object/_alias/projectile.creeper_bullet/hit
+# @within asset_manager:object/call_method/run_method.m
 
 # クリーパーだ！
     summon creeper ~ ~ ~ {Motion:[0.0,0.5,0.0]}

@@ -2,7 +2,7 @@
 #
 # 継承先などから実行される処理
 #
-# @within asset:object/_alias/projectile.drill_ball/hit
+# @within asset_manager:object/call_method/run_method.m
 
 # 演出
     particle minecraft:crit ~ ~ ~ 0 0 0 1 10 force @a[distance=..64]

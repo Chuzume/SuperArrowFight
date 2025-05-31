@@ -2,7 +2,7 @@
 #
 # 継承先などから実行される処理
 #
-# @within asset:object/_alias/projectile.tnt_bullet/hit
+# @within asset_manager:object/call_method/run_method.m
 
 # サウンド  
     playsound minecraft:item.flintandsteel.use neutral @a ~ ~ ~ 1 1

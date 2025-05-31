@@ -2,7 +2,7 @@
 #
 # Objectのデータを指定
 #
-# @within function asset:object/_alias/projectile.poison_mist_bullet/register
+# @within function asset_manager:object/summon/register.m
 
 # 継承(オプション)
     data modify storage asset:object Extends append value "abstract.gravity_projectile_3d"

@@ -2,7 +2,7 @@
 #
 # 継承先などから実行される処理
 #
-# @within asset:object/_alias/projectile.napalm_bullet/hit
+# @within asset_manager:object/call_method/run_method.m
 
 # サウンド
     playsound minecraft:entity.blaze.shoot neutral @a ~ ~ ~ 1.5 1

@@ -2,7 +2,7 @@
 #
 # Objectのtick時の処理
 #
-# @within asset:object/_alias/projectile.lightning_bullet/tick
+# @within asset_manager:object/tick/tick.m
 
 # パーティクル
     particle electric_spark ~ ~ ~ 0.1 0.1 0.1 0.5 5 force @a[distance=..64]

@@ -2,7 +2,7 @@
 #
 # Objectのinit時の処理
 #
-# @within asset:object/_alias/abstract.gravity_projectile/init
+# @within asset_manager:object/init/init.m
 
 # ダメージを与えて描画更新
     execute on vehicle run damage @s 0

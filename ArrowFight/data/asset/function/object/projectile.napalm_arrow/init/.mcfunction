@@ -2,7 +2,7 @@
 #
 # Objectのinit時の処理
 #
-# @within asset:object/_alias/projectile.napalm_arrow/init
+# @within asset_manager:object/init/init.m
 
 # ダメージ調整
     data modify entity @s damage set value 1

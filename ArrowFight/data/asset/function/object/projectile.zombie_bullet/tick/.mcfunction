@@ -2,7 +2,7 @@
 #
 # Objectのtick時の処理
 #
-# @within asset:object/_alias/projectile.zombie_bullet/tick
+# @within asset_manager:object/tick/tick.m
 
 # パーティクル
     particle entity_effect{color:[0.3,0.48,0.21,1.00]} ~ ~ ~ 0.1 0.1 0.1 1 1 force @a[distance=..64]

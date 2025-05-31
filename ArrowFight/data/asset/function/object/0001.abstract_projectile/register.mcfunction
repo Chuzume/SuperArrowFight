@@ -2,7 +2,7 @@
 #
 # Objectのデータを指定
 #
-# @within function asset:object/_alias/1/register
+# @within function asset_manager:object/summon/register.m
 
 # 他のモブに継承されることを許可するか (boolean) (オプション)
     data modify storage asset:object ExtendsSafe set value true

@@ -2,7 +2,7 @@
 #
 # Objectのinit時の処理
 #
-# @within asset:object/_alias/projectile.lightning_bullet/init
+# @within asset_manager:object/init/init.m
 
 # サウンド
     playsound minecraft:item.trident.return player @a ^ ^ ^1 1 1.5

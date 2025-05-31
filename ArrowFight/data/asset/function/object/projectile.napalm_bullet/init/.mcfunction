@@ -2,7 +2,7 @@
 #
 # Objectのinit時の処理
 #
-# @within asset:object/_alias/projectile.napalm_bullet/init
+# @within asset_manager:object/init/init.m
 
 # サウンド
     playsound minecraft:entity.blaze.shoot player @a ^ ^ ^1 1 1.5

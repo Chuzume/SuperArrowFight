@@ -2,7 +2,7 @@
 #
 # Objectのinit時の処理
 #
-# @within asset:object/_alias/projectile.drill_ball/init
+# @within asset_manager:object/init/init.m
 
 # サウンド、発射音なのでplayer、かつちょっと前で鳴らす
     playsound minecraft:entity.witch.throw player @a ^ ^ ^1 1 0.5

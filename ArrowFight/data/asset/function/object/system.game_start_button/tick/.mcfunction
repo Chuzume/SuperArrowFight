@@ -2,7 +2,7 @@
 #
 # Objectのtick時の処理
 #
-# @within asset:object/_alias/system.game_start_button/tick
+# @within asset_manager:object/tick/tick.m
 
 # 触れられると発動、ただしロックされてないとき
     execute if data entity @s[tag=!system.game_start_button.Lock] interaction run function asset:object/system.game_start_button/tick/activate

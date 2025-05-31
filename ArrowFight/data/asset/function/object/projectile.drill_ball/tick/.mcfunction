@@ -2,7 +2,7 @@
 #
 # Objectのtick時の処理
 #
-# @within asset:object/_alias/projectile.drill_ball/tick
+# @within asset_manager:object/tick/tick.m
 
 # Tick加算
     scoreboard players add @s General.Object.Tick 1
