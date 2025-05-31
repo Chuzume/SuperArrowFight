@@ -1,0 +1,10 @@
+{
+    "values": [
+        "#minecraft:flowers",
+        "#minecraft:crops",
+        "minecraft:short_grass",
+        "minecraft:vine",
+        "minecraft:dead_bush",
+        "minecraft:snow"
+    ]
+}

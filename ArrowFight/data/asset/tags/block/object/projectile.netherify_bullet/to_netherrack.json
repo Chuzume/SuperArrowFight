@@ -1,0 +1,9 @@
+{
+    "values": [
+        "minecraft:dirt",
+		"minecraft:cobblestone",
+        "minecraft:stone",
+        "minecraft:andesite",
+        "minecraft:snow_block"
+    ]
+}

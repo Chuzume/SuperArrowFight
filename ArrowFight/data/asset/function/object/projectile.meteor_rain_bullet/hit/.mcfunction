@@ -14,14 +14,11 @@
 # 最初のTickに実行
     execute if score @s General.Object.Tick matches 1 run function asset:object/projectile.meteor_rain_bullet/hit/first
 
-# 警告音
-    execute if score @s General.Object.Tick matches 1 run playsound minecraft:block.note_block.pling neutral @a ~ ~ ~ 1 2
-    execute if score @s General.Object.Tick matches 3 run playsound minecraft:block.note_block.pling neutral @a ~ ~ ~ 1 2
-    execute if score @s General.Object.Tick matches 5 run playsound minecraft:block.note_block.pling neutral @a ~ ~ ~ 1 2
-    execute if score @s General.Object.Tick matches 7 run playsound minecraft:block.note_block.pling neutral @a ~ ~ ~ 1 2
-    execute if score @s General.Object.Tick matches 9 run playsound minecraft:block.note_block.pling neutral @a ~ ~ ~ 1 2
-    execute if score @s General.Object.Tick matches 11 run playsound minecraft:block.note_block.pling neutral @a ~ ~ ~ 1 2
-    execute if score @s General.Object.Tick matches 13 run playsound minecraft:block.note_block.pling neutral @a ~ ~ ~ 1 2
+# 数Tickおきに警告音が鳴る
+    scoreboard players operation $Interval Temporary = @s General.Object.Tick
+    scoreboard players operation $Interval Temporary %= $5 Const
+    execute if score $Interval Temporary matches 0 run playsound minecraft:block.note_block.pling neutral @a ~ ~ ~ 1 2
+    scoreboard players reset $Interval Temporary
 
 # メテオ召喚
     execute if score @s General.Object.Tick matches 20 run function asset:object/projectile.meteor_rain_bullet/hit/summon_meteor
