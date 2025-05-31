@@ -6,4 +6,4 @@
 #   api:mob/core/summon
 #   asset:mob/_extends/foreach
 
-$function asset:mob/_alias/$(id)/register
+$function asset:mob/$(id)/register
