@@ -9,10 +9,8 @@
 
 # タウン
     data modify storage api: Argument.FieldOverride set value {MapName:"タウン",MapIcon:"minecraft:red_glazed_terracotta",MapID:"flowerville"}
-    execute store result storage api: Argument.FieldOverride.Scale[1] float 1 run scoreboard players get @s Temporary
     execute positioned ^2 ^ ^ rotated 180 0 run function api:object/summon.m {ID:system.map_generate_button}
     
 # マウンテン
     data modify storage api: Argument.FieldOverride set value {MapName:"マウンテン",MapIcon:"minecraft:stone",MapID:"mountains"}
-    execute store result storage api: Argument.FieldOverride.Scale[1] float 1 run scoreboard players get @s Temporary
     execute positioned ^-2 ^ ^ rotated 180 0 run function api:object/summon.m {ID:system.map_generate_button}
