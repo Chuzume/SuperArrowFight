@@ -1,0 +1,80 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:arrow",
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "🏹 矢弾",
+                  "color": "gray",
+                  "italic": false
+                }
+              ],
+              "mode": "append"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": ""
+                }
+              ],
+              "mode": "append"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "これといった効果はない、よくある矢",
+                  "color": "white",
+                  "italic": false
+                }
+              ],
+              "mode": "append"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "敵に直接ダメージを与える",
+                  "color": "white",
+                  "italic": false
+                }
+              ],
+              "mode": "append"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_data": {
+                  "ObjectID": "projectile.normal_arrow"
+                }
+              },
+              "conditions": []
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "ふつうの矢",
+                "color": "white",
+                "italic": false,
+                "extra": [
+                  {
+                    "text": " [🏹]",
+                    "color": "gray"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

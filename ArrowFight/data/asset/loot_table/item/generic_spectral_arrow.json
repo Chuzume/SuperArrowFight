@@ -1,0 +1,80 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:spectral_arrow",
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "🏹 矢弾",
+                  "color": "gray",
+                  "italic": false
+                }
+              ],
+              "mode": "append"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": ""
+                }
+              ],
+              "mode": "append"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "対象を光らせる、よくある光の矢",
+                  "color": "white",
+                  "italic": false
+                }
+              ],
+              "mode": "append"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": "敵に直接ダメージを与え、発光させる",
+                  "color": "white",
+                  "italic": false
+                }
+              ],
+              "mode": "append"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_data": {
+                  "ObjectID": "projectile.spectral_arrow"
+                }
+              },
+              "conditions": []
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "text": "ふつうの光の矢",
+                "color": "white",
+                "italic": false,
+                "extra": [
+                  {
+                    "text": " [🏹]",
+                    "color": "gray"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
