@@ -22,7 +22,8 @@
     execute as @n[type=marker,tag=SpreadMarker] run function lib:spread_entity/
 
 # マーカーの位置にオブジェクト召喚
-    execute at @n[type=marker,tag=SpreadMarker] positioned ~ ~50 ~ rotated ~ 90 run function api:object/summon.m {ID:projectile.meteor}
+    data modify storage api: Argument.FieldOverride set value 0.5
+    execute at @n[type=marker,tag=SpreadMarker] positioned ~ ~50 ~ facing entity @s feet rotated ~ 90 run function api:object/summon.m {ID:projectile.meteor}
 
 # マーカーキル
     kill @n[type=marker,tag=SpreadMarker]

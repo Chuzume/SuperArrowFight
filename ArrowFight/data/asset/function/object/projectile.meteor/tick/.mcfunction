@@ -5,11 +5,11 @@
 # @within asset_manager:object/tick/tick.m
           
 # パーティクル
-    particle entity_effect{color:[0.5,1.0,0.5,1.00]} ~ ~ ~ 0.1 0.1 0.1 1 1 force @a[distance=..64]
-    particle entity_effect{color:[0.0,0.7,0.0,1.00]} ~ ~ ~ 0 0 0 1 1 force @a[distance=..64]
+    particle dust{color:[1,0.3,0.0],scale:1} ~ ~ ~ 0.2 0.2 0.2 1 5 force @a[distance=..64]
+    particle large_smoke ~ ~ ~ 0.1 0.1 0.1 0 2 force @a[distance=..64]
 
 # マーカーの向きに下のエンダーパールを進ませ続ける
-    data modify storage lib: Argument.VectorMagnitude set value 1
+    data modify storage lib: Argument.VectorMagnitude set from storage asset:context this.Speed
     execute on vehicle run function lib:motion/
 
 # Super

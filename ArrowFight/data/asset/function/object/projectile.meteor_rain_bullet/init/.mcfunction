@@ -5,8 +5,8 @@
 # @within asset_manager:object/init/init.m
 
 # サウンド
-    playsound minecraft:item.trident.return player @a ^ ^ ^1 1 1.5
-    playsound minecraft:entity.firework_rocket.twinkle player @a ^ ^ ^1 1 1.5
+    playsound minecraft:entity.blaze.shoot player @a ^ ^ ^1 1 0.8
+    playsound minecraft:entity.blaze.hurt player @a ^ ^ ^1 1 1.5
 
 # 下の雪玉に場外で消す用のタグを付与
     execute on vehicle run tag @s add VanishOnExitArena

@@ -20,6 +20,6 @@
     # transformation
         data modify storage asset:object Field.Transformation set value {left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0.0f,0.0f,0f],scale:[1f,1f,1f]}
     # item
-        data modify storage asset:object Field.Item set value {id:"minecraft:magma_block",count:1}
+        data modify storage asset:object Field.Item set value {id:"minecraft:player_head",count:1,components:{"minecraft:profile":{id:[I;546264793,1580024064,-1780039325,-2086531046],properties:[{name:"textures",value:"eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjM2ZTk4YjgxZGNhOWIxZTBlYmExNjI2NzAzMTNjNDBhMWQxOWNmZGU1ODRhMDc5ZjYwMGJjZGE0MWY5YTUxZSJ9fX0="}]}}}
     # item_display
         data modify storage asset:object Field.ItemDisplay set value "gui" 
