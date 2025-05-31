@@ -2,7 +2,7 @@
 #
 # Mobのinit時の処理
 #
-# @within asset:mob/_alias/trader.arrow_shop/init
+# @within asset:mob/trader.arrow_shop/init
 
 # Attribute周り
     attribute @s minecraft:movement_speed base set 0
