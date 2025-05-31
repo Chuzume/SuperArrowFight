@@ -61,7 +61,7 @@
             {
               "function": "minecraft:set_name",
               "name": {
-                "text": "ふつうの光の矢",
+                "text": "光の矢",
                 "color": "white",
                 "italic": false,
                 "extra": [
