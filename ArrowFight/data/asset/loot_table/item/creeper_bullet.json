@@ -52,7 +52,7 @@
             {
               "function": "minecraft:set_name",
               "name": {
-                "text": "バクヤク弾",
+                "text": "クリーパー弾",
                 "color": "white",
                 "italic": false,
                 "extra": [
