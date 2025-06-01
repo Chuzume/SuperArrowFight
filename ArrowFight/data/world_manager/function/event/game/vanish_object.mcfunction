@@ -2,7 +2,9 @@
 #
 # 対象のものを消す
 #
-# @within function world_manager:event/game/tick
+# @within function 
+#   world_manager:event/game/tick
+#   world_manager:event/game/end_game/setdata
 
 # 演出一応つけとく？
     particle minecraft:poof ~ ~ ~ 0 0 0 0.1 5 force @a[distance=..64]
