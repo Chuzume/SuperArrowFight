@@ -4,9 +4,9 @@
 #
 # @within function asset:object/projectile.netherify_bullet/hit/
 
-# 空きスペースにブレイズを召喚
-#    execute if block ~3 ~2 ~3 air run summon blaze ~3 ~2 ~3 {Tags:["Init"]}
-#    execute if block ~-3 ~2 ~-3 air run summon blaze ~-3 ~2 ~-3 {Tags:["Init"]}
+# ブレイズを召喚
+    execute positioned ~0.1 ~ ~ run function asset:object/projectile.netherify_bullet/hit/summon
+    execute positioned ~-0.1 ~ ~ run function asset:object/projectile.netherify_bullet/hit/summon
 
 # パーティクル
     particle minecraft:crimson_spore ~ ~ ~ 2 2 2 0 100 force @a[distance=..64]
