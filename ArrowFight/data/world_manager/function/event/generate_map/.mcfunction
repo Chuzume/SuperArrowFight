@@ -6,6 +6,7 @@
 
 # 一旦全部消す
     fill 531 129 533 469 100 580 air
+    kill @e[type=armor_stand,tag=TraderSpawnPoint,distance=..128]
 
 # 生成する
     $place template map:$(MapID) 495 100 581 180
