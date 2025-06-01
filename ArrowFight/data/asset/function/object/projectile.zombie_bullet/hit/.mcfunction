@@ -5,13 +5,13 @@
 # @within asset_manager:object/call_method/run_method.m
 
 # 武装したゾンビだ！
-    summon zombie ~ ~ ~ {Motion:[0.0,0.5,0.0],equipment:{head:{id:"minecraft:chainmail_helmet",count:1},mainhand:{id:"minecraft:wooden_sword",count:1}},drop_chances:{head:0.000,mainhand:0.000}}
-    summon zombie ~ ~ ~ {Motion:[0.1,0.5,0.1],equipment:{head:{id:"minecraft:chainmail_helmet",count:1},mainhand:{id:"minecraft:wooden_sword",count:1}},drop_chances:{head:0.000,mainhand:0.000}}
-    summon zombie ~ ~ ~ {Motion:[0.1,0.5,-0.1],equipment:{head:{id:"minecraft:chainmail_helmet",count:1},mainhand:{id:"minecraft:wooden_sword",count:1}},drop_chances:{head:0.000,mainhand:0.000}}
-    summon zombie ~ ~ ~ {Motion:[-0.1,0.5,0.1],equipment:{head:{id:"minecraft:chainmail_helmet",count:1},mainhand:{id:"minecraft:wooden_sword",count:1}},drop_chances:{head:0.000,mainhand:0.000}}
-    summon zombie ~ ~ ~ {Motion:[-0.0,0.5,-0.1],equipment:{head:{id:"minecraft:chainmail_helmet",count:1},mainhand:{id:"minecraft:wooden_sword",count:1}},drop_chances:{head:0.000,mainhand:0.000}}
-    summon zombie ~ ~ ~ {Motion:[-0.0,0.5,-0.1],equipment:{head:{id:"minecraft:chainmail_helmet",count:1},mainhand:{id:"minecraft:wooden_sword",count:1}},drop_chances:{head:0.000,mainhand:0.000}}
-    summon zombie ~ ~ ~ {Motion:[-0.0,0.5,-0.1],equipment:{head:{id:"minecraft:chainmail_helmet",count:1},mainhand:{id:"minecraft:wooden_sword",count:1}},drop_chances:{head:0.000,mainhand:0.000}}
+    execute positioned ~ ~ ~ run function asset:object/projectile.zombie_bullet/hit/summon
+    execute positioned ~0.1 ~ ~ run function asset:object/projectile.zombie_bullet/hit/summon
+    execute positioned ~-0.1 ~ ~ run function asset:object/projectile.zombie_bullet/hit/summon
+    execute positioned ~ ~ ~0.1 run function asset:object/projectile.zombie_bullet/hit/summon
+    execute positioned ~ ~ ~-0.1 run function asset:object/projectile.zombie_bullet/hit/summon
+    execute positioned ~0.1 ~ ~0.1 run function asset:object/projectile.zombie_bullet/hit/summon
+    execute positioned ~-0.1 ~ ~-0.1 run function asset:object/projectile.zombie_bullet/hit/summon
 
 # 演出
     playsound minecraft:entity.zombie.hurt neutral @a ~ ~ ~ 1.5 1
