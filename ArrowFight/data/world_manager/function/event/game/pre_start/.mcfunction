@@ -14,6 +14,9 @@
 # 頂点辺りで転送
     execute if score $Game Game.Tick matches 80 as @a[tag=GameJoinedPlayer,distance=..128] at @s run function world_manager:event/game/pre_start/teleport
 
+# 村人を召喚する
+    execute if score $Game Game.Tick matches 80 run function world_manager:event/game/pre_start/summon_trader
+
 # 試合開始の合図をしろ！
     # カウントダウン
         execute if score $Game Game.Tick matches 100 as @a[tag=GameJoinedPlayer,distance=..128] at @s run function world_manager:event/game/pre_start/title/3
