@@ -19,7 +19,7 @@
     execute if data storage world_manager: Game{LoadedMap:flowerville} run data modify entity @s VillagerData.type set value "minecraft:plains"
     execute if data storage world_manager: Game{LoadedMap:jungle} run data modify entity @s VillagerData.type set value "minecraft:jungle"
     execute if data storage world_manager: Game{LoadedMap:desert} run data modify entity @s VillagerData.type set value "minecraft:desert"
-    execute if data storage world_manager: Game{LoadedMap:moutains} run data modify entity @s VillagerData.type set value "minecraft:taiga"
+    execute if data storage world_manager: Game{LoadedMap:mountains} run data modify entity @s VillagerData.type set value "minecraft:taiga"
     execute if data storage world_manager: Game{LoadedMap:cliff} run data modify entity @s VillagerData.type set value "minecraft:savanna"
 
 # 商品
