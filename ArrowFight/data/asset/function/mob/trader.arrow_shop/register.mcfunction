@@ -2,7 +2,7 @@
 #
 # Mobのデータを指定
 #
-# @within function asset:mob/trader.arrow_shop/register
+# @within function asset_manager:mob/summon/register.m
 
 # 継承(オプション)
     # data modify storage asset:mob Extends append value 

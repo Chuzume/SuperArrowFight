@@ -2,4 +2,4 @@
 #
 # Mobのtick時の処理
 #
-# @within asset:mob/trader.arrow_shop/tick
+# @within asset_manager:mob/triggers/tick/tick.m
