@@ -4,9 +4,23 @@
 #
 # @within asset_manager:mob/triggers/init/init.m
 
+# テキストを召喚、自分の上に乗せる
+    summon text_display ~ ~ ~ {Tags:["Init","ProcessCommonTag","AutoKillWhenDieVehicle"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,0.2f,0f],scale:[1f,1f,1f]},billboard:"vertical",shadow:1b,brightness:{sky:15,block:15},text:{"color":"white","text":" Shop ","underlined":true},background:16711680}
+    tp @e[type=text_display,tag=Init,limit=1] ~ ~ ~ ~ ~
+    ride @e[type=text_display,tag=Init,limit=1] mount @s
+    tag @e[type=text_display,tag=Init,limit=1] remove Init
+
 # Attribute周り
     attribute @s minecraft:movement_speed base set 0
     attribute @s minecraft:jump_strength base set 0
+
+# 見た目
+    execute if data storage world_manager: Game{LoadedMap:ice} run data modify entity @s VillagerData.type set value "minecraft:snow"
+    execute if data storage world_manager: Game{LoadedMap:flowerville} run data modify entity @s VillagerData.type set value "minecraft:plains"
+    execute if data storage world_manager: Game{LoadedMap:jungle} run data modify entity @s VillagerData.type set value "minecraft:jungle"
+    execute if data storage world_manager: Game{LoadedMap:desert} run data modify entity @s VillagerData.type set value "minecraft:desert"
+    execute if data storage world_manager: Game{LoadedMap:moutains} run data modify entity @s VillagerData.type set value "minecraft:taiga"
+    execute if data storage world_manager: Game{LoadedMap:cliff} run data modify entity @s VillagerData.type set value "minecraft:savanna"
 
 # 商品
     # 通常矢
