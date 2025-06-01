@@ -16,8 +16,8 @@
 
 # 鉱石生成
     function world_manager:event/generate_map/ore/
-    function world_manager:event/generate_map/ore/
-    function world_manager:event/generate_map/ore/
+    #function world_manager:event/generate_map/ore/
+    #function world_manager:event/generate_map/ore/
     
 # アイテム削除
     execute positioned 468 99 533 run kill @e[type=item,distance=..128,predicate=world_manager:area/battle_field/kill_object]
