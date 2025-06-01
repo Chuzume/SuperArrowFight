@@ -42,7 +42,7 @@
               "function": "minecraft:set_lore",
               "lore": [
                 {
-                  "text": "十分な空間があれば、ブレイズも出てくる",
+                  "text": "ついでに、ブレイズも出てくる",
                   "color": "white",
                   "italic": false
                 }
