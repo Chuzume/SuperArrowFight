@@ -15,7 +15,7 @@
     data modify storage asset:object ID set value "projectile.creeper_bullet"
 # フィールド: 
     # 速度倍率、100倍して使うこと。86で大体矢と同じくらいのところに落ちる。
-        data modify storage asset:object Field.SpeedMultiPlier set value 50
+        data modify storage asset:object Field.SpeedMultiPlier set value 86
     # transformation
         data modify storage asset:object Field.Transformation set value {left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0.0f,0.0f,0f],scale:[1f,1f,1f]}
     # item
