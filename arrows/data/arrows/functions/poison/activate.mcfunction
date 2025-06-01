@@ -1,2 +1,0 @@
-playsound minecraft:entity.splash_potion.break ambient @a
-summon area_effect_cloud ~ ~0.25 ~ {Tags:["mapMob"],Radius:5f,RadiusOnUse:0f,Duration:200,WaitTime:10,Color:3484199,effects:[{id:"minecraft:wither",amplifier:2b,duration:100}]}
