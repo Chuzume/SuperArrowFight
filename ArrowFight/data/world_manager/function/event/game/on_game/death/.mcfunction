@@ -10,6 +10,9 @@
 # チームから脱退
     team leave @s
 
+# ゲームモードを変更
+    gamemode adventure @s
+
 # 荷物削除
     clear @s
 
