@@ -11,7 +11,7 @@
     execute on vehicle run tag @s add VanishOnExitArena
 
 # 耐久値設定
-    scoreboard players set @s projectile.drill_ball.Durability 80
+#    scoreboard players set @s projectile.drill_ball.Durability 2147483647
 
 # Super
     function asset:object/super.init

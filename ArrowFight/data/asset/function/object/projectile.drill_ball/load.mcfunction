@@ -6,5 +6,5 @@
 
 #> 定義類はここに
 # @within function asset:object/projectile.drill_ball/**
-    scoreboard objectives add projectile.drill_ball.Durability dummy
+#    scoreboard objectives add projectile.drill_ball.Durability dummy
     scoreboard objectives add projectile.drill_ball.Result dummy

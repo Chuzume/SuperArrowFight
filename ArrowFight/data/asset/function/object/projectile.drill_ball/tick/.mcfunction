@@ -14,10 +14,10 @@
     execute if score @s General.Object.Tick matches 3.. run function asset:object/projectile.drill_ball/tick/break/
 
 # 地形破壊で得たスコアを耐久値から削る
-    scoreboard players operation @s projectile.drill_ball.Durability -= @s projectile.drill_ball.Result
+#    scoreboard players operation @s projectile.drill_ball.Durability -= @s projectile.drill_ball.Result
 
 # 耐久値0未満で破壊される
-    execute if score @s projectile.drill_ball.Durability matches ..-1 run function asset:object/call.m {method:hit}
+#    execute if score @s projectile.drill_ball.Durability matches ..-1 run function asset:object/call.m {method:hit}
 
 # フェイルセーフ兼射程
     execute if score @s General.Object.Tick matches 600.. run function asset:object/call.m {method:hit}
