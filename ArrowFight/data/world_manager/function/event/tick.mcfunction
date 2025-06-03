@@ -9,3 +9,6 @@
 
 # マップ生成
     execute if data storage world_manager: GenerateMap{Active:true} run function world_manager:event/generate_map/ with storage world_manager: GenerateMap
+
+# エフェクト付与
+    effect give @a minecraft:saturation infinite 10 true
