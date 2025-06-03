@@ -48,12 +48,12 @@
     # バクヤク弾
         loot replace entity @s villager.0 loot asset:item/tnt_bullet
         data modify entity @s Offers.Recipes append value {rewardExp:0b,maxUses:2147483647,buy:{id:"minecraft:stone",count:1},sell:{id:"minecraft:grass_block",count:1}}
-        data modify entity @s Offers.Recipes[3].buy set value {id:"minecraft:redstone",count:4}
+        data modify entity @s Offers.Recipes[3].buy set value {id:"minecraft:redstone",count:8}
         data modify entity @s Offers.Recipes[3].sell set from entity @s Inventory[0]
     # メテオレイン弾
         loot replace entity @s villager.0 loot asset:item/meteor_rain_bullet
         data modify entity @s Offers.Recipes append value {rewardExp:0b,maxUses:2147483647,buy:{id:"minecraft:stone",count:1},sell:{id:"minecraft:grass_block",count:1}}
-        data modify entity @s Offers.Recipes[4].buy set value {id:"minecraft:redstone",count:12}
+        data modify entity @s Offers.Recipes[4].buy set value {id:"minecraft:redstone",count:8}
         data modify entity @s Offers.Recipes[4].buyB set value {id:"minecraft:coal_block",count:1}
         data modify entity @s Offers.Recipes[4].sell set from entity @s Inventory[0]
     # イカヅチ弾
