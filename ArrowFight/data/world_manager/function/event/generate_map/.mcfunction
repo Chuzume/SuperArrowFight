@@ -17,7 +17,7 @@
 
 # 鉱石生成
     function world_manager:event/generate_map/ore/
-    #function world_manager:event/generate_map/ore/
+    function world_manager:event/generate_map/ore/
     #function world_manager:event/generate_map/ore/
     
 # アイテム削除

@@ -7,6 +7,9 @@
 # テレポート
     tp @s 500 126 496
 
+# ゲームモードを戻す
+    gamemode adventure
+
 # タグ解除
     tag @s remove GameJoinedPlayer
 

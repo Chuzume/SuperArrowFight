@@ -37,6 +37,9 @@
     give @s stone_axe
     give @s stone_shovel
 
+# エフェクト付与
+    effect give @a minecraft:regeneration infinite 0 true
+
 # 演出
     execute at @s run function world_manager:event/game/pre_start/teleport_vfx
  

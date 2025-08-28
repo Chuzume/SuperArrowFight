@@ -7,6 +7,13 @@
 # テレポート
     tp @s 500 126 496
 
+# ゲームモード変更
+    gamemode adventure
+
+# エフェクト削除
+    effect clear @s glowing
+    effect clear @s regeneration
+
 # タグ解除
     tag @s remove GameJoinedPlayer
 

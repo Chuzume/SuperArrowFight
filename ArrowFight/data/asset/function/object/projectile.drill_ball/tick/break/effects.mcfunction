@@ -8,4 +8,4 @@
     playsound minecraft:block.stone.break neutral @a ~ ~ ~ 1 1
 
 # パーティクル
-    particle minecraft:dust_plume ~ ~ ~ 0.3 0.3 0.3 0.2 5
+    particle minecraft:dust_plume ~ ~ ~ 0.5 0.5 0.5 0.2 10
