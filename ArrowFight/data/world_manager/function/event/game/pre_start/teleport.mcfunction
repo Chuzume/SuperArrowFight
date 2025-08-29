@@ -40,6 +40,9 @@
 # エフェクト付与
     effect give @a minecraft:regeneration infinite 0 true
 
+# バトルモードにする
+    function player_manager:mode/battle
+
 # 演出
     execute at @s run function world_manager:event/game/pre_start/teleport_vfx
  

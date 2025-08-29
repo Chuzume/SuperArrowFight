@@ -7,6 +7,9 @@
 # テレポート
     tp @s 500 126 496
 
+# ロビーモードにする
+    function player_manager:mode/lobby
+
 # ゲームモードを戻す
     gamemode adventure
 

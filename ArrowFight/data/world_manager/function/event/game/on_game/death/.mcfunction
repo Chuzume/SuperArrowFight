@@ -13,8 +13,8 @@
 # ゲームモードを変更
     gamemode adventure @s
 
-# 荷物削除
-    clear @s
+# ロビーモードにする
+    function player_manager:mode/lobby
 
 # タイトル表示
     title @s times 0 20 10

@@ -10,6 +10,9 @@
 # ゲームモード変更
     gamemode adventure
 
+# ロビーモードにする
+    function player_manager:mode/lobby
+
 # エフェクト削除
     effect clear @s glowing
     effect clear @s regeneration
