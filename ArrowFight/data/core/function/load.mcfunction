@@ -90,6 +90,14 @@
         team modify Team.Blue friendlyFire false
         team modify Team.Blue collisionRule pushOtherTeams
         team modify Team.Blue color aqua
+    # 観戦チーム
+        team add Team.Spectator
+        team modify Team.Spectator displayName {"color":"gray","text":"観戦","underlined":true}
+        team modify Team.Spectator prefix [{"color":"gray","text":"[Spectator] "}]
+        team modify Team.Spectator seeFriendlyInvisibles false
+        team modify Team.Spectator friendlyFire false
+        team modify Team.Spectator collisionRule pushOtherTeams
+        team modify Team.Spectator color gray
 
 # フォースロード
     forceload add 0 0 0 0

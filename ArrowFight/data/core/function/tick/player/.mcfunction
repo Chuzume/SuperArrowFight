@@ -21,6 +21,10 @@
 # Deathタグ付与
 #    execute if entity @s[scores={DeathEvent=1..}] run tag @s add Death
 
+# 観戦モードの際、帰り方を教える
+    title @s[team=Team.Spectator] actionbar [{"text":"ロビーに向かって飛ぶことで観戦モードを終了","color":"gray","underlined":true}]
+
+
 # Triggers
 #    execute if entity @s[scores={FirstJoinEvent=1}] run function core:handler/first_join
     execute if entity @s[scores={RejoinEvent=1..}] run function core:handler/rejoin
