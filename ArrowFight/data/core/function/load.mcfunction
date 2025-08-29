@@ -94,6 +94,10 @@
 # フォースロード
     forceload add 0 0 0 0
 
+# メモ書き:
+    #execute positioned 500 127 501 run function api:object/summon.m {ID:system.game_start_button}
+    #execute positioned 500 127 505 run function api:object/summon.m {ID:system.map_select_button}
+
 # 原点を召喚
     summon marker 0.0 0.0 0.0 {UUID:[I;0,0,0,0]}
 
