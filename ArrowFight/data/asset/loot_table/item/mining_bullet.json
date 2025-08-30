@@ -39,17 +39,6 @@
               "mode": "append"
             },
             {
-              "function": "minecraft:set_lore",
-              "lore": [
-                {
-                  "text": "ある程度掘ると壊れてしまう",
-                  "color": "white",
-                  "italic": false
-                }
-              ],
-              "mode": "append"
-            },
-            {
               "function": "minecraft:set_components",
               "components": {
                 "minecraft:custom_data": {
