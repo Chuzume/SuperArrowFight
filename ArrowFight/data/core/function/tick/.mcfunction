@@ -24,7 +24,7 @@
 # Objects処理
     execute as @e[tag=AssetObject] at @s run function asset_manager:object/triggers/tick
 
-# UserID割り振り
+# UserID割り振りと初期スポーンへの移動
     execute as @a unless score @s UserID matches 0.. run function core:give_user_id
 
 # エフェクト処理
