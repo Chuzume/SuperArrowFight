@@ -21,9 +21,9 @@
 # Deathタグ付与
 #    execute if entity @s[scores={DeathEvent=1..}] run tag @s add Death
 
-# 観戦モードの際、帰り方を教える
-    title @s[team=Team.Spectator] actionbar [{"text":"ロビーに向かって飛ぶことで観戦モードを終了","color":"gray","underlined":true}]
-
+# ダメージで再生が一時的に切れる
+    execute if score @s StopRegeneration matches 1.. run scoreboard players remove @s StopRegeneration 1
+    execute if score @s StopRegeneration matches 0 run function core:tick/player/regeneration/re_active
 
 # Triggers
 #    execute if entity @s[scores={FirstJoinEvent=1}] run function core:handler/first_join
