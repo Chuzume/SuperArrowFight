@@ -47,3 +47,7 @@ fill 472 100 535 472 129 535 minecraft:moving_piston
 fill 471 100 536 471 129 536 minecraft:moving_piston
 fill 470 100 537 470 129 538 minecraft:moving_piston
 fill 494 130 580 470 130 534 minecraft:moving_piston
+
+# 底面
+    fill 494 99 580 470 99 533 minecraft:moving_piston
+    fill 530 99 534 506 99 580 minecraft:moving_piston
