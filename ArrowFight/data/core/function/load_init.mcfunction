@@ -14,3 +14,9 @@
     summon text_display 492 127.5 501 {view_range:0.25f,billboard:"vertical",shadow:1b,Tags:["LobbyHologram","TeamJoinHologram"],text:{"fallback":" Join §b§n Blue Team ","translate":"lobby.hologram.join_blue"},background:16711680}
     summon text_display 508 127.5 501 {view_range:0.25f,billboard:"vertical",shadow:1b,Tags:["LobbyHologram","TeamJoinHologram"],text:{"fallback":" Join §c§n Red Team ","translate":"lobby.hologram.join_red"},background:16711680}
     summon text_display 500 127.5 488 {view_range:0.25f,billboard:"vertical",shadow:1b,Tags:["LobbyHologram"],text:{"fallback":" Join §7§n Spectator §r ","translate":"lobby.hologram.join_spectator"},background:16711680}
+
+# フォースロード
+    forceload add 0 0 0 0
+
+# 原点を召喚
+    summon marker 0.0 0.0 0.0 {UUID:[I;0,0,0,0]}
