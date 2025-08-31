@@ -8,7 +8,7 @@
     execute positioned 500 127 501 run function api:object/summon.m {ID:system.game_start_button}
 
 # マップ選択ボタンを置く
-    execute positioned 500 127 505 run function api:object/summon.m {ID:system.map_select_button}
+    execute positioned 500 127 509 run function api:object/summon.m {ID:system.map_select_button}
 
 # マップを生成する
     data modify storage world_manager: GenerateMap.MapID set from storage world_manager: Game.LoadedMap
