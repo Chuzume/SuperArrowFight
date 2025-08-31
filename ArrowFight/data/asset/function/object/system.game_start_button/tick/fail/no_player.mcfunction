@@ -5,8 +5,8 @@
 # @within function asset:object/system.game_start_button/tick/activate
 
 # メッセージ
-    tellraw @a[distance=..8] [{"color":"dark_red","text":"! "},{"color":"white","text":"両チームとも参加者がいないようです","underlined":false},{"color":"dark_red","text":" !"}]
-    tellraw @a[distance=..8] [{"color":"dark_red","text":"! "},{"color":"white","text":"ゲームの開始には、それぞれのチームに最低でも1人のプレイヤーが必要です","underlined":false},{"color":"dark_red","text":" !"}]
+    tellraw @a[distance=..8] [{"color":"dark_red","text":"! "},{"color":"white","fallback":"There are no player on either team","translate":"error.no_both_team.line_1","underlined":false},{"color":"dark_red","text":" !"}]
+    tellraw @a[distance=..8] [{"color":"dark_red","text":"! "},{"color":"white","fallback":"Each team must have at least one player to start the game","translate":"error.no_both_team.line_2","underlined":false},{"color":"dark_red","text":" !"}]
 
 # 演出
     particle dust{color:[0.3,0.3,0.3],scale:1} ~ ~0.2 ~ 0.1 0.1 0.1 0 5

@@ -8,7 +8,7 @@
     tag @s add system.game_start_button.Lock
 
 # メッセージ
-    tellraw @a[distance=..128] [{"color":"gold","text":"! "},{"color":"white","text":"ゲームを開始します","underlined":false},{"color":"gold","text":" !"}]
+    tellraw @a[distance=..128] [{"color":"gold","text":"! "},{"color":"white","fallback":"Start the game","translate":"lobby.message.game_start","underlined":false},{"color":"gold","text":" !"}]
 
 # 演出
     playsound minecraft:block.iron_door.open block @a ~ ~ ~ 1 0.5
