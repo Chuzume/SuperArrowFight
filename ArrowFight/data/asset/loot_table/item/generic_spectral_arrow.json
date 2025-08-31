@@ -1,80 +1,91 @@
 {
-  "pools": [
-    {
-      "rolls": 1,
-      "entries": [
+    "pools": [
         {
-          "type": "minecraft:item",
-          "name": "minecraft:spectral_arrow",
-          "functions": [
-            {
-              "function": "minecraft:set_lore",
-              "lore": [
+            "rolls": 1,
+            "entries": [
                 {
-                  "text": "🏹 矢弾",
-                  "color": "gray",
-                  "italic": false
+                    "type": "minecraft:item",
+                    "name": "minecraft:spectral_arrow",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_lore",
+                            "lore": [
+                                {
+                                    "text": "🏹 ",
+                                    "color": "gray",
+                                    "italic": false,
+                                    "extra": [
+                                        {
+                                            "translate": "item.super_arrow_fight.category.projectile",
+                                            "fallback": "Bow-launchable",
+                                            "color": "gray",
+                                            "italic": false
+                                        }
+                                    ]
+                                }
+                            ],
+                            "mode": "append"
+                        },
+                        {
+                            "function": "minecraft:set_lore",
+                            "lore": [
+                                {
+                                    "text": ""
+                                }
+                            ],
+                            "mode": "append"
+                        },
+                        {
+                            "function": "minecraft:set_lore",
+                            "lore": [
+                                {
+                                    "translate": "item.super_arrow_fight.spectral_arrow.description.line_1",
+                                    "fallback": "An ordinary spectral arrow that glows the target",
+                                    "color": "white",
+                                    "italic": false
+                                }
+                            ],
+                            "mode": "append"
+                        },
+                        {
+                            "function": "minecraft:set_lore",
+                            "lore": [
+                                {
+                                    "translate": "item.super_arrow_fight.spectral_arrow.description.line_2",
+                                    "fallback": "Deals direct damage to enemies and makes them glow",
+                                    "color": "white",
+                                    "italic": false
+                                }
+                            ],
+                            "mode": "append"
+                        },
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:custom_data": {
+                                    "ObjectID": "projectile.spectral_arrow"
+                                }
+                            },
+                            "conditions": []
+                        },
+                        {
+                            "function": "minecraft:set_name",
+                            "name": {
+                                "translate": "item.super_arrow_fight.spectral_arrow",
+                                "fallback": "Ordinary Spectral Arrow",
+                                "extra": [
+                                    {
+                                        "text": " [🏹]",
+                                        "color": "gray",
+                                        "italic": false
+                                    }
+                                ],
+                                "italic": false
+                            }
+                        }
+                    ]
                 }
-              ],
-              "mode": "append"
-            },
-            {
-              "function": "minecraft:set_lore",
-              "lore": [
-                {
-                  "text": ""
-                }
-              ],
-              "mode": "append"
-            },
-            {
-              "function": "minecraft:set_lore",
-              "lore": [
-                {
-                  "text": "対象を光らせる、よくある光の矢",
-                  "color": "white",
-                  "italic": false
-                }
-              ],
-              "mode": "append"
-            },
-            {
-              "function": "minecraft:set_lore",
-              "lore": [
-                {
-                  "text": "敵に直接ダメージを与え、発光させる",
-                  "color": "white",
-                  "italic": false
-                }
-              ],
-              "mode": "append"
-            },
-            {
-              "function": "minecraft:set_components",
-              "components": {
-                "minecraft:custom_data": {
-                  "ObjectID": "projectile.spectral_arrow"
-                }
-              },
-              "conditions": []
-            },
-            {
-              "function": "minecraft:set_name",
-              "name": {
-                "text": "光の矢",
-                "color": "white",
-                "italic": false,
-                "extra": [
-                  {
-                    "text": " [🏹]",
-                    "color": "gray"
-                  }
-                ]
-              }
-            }
-          ]
+            ]
         }
-      ]
-    }
-  ]
+    ]
 }

@@ -1,71 +1,81 @@
 {
-  "pools": [
-    {
-      "rolls": 1,
-      "entries": [
+    "pools": [
         {
-          "type": "minecraft:item",
-          "name": "minecraft:arrow",
-          "functions": [
-            {
-              "function": "minecraft:set_lore",
-              "lore": [
+            "rolls": 1,
+            "entries": [
                 {
-                  "text": "🏹 矢弾",
-                  "color": "gray",
-                  "italic": false
+                    "type": "minecraft:item",
+                    "name": "minecraft:arrow",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_lore",
+                            "lore": [
+                                {
+                                    "text": "🏹 ",
+                                    "color": "gray",
+                                    "italic": false,
+                                    "extra": [
+                                        {
+                                            "translate": "item.super_arrow_fight.category.projectile",
+                                            "fallback": "Bow-launchable",
+                                            "color": "gray",
+                                            "italic": false
+                                        }
+                                    ]
+                                }
+                            ],
+                            "mode": "append"
+                        },
+                        {
+                            "function": "minecraft:set_lore",
+                            "lore": [
+                                {
+                                    "text": ""
+                                }
+                            ],
+                            "mode": "append"
+                        },
+                        {
+                            "function": "minecraft:set_lore",
+                            "lore": [
+                                {
+                                    "translate": "item.super_arrow_fight.zombie_bullet.description.line_1",
+                                    "fallback": "Spawns a horde of zombies on impact",
+                                    "color": "white",
+                                    "italic": false
+                                }
+                            ],
+                            "mode": "append"
+                        },
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:custom_data": {
+                                    "ObjectID": "projectile.zombie_bullet",
+                                    "FullConvert": true
+                                },
+                                "minecraft:item_model": "minecraft:zombie_head"
+                            },
+                            "conditions": []
+                        },
+                        {
+                            "function": "minecraft:set_name",
+                            "name": {
+                                "translate": "item.super_arrow_fight.zombie_bullet",
+                                "fallback": "Zombie Bullet",
+                                "extra": [
+                                    {
+                                        "text": " [🏹]",
+                                        "color": "gray",
+                                        "italic": false
+                                    }
+                                ],
+                                "italic": false
+                            }
+                        }
+                    ]
                 }
-              ],
-              "mode": "append"
-            },
-            {
-              "function": "minecraft:set_lore",
-              "lore": [
-                {
-                  "text": ""
-                }
-              ],
-              "mode": "append"
-            },
-            {
-              "function": "minecraft:set_lore",
-              "lore": [
-                {
-                  "text": "着弾地点にゾンビの群れが出現する",
-                  "color": "white",
-                  "italic": false
-                }
-              ],
-              "mode": "append"
-            },
-            {
-              "function": "minecraft:set_components",
-              "components": {
-                "minecraft:custom_data": {
-                  "ObjectID": "projectile.zombie_bullet",
-                  "FullConvert": true
-                },
-                "minecraft:item_model": "minecraft:zombie_head"
-              },
-              "conditions": []
-            },
-            {
-              "function": "minecraft:set_name",
-              "name": {
-                "text": "ゾンビ弾",
-                "color": "white",
-                "italic": false,
-                "extra": [
-                  {
-                    "text": " [🏹]",
-                    "color": "gray"
-                  }
-                ]
-              }
-            }
-          ]
+            ]
         }
-      ]
-    }
-  ]
+    ]
 }

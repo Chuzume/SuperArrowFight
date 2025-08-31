@@ -1,90 +1,101 @@
 {
-  "pools": [
-    {
-      "rolls": 1,
-      "entries": [
+    "pools": [
         {
-          "type": "minecraft:item",
-          "name": "minecraft:arrow",
-          "functions": [
-            {
-              "function": "minecraft:set_lore",
-              "lore": [
+            "rolls": 1,
+            "entries": [
                 {
-                  "text": "🏹 矢弾",
-                  "color": "gray",
-                  "italic": false
+                    "type": "minecraft:item",
+                    "name": "minecraft:arrow",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_lore",
+                            "lore": [
+                                {
+                                    "text": "🏹 ",
+                                    "color": "gray",
+                                    "italic": false,
+                                    "extra": [
+                                        {
+                                            "translate": "item.super_arrow_fight.category.projectile",
+                                            "fallback": "Bow-launchable",
+                                            "color": "gray",
+                                            "italic": false
+                                        }
+                                    ]
+                                }
+                            ],
+                            "mode": "append"
+                        },
+                        {
+                            "function": "minecraft:set_lore",
+                            "lore": [
+                                {
+                                    "text": ""
+                                }
+                            ],
+                            "mode": "append"
+                        },
+                        {
+                            "function": "minecraft:set_lore",
+                            "lore": [
+                                {
+                                    "translate": "item.super_arrow_fight.netherifybullet.description.line_1",
+                                    "fallback": "Netherize the surrounding terrain on impact",
+                                    "color": "white",
+                                    "italic": false
+                                }
+                            ],
+                            "mode": "append"
+                        },
+                        {
+                            "function": "minecraft:set_lore",
+                            "lore": [
+                                {
+                                    "translate": "item.super_arrow_fight.netherifybullet.description.line_2",
+                                    "fallback": "Blazes will also spawn.",
+                                    "color": "white",
+                                    "italic": false
+                                }
+                            ],
+                            "mode": "append"
+                        },
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:custom_data": {
+                                    "ObjectID": "projectile.netherify_bullet",
+                                    "FullConvert": true
+                                },
+                                "minecraft:item_model": "minecraft:player_head",
+                                "minecraft:profile": {
+                                    "properties": [
+                                        {
+                                            "name": "textures",
+                                            "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmM5MTVkYjNmYzQwYTc5YjYzYzJjNDUzZjBjNDkwOTgxZTUyMjdjNTAyNzUwMTI4MzI3MjEzODUzM2RlYTUxOSJ9fX0="
+                                        }
+                                    ]
+                                }
+                            },
+                            "conditions": []
+                        },
+                        {
+                            "function": "minecraft:set_name",
+                            "name": {
+                                "translate": "item.super_arrow_fight.netherify_bullet",
+                                "fallback": "Netherify Bullet",
+                                "extra": [
+                                    {
+                                        "text": " [🏹]",
+                                        "color": "gray",
+                                        "italic": false
+                                    }
+                                ],
+                                "italic": false
+                            }
+                        }
+                    ]
                 }
-              ],
-              "mode": "append"
-            },
-            {
-              "function": "minecraft:set_lore",
-              "lore": [
-                {
-                  "text": ""
-                }
-              ],
-              "mode": "append"
-            },
-            {
-              "function": "minecraft:set_lore",
-              "lore": [
-                {
-                  "text": "着弾地点周辺をネザー化する",
-                  "color": "white",
-                  "italic": false
-                }
-              ],
-              "mode": "append"
-            },
-            {
-              "function": "minecraft:set_lore",
-              "lore": [
-                {
-                  "text": "ついでに、ブレイズも出てくる",
-                  "color": "white",
-                  "italic": false
-                }
-              ],
-              "mode": "append"
-            },
-            {
-              "function": "minecraft:set_components",
-              "components": {
-                "minecraft:custom_data": {
-                  "ObjectID": "projectile.netherify_bullet",
-                  "FullConvert": true
-                },
-                "minecraft:item_model": "minecraft:player_head",
-                "minecraft:profile": {
-                  "properties": [
-                    {
-                      "name": "textures",
-                      "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvMmM5MTVkYjNmYzQwYTc5YjYzYzJjNDUzZjBjNDkwOTgxZTUyMjdjNTAyNzUwMTI4MzI3MjEzODUzM2RlYTUxOSJ9fX0="
-                    }
-                  ]
-                }
-              },
-              "conditions": []
-            },
-            {
-              "function": "minecraft:set_name",
-              "name": {
-                "text": "ネザー弾",
-                "color": "white",
-                "italic": false,
-                "extra": [
-                  {
-                    "text": " [🏹]",
-                    "color": "gray"
-                  }
-                ]
-              }
-            }
-          ]
+            ]
         }
-      ]
-    }
-  ]
+    ]
 }

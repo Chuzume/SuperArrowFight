@@ -1,79 +1,89 @@
 {
-  "pools": [
-    {
-      "rolls": 1,
-      "entries": [
+    "pools": [
         {
-          "type": "minecraft:item",
-          "name": "minecraft:arrow",
-          "functions": [
-            {
-              "function": "minecraft:set_lore",
-              "lore": [
+            "rolls": 1,
+            "entries": [
                 {
-                  "text": "🏹 矢弾",
-                  "color": "gray",
-                  "italic": false
+                    "type": "minecraft:item",
+                    "name": "minecraft:arrow",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_lore",
+                            "lore": [
+                                {
+                                    "text": "🏹 ",
+                                    "color": "gray",
+                                    "italic": false,
+                                    "extra": [
+                                        {
+                                            "translate": "item.super_arrow_fight.category.projectile",
+                                            "fallback": "Bow-launchable",
+                                            "color": "gray",
+                                            "italic": false
+                                        }
+                                    ]
+                                }
+                            ],
+                            "mode": "append"
+                        },
+                        {
+                            "function": "minecraft:set_lore",
+                            "lore": [
+                                {
+                                    "text": ""
+                                }
+                            ],
+                            "mode": "append"
+                        },
+                        {
+                            "function": "minecraft:set_lore",
+                            "lore": [
+                                {
+                                    "translate": "item.super_arrow_fight.mining_bullet.description.line_1",
+                                    "fallback": "Releases a pickaxe that continues to dig into the terrain",
+                                    "color": "white",
+                                    "italic": false
+                                }
+                            ],
+                            "mode": "append"
+                        },
+                        {
+                            "function": "minecraft:set_components",
+                            "components": {
+                                "minecraft:custom_data": {
+                                    "ObjectID": "projectile.drill_ball",
+                                    "FullConvert": true
+                                },
+                                "minecraft:item_model": "minecraft:player_head",
+                                "minecraft:profile": {
+                                    "properties": [
+                                        {
+                                            "name": "textures",
+                                            "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjZlYTIxMzU4Mzg0NjE1MzQzNzJmMmRhNmM4NjJkMjFjZDVmM2QyYzcxMTlmMmJiNjc0YmJkNDI3OTEifX19"
+                                        }
+                                    ]
+                                }
+                            },
+                            "conditions": []
+                        },
+                        {
+                            "function": "minecraft:set_name",
+                            "name": {
+                                "translate": "item.super_arrow_fight.mining_bullet",
+                                "fallback": "Digger Bullet",
+                                "extra": [
+                                    {
+                                        "text": " [🏹]",
+                                        "color": "gray",
+                                        "italic": false
+                                    }
+                                ],
+                                "italic": false
+                            }
+                        }
+                    ]
                 }
-              ],
-              "mode": "append"
-            },
-            {
-              "function": "minecraft:set_lore",
-              "lore": [
-                {
-                  "text": ""
-                }
-              ],
-              "mode": "append"
-            },
-            {
-              "function": "minecraft:set_lore",
-              "lore": [
-                {
-                  "text": "地形を掘り続けるツルハシを放つ",
-                  "color": "white",
-                  "italic": false
-                }
-              ],
-              "mode": "append"
-            },
-            {
-              "function": "minecraft:set_components",
-              "components": {
-                "minecraft:custom_data": {
-                  "ObjectID": "projectile.drill_ball",
-                  "FullConvert": true
-                },
-                "minecraft:item_model": "minecraft:player_head",
-                "minecraft:profile": {
-                  "properties": [
-                    {
-                      "name": "textures",
-                      "value": "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvYjZlYTIxMzU4Mzg0NjE1MzQzNzJmMmRhNmM4NjJkMjFjZDVmM2QyYzcxMTlmMmJiNjc0YmJkNDI3OTEifX19"
-                    }
-                  ]
-                }
-              },
-              "conditions": []
-            },
-            {
-              "function": "minecraft:set_name",
-              "name": {
-                "text": "ツルハシ弾",
-                "color": "white",
-                "italic": false,
-                "extra": [
-                  {
-                    "text": " [🏹]",
-                    "color": "gray"
-                  }
-                ]
-              }
-            }
-          ]
+            ]
         }
-      ]
-    }
-  ]
+    ]
 }
