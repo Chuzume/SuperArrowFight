@@ -22,3 +22,6 @@
 
 # ボタンを押し込む
     setblock ~ ~ ~ minecraft:stone_button[face=floor,powered=true,facing=north]
+
+# チーム参加ホログラムを消す
+    kill @e[type=text_display,tag=TeamJoinHologram,distance=..128]
