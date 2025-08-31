@@ -9,7 +9,7 @@
     #declare tag Init
 
 # テキストを召喚、自分の上に乗せる
-    $summon text_display ~ ~ ~ {Tags:["Init","ProcessCommonTag","AutoKillWhenDieVehicle"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,1f,0f],scale:[1f,1f,1f]},shadow:1b,brightness:{sky:15,block:15},text:{"color":"white","text":"$(MapName)","underlined":true},background:16711680}
+    $summon text_display ~ ~ ~ {Tags:["Init","ProcessCommonTag","AutoKillWhenDieVehicle"],transformation:{left_rotation:[0f,0f,0f,1f],right_rotation:[0f,0f,0f,1f],translation:[0f,1f,0f],scale:[1f,1f,1f]},shadow:1b,billboard:"vertical",brightness:{sky:15,block:15},text:{"color":"white","fallback":"$(MapName)","translate":"lobby.map_button.$(MapTranslate)","underlined":false},background:16711680}
     tp @e[type=text_display,tag=Init,limit=1] ~ ~ ~ ~ ~
     ride @e[type=text_display,tag=Init,limit=1] mount @s
     tag @e[type=text_display,tag=Init,limit=1] remove Init
