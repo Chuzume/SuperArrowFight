@@ -4,6 +4,9 @@
 #
 # @within tag/function minecraft:load
 
+# 初期ロード
+    execute unless data storage world_manager: Game{Init:true} run function core:load_init
+
 # スコアボード作成
     scoreboard objectives add MobUUID dummy {"text":"汎用固有MobID"}
     scoreboard objectives add ObjectID dummy {"text":"ObjectAssetのID"}
@@ -102,16 +105,6 @@
         team modify Team.Spectator collisionRule pushOtherTeams
         team modify Team.Spectator color gray
 
-# フォースロード
-    forceload add 0 0 0 0
-
-# メモ書き:
-    #execute positioned 500 127 501 rotated 0 0 run function api:object/summon.m {ID:system.game_start_button}
-    #execute positioned 500 127 509 rotated 0 0 run function api:object/summon.m {ID:system.map_select_button}
-    #execute positioned 503 126 497 rotated 0 0 run function api:object/summon.m {ID:system.book_how_to_play}
-
-# 原点を召喚
-    summon marker 0.0 0.0 0.0 {UUID:[I;0,0,0,0]}
 
 # その他初期化が必要なもの
     function #asset:mob/load
