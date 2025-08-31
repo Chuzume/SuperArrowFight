@@ -17,6 +17,9 @@
     effect clear @s glowing
     effect clear @s regeneration
 
+# チームリセット
+    team leave @s 
+
 # タグ解除
     tag @s remove GameJoinedPlayer
 
