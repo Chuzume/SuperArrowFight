@@ -52,7 +52,7 @@
                             "lore": [
                                 {
                                     "translate": "item.super_arrow_fight.netherifybullet.description.line_2",
-                                    "fallback": "Blazes will also spawn.",
+                                    "fallback": "Blazes will also spawn",
                                     "color": "white",
                                     "italic": false
                                 }

@@ -70,7 +70,7 @@
                             "function": "minecraft:set_name",
                             "name": {
                                 "translate": "item.super_arrow_fight.mining_bullet",
-                                "fallback": "Digger Bullet",
+                                "fallback": "Mining Bullet",
                                 "extra": [
                                     {
                                         "text": " [🏹]",

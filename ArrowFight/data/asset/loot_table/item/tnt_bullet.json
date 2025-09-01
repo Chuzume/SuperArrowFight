@@ -40,7 +40,7 @@
                             "lore": [
                                 {
                                     "translate": "item.super_arrow_fight.tnt_bullet.description.line_1",
-                                    "fallback": "It explodes a short time after impact",
+                                    "fallback": "Explodes a short time after impact",
                                     "color": "white",
                                     "italic": false
                                 }
