@@ -39,7 +39,7 @@
                             "function": "minecraft:set_lore",
                             "lore": [
                                 {
-                                    "translate": "item.super_arrow_fight.creeper_bullet.description",
+                                    "translate": "item.super_arrow_fight.creeper_bullet.description.line_1",
                                     "fallback": "Spawns a swarm of creepers on impact",
                                     "color": "white",
                                     "italic": false

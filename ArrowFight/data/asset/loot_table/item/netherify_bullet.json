@@ -39,7 +39,7 @@
                             "function": "minecraft:set_lore",
                             "lore": [
                                 {
-                                    "translate": "item.super_arrow_fight.netherifybullet.description.line_1",
+                                    "translate": "item.super_arrow_fight.netherify_bullet.description.line_1",
                                     "fallback": "Netherize the surrounding terrain on impact",
                                     "color": "white",
                                     "italic": false
@@ -51,7 +51,7 @@
                             "function": "minecraft:set_lore",
                             "lore": [
                                 {
-                                    "translate": "item.super_arrow_fight.netherifybullet.description.line_2",
+                                    "translate": "item.super_arrow_fight.netherify_bullet.description.line_2",
                                     "fallback": "Blazes will also spawn",
                                     "color": "white",
                                     "italic": false

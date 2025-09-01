@@ -39,7 +39,7 @@
                             "function": "minecraft:set_lore",
                             "lore": [
                                 {
-                                    "translate": "item.super_arrow_fight.meteor_bullet.description",
+                                    "translate": "item.super_arrow_fight.meteor_rain_bullet.description",
                                     "fallback": "Summon multiple meteors on impact",
                                     "color": "white",
                                     "italic": false
