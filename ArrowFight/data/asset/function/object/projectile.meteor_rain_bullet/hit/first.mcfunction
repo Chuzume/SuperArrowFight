@@ -10,4 +10,4 @@
     playsound minecraft:entity.ghast.shoot neutral @a ~ ~ ~ 3 0.5
 
 # メッセージ
-    tellraw @a[distance=..16] [{"text":"⚠ ","color":"red"},{"text":"空から隕石が降ってくる！","color":"white"},{"text":" ⚠","color":"red"}]
+    tellraw @a[distance=..16] [{"text":"⚠ ","color":"red"},{"fallback":"Meteors are falling from the sky!","translate":"","color":"white"},{"text":" ⚠","color":"red"}]
