@@ -13,6 +13,6 @@
 # ブロック周りの処理
     setblock ~ ~-1 ~ minecraft:chiseled_tuff_bricks
     setblock ~ ~ ~ minecraft:stone_button[face=floor,powered=false,facing=north]
-    setblock ~ ~-2 ~ air
+    fill ~ ~-2 ~ ~ ~-4 ~ air
     setblock ~ ~-3 ~ sticky_piston[facing=up]
     setblock ~ ~-4 ~ redstone_block
