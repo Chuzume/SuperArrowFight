@@ -36,6 +36,7 @@
     # @within function
     #   world_manager/event/
         scoreboard objectives add Game.Tick dummy {"text":"試合のTick用スコア"}
+        scoreboard objectives add DeathMatch.Tick dummy {"text":"試合のTick用スコア"}
 
     #> MobManager用スコアボード - 攻撃元
     # @within function
@@ -75,7 +76,7 @@
         scoreboard objectives add StopRegeneration dummy {"text":"ヘルス再生停止"}
 
 # ゲームルール定義
-    gamerule keepInventory true
+    gamerule keepInventory false
     gamerule spectatorsGenerateChunks false
     gamerule commandModificationBlockLimit 2147483647
     gamerule doDaylightCycle false
