@@ -5,4 +5,4 @@
 # @within asset_manager:mob/summon/summon.m
 
 # 元となるEntityを召喚する
-    summon villager ~ ~ ~ {Invulnerable:true,Tags:["MobInit"],VillagerData:{level:99,profession:"minecraft:fletcher",type:"minecraft:plains"}}
+    summon wandering_trader ~ ~ ~ {Tags:["MobInit"],Offers:{Recipes:[]}}
