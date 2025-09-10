@@ -12,6 +12,9 @@
     tp @s 500 126 495 0.0 0.0
     gamemode adventure @s
 
+# ロビーモードにする
+    function player_manager:mode/lobby
+
 # 固有ユーザーID
     scoreboard players add $UserIDIndex Global 1
     scoreboard players operation @s UserID = $UserIDIndex Global
