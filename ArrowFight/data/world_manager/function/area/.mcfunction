@@ -19,5 +19,6 @@
         execute unless data storage world_manager: Game{Active:true} if predicate world_manager:area/team_join_blue unless entity @s[team=Team.Blue] run function world_manager:area/team_join_blue/
     # 観戦モード解除
         execute if entity @s[team=Team.Spectator] if predicate world_manager:area/lobby run function world_manager:area/end_spectator
+        execute if entity @s[team=Team.Spectator] unless predicate world_manager:area/end_spectator run function world_manager:area/end_spectator
     # 観戦チーム参加
         execute if predicate world_manager:area/team_join_spectator run function world_manager:area/team_join_spectator/
