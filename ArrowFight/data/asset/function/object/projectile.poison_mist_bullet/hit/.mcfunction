@@ -15,7 +15,7 @@
     particle dust{color:[0.3,0.57,0.19],scale:2} ~ ~ ~ 2.5 2.5 2.5 1 5 force @a[distance=..64]
 
 # 範囲内のプレイヤーに毒を付与する
-    effect give @a[distance=..5] poison 1 1
+    effect give @a[distance=..5] poison 2 4
 
 # キル
     execute if score @s General.Object.Tick matches 200 run kill @s
