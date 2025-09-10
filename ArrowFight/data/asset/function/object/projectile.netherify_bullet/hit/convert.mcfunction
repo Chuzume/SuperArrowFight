@@ -5,8 +5,9 @@
 # @within function asset:object/projectile.netherify_bullet/hit/
 
 # ブレイズを召喚
-    execute positioned ~0.1 ~ ~ run function asset:object/projectile.netherify_bullet/hit/summon
-    execute positioned ~-0.1 ~ ~ run function asset:object/projectile.netherify_bullet/hit/summon
+    function asset:object/projectile.netherify_bullet/hit/summon
+    #execute positioned ~0.1 ~ ~ run function asset:object/projectile.netherify_bullet/hit/summon
+    #execute positioned ~-0.1 ~ ~ run function asset:object/projectile.netherify_bullet/hit/summon
 
 # パーティクル
     particle minecraft:crimson_spore ~ ~ ~ 2 2 2 0 100 force @a[distance=..64]
