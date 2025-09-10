@@ -4,8 +4,8 @@
         "dimension": "overworld",
         "position": {
             "x": {
-                "min": 450,
-                "max": 551
+                "min": 460,
+                "max": 541
             },
             "y": {
                 "min": 100,
