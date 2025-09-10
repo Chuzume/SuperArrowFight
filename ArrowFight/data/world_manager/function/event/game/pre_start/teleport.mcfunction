@@ -34,6 +34,9 @@
 # 手持ちを消去
     clear @s
 
+# フェイルセーフ
+    advancement revoke @s only core:handler/damage
+
 # 初期装備
     give @s bow[unbreakable={}]
     give @s stone_pickaxe
