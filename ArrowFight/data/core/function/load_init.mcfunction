@@ -85,6 +85,7 @@
     gamerule spawnRadius 0
     gamerule naturalRegeneration false
     gamerule reducedDebugInfo true
+    gamerule playersNetherPortalDefaultDelay 2147483647
 
 # チーム作成と設定
     # 赤チーム
