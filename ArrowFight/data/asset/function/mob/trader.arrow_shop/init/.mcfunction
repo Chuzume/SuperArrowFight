@@ -79,7 +79,8 @@
     # ポイズン弾
         loot replace entity @s villager.0 loot asset:item/poison_mist_bullet
         data modify entity @s Offers.Recipes append value {rewardExp:0b,maxUses:2147483647,buy:{id:"minecraft:stone",count:1},sell:{id:"minecraft:grass_block",count:1}}
-        data modify entity @s Offers.Recipes[8].buy set value {id:"minecraft:glass_bottle",count:3}
+        data modify entity @s Offers.Recipes[8].buy set value {id:"minecraft:sand",count:3}
+        data modify entity @s Offers.Recipes[8].buyB set value {id:"minecraft:emerald",count:3}
         data modify entity @s Offers.Recipes[8].sell set from entity @s Inventory[0]
     # ツルハシ弾
         loot replace entity @s villager.0 loot asset:item/mining_bullet
