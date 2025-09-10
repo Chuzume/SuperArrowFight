@@ -13,7 +13,7 @@
     execute if data storage asset:context this{Team:Red} run team join Team.Red
 
 # 武装
-    item replace entity @s weapon.mainhand with wooden_sword
+#    item replace entity @s weapon.mainhand with wooden_sword
 
 # そこら辺のやつの方を向く
     rotate @s facing entity @p[distance=..16] feet
