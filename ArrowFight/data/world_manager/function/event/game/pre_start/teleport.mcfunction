@@ -18,8 +18,8 @@
         execute if data storage world_manager: Game{LoadedMap:jungle} run spreadplayers 490 557 1 2 under 130 false @s[team=Team.Blue]
         execute if data storage world_manager: Game{LoadedMap:jungle} run spreadplayers 510 557 1 2 under 130 false @s[team=Team.Red]
     # Sand
-        execute if data storage world_manager: Game{LoadedMap:sand} run spreadplayers 489 557 1 2 under 130 false @s[team=Team.Blue]
-        execute if data storage world_manager: Game{LoadedMap:sand} run spreadplayers 511 557 1 2 under 130 false @s[team=Team.Red]
+        execute if data storage world_manager: Game{LoadedMap:desert} run spreadplayers 489 557 1 2 under 130 false @s[team=Team.Blue]
+        execute if data storage world_manager: Game{LoadedMap:desert} run spreadplayers 511 557 1 2 under 130 false @s[team=Team.Red]
     # Moutains
         execute if data storage world_manager: Game{LoadedMap:mountains} run spreadplayers 488 557 1 2 under 130 false @s[team=Team.Blue]
         execute if data storage world_manager: Game{LoadedMap:mountains} run spreadplayers 512 557 1 2 under 130 false @s[team=Team.Red]
