@@ -25,9 +25,9 @@
     execute if score @s StopRegeneration matches 1.. run scoreboard players remove @s StopRegeneration 1
     execute if score @s StopRegeneration matches 0 run function core:tick/player/regeneration/re_active
 
+
 # Triggers
 #    execute if entity @s[scores={FirstJoinEvent=1}] run function core:handler/first_join
-    execute if entity @s[scores={RejoinEvent=1..}] run function core:handler/rejoin
 #    execute if entity @s[scores={RespawnEvent=1}] run function core:handler/respawn
 #    execute if entity @s[tag=InRespawnEvent,scores={RespawnEvent=80..}] run function core:handler/respawn.delay
 #    execute if entity @s[scores={Sneak=1..},predicate=lib:is_sneaking] run function core:handler/sneak
@@ -41,6 +41,8 @@
 #    execute if entity @s[scores={ClickCarrotEvent=1..}] run function core:handler/click.carrot
 #    execute if entity @s[scores={Elytra=1..}] run function core:handler/flying_elytra
 #    execute if entity @s[scores={DropEvent=1..}] run function core:handler/drop
+    execute if entity @s[advancements={core:handler/damage=true}] run function core:handler/damage
+    execute if entity @s[scores={RejoinEvent=1..}] run function core:handler/rejoin
     execute if entity @s[scores={UseBowEvent=1..}] run function core:handler/use_bow
 
 # エリア処理
