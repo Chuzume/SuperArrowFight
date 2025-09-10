@@ -5,7 +5,7 @@
 # @within function world_manager:event/tick
 
 # 一旦全部消す
-    fill 531 129 533 469 100 580 air
+    fill 531 129 533 469 100 580 air strict
     kill @e[type=armor_stand,tag=TraderSpawnPoint,distance=..128]
 
 # 生成する
