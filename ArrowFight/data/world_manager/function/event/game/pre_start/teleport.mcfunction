@@ -31,6 +31,9 @@
     execute if entity @s[team=Team.Blue] at @s run tp @s ~ ~ ~ -90 0
     execute if entity @s[team=Team.Red] at @s run tp @s ~ ~ ~ 90 0
 
+# 手持ちを消去
+    clear @s
+
 # 初期装備
     give @s bow[unbreakable={}]
     give @s stone_pickaxe
