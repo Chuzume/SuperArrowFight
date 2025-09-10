@@ -4,6 +4,9 @@
 #
 # @within function world_manager:event/game/on_game/tick
 
+# テレポート
+    tp @s 500 126 495 0.0 0.0
+
 # タグ解除
     tag @s remove GameJoinedPlayer
 
