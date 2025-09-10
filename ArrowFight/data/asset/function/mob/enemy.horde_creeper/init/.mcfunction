@@ -11,5 +11,9 @@
 # そこら辺のやつの方を向く
     rotate @s facing entity @p[distance=..16] feet
 
+# 体力設定
+    attribute @s max_health base set 10
+    data modify entity @s Health set value 10.0f
+
 # 飛び上がる
     data modify entity @s Motion[1] set value 0.1d
