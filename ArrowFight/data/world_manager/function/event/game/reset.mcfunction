@@ -4,6 +4,10 @@
 #
 # @within function world_manager:event/game/**
 
+# 敵チームのネームタグが見えるようになる
+    team modify Team.Blue nametagVisibility always
+    team modify Team.Red nametagVisibility always
+
 # ゲーム開始ボタンを置く
     execute positioned 500 127 501 run function api:object/summon.m {ID:system.game_start_button}
 

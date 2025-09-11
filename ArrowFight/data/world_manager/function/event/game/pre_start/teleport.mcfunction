@@ -27,6 +27,10 @@
         execute if data storage world_manager: Game{LoadedMap:cliff} run spreadplayers 489 557 1 1 under 130 false @s[team=Team.Blue]
         execute if data storage world_manager: Game{LoadedMap:cliff} run spreadplayers 511 557 1 1 under 130 false @s[team=Team.Red]
 
+# 敵チームのネームタグが見えなくなる
+    team modify Team.Blue nametagVisibility hideForOtherTeams
+    team modify Team.Red nametagVisibility hideForOtherTeams
+
 # 向きを変える
     execute if entity @s[team=Team.Blue] at @s run tp @s ~ ~ ~ -90 0
     execute if entity @s[team=Team.Red] at @s run tp @s ~ ~ ~ 90 0
