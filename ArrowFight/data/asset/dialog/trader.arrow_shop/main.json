@@ -1,0 +1,72 @@
+{
+    "type": "minecraft:notice",
+    "title": {
+        "translate": "test",
+        "fallback": "飛び道具ショップ"
+    },
+    "body": [
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "                                        ",
+                "underlined": true,
+                "color": "gray"
+            }
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "",
+                "extra": [
+                    {
+                        "translate": "item.minecraft.gold_ingot"
+                    },
+                    {
+                        "text": " ×"
+                    },
+                    {
+                        "text": "10"
+                    },
+                    {
+                        "text": "\n\n↓"
+                    }
+                ]
+            }
+        },
+        {
+            "type": "minecraft:item",
+            "item": {
+                "id": "minecraft:gold_ingot",
+                "components": {},
+                "count": 64
+            },
+            "show_tooltip": true,
+            "height": 16
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": " [購入] ",
+                "underlined": true
+            }
+        },
+                {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": " $(Hoge) ",
+                "underlined": true
+            }
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "                                        ",
+                "underlined": true,
+                "color": "gray"
+            }
+        }
+    ],
+    "inputs": [],
+    "can_close_with_escape": true,
+    "pause": false
+}
