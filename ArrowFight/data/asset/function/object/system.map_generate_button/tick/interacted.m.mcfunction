@@ -8,7 +8,6 @@
     playsound minecraft:block.amethyst_block.break block @a ~ ~ ~ 1 1.5
 
 # 自分の持ってるフィールドをワールド側に渡し、マップを生成する
-    data modify storage world_manager: Game.LoadedMapID set from storage asset:context this.MapID
     data modify storage world_manager: GenerateMap.MapID set from storage asset:context this.MapID
     data modify storage world_manager: GenerateMap.Active set value true
 
