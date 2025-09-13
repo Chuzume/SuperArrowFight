@@ -17,6 +17,9 @@
 # 村人を召喚する
     execute if score $Game Game.Tick matches 80 run function world_manager:event/game/pre_start/summon_trader
 
+# 村人が光る
+    execute if score $Game Game.Tick matches 80 run effect give @e[type=wandering_trader,tag=Mob.trader.arrow_shop] glowing 2 0
+
 # 試合開始の合図をしろ！
     # カウントダウン
         execute if score $Game Game.Tick matches 100 as @a[tag=GameJoinedPlayer,distance=..128] at @s run function world_manager:event/game/pre_start/title/3

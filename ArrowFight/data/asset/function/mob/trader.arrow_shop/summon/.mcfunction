@@ -5,4 +5,4 @@
 # @within asset_manager:mob/summon/summon.m
 
 # 元となるEntityを召喚する
-    summon wandering_trader ~ ~ ~ {Invulnerable:1b,Tags:["MobInit"],Offers:{Recipes:[]}}
+    summon wandering_trader ~ ~ ~ {Invulnerable:1b,Tags:["MobInit","VanishOnReset"],Offers:{Recipes:[]}}
