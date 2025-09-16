@@ -4,16 +4,12 @@
 #
 # @within function lib:dialog/shop/test
 
-# TranslateとName両方空ならエラー出して終了
-    execute unless data storage lib: Dialog.Shop.Buy.Translate unless data storage lib: Dialog.Shop.Buy.Name run tellraw @s [{"color":"red","text":"エラー :"},{"color":"white","text":"必要アイテムには最翻訳キーか名前のどちらかが必須です" }]
-    execute unless data storage lib: Dialog.Shop.Buy.Translate unless data storage lib: Dialog.Shop.Buy.Name run return fail
-
 # 個数未設定なら1にすっけどよ…
-    execute unless data storage lib: Dialog.Shop.Buy.Count run data modify storage lib: Dialog.Shop.Buy.Count set value 1
+    execute unless data storage lib: Dialog.Shop.BuyItem.Count run data modify storage lib: Dialog.Shop.BuyItem.Count set value 1
 
-# TranslateとNameがなければ空データ指定する
-    execute unless data storage lib: Dialog.Shop.Buy.Translate run data modify storage lib: Dialog.Shop.Buy.Translate set value ""
-    execute unless data storage lib: Dialog.Shop.Buy.Name run data modify storage lib: Dialog.Shop.Buy.Name set value ""
+# item_nameコンポーネントを移す
+    data modify storage lib: Dialog.Shop.BuyItem.Name set from storage lib: Dialog.Shop.BuyItem.components."minecraft:custom_name"
 
 # マクロ実行
-    function lib:dialog/shop/add_buy/m with storage lib: Dialog.Shop.Buy
+    execute if data storage lib: Dialog.Shop.BuyItem.Translate run function lib:dialog/shop/add_buy/translate.m with storage lib: Dialog.Shop.BuyItem
+    execute unless data storage lib: Dialog.Shop.BuyItem.Translate run function lib:dialog/shop/add_buy/name.m with storage lib: Dialog.Shop.BuyItem
