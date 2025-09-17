@@ -8,21 +8,31 @@
     # 商品を指定: ルートテーブルからやる
         loot spawn ~ ~ ~ loot asset:item/generic_arrow
         data modify storage lib: Dialog.Shop.Sell set from entity @n[type=item,distance=..0.1] Item
-            data modify storage lib: Dialog.Shop.Sell.count set value 4
+        data modify storage lib: Dialog.Shop.Sell.count set value 4
         kill @n[type=item,distance=..0.1]
     # 必要なアイテムを設定
+        data modify storage lib: Dialog.Shop.BuyItem set value {id: "minecraft:iron_ingot"}
+        data modify storage lib: Dialog.Shop.BuyItem.Translate set value "item.minecraft.iron_ingot"
+        data modify storage lib: Dialog.Shop.BuyItem.Count set value 2
+        function lib:dialog/shop/add_buy/
+    # 在庫を追加
+        function lib:dialog/shop/add_stock/
+
+    # 商品を指定: ルートテーブルからやる
+        loot spawn ~ ~ ~ loot asset:item/generic_spectral_arrow
+        data modify storage lib: Dialog.Shop.Sell set from entity @n[type=item,distance=..0.1] Item
+        data modify storage lib: Dialog.Shop.Sell.count set value 4
+        kill @n[type=item,distance=..0.1]
+    # 必要なアイテムを設定
+        data modify storage lib: Dialog.Shop.BuyItem set value {id: "minecraft:iron_ingot"}
         data modify storage lib: Dialog.Shop.BuyItem.Translate set value "item.minecraft.iron_ingot"
         data modify storage lib: Dialog.Shop.BuyItem.Count set value 2
         function lib:dialog/shop/add_buy/
     # 必要なアイテムを設定
-        data modify storage lib: Dialog.Shop.BuyItem set from entity @s SelectedItem
-        data modify storage lib: Dialog.Shop.BuyItem.Count set value 1
+        data modify storage lib: Dialog.Shop.BuyItem set value {id: "minecraft:gold_ingot"}
+        data modify storage lib: Dialog.Shop.BuyItem.Translate set value "item.minecraft.gold_ingot"
+        data modify storage lib: Dialog.Shop.BuyItem.Count set value 2
         function lib:dialog/shop/add_buy/
-    # 必要なアイテムを設定
-        data modify storage lib: Dialog.Shop.BuyItem set from entity @s SelectedItem
-        data modify storage lib: Dialog.Shop.BuyItem.Count set value 1
-        function lib:dialog/shop/add_buy/
-
     # 在庫を追加
         function lib:dialog/shop/add_stock/
 
