@@ -131,6 +131,10 @@
 # フォースロード
     forceload add 0 0 0 0
 
+# 箱置く
+    setblock 0 0 0 red_shulker_box
+    setblock 1 0 0 red_shulker_box
+
 # 原点を召喚
     summon marker 0.0 0.0 0.0 {UUID:[I;0,0,0,0]}
 
