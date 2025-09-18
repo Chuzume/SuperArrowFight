@@ -4,8 +4,11 @@
 #
 # @within function lib:dialog/shop/test
 
-# テスト
-    #data modify storage lib: Dialog.Shop.BuyItemResult set from storage test: Test.Item.Hoge
+# ショップのIDを設定
+    data modify storage lib: Dialog.Shop.BuyItem.ActiveDialog set from storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].ActiveDialog
+
+# ID加算
+    execute store result storage lib: Dialog.Shop.TriggerID int 1 run scoreboard players add $TriggerID Temporary 1
 
 # マクロ実行
     function lib:dialog/shop/add_stock/m with storage lib: Dialog.Shop

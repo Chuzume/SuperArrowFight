@@ -18,6 +18,8 @@ say 3
 # 現在の手持ちをストレージに
     data modify storage lib:temp Shop.Inventory set from entity @s Inventory
 
+$tellraw @p {"storage":"lib:temp","nbt":"ShopData.BuyItemList.Item[$(ID)]"}
+
 # リストの先頭を削除し、要素が残ってれば再スタート
     $data remove storage lib:temp ShopData.BuyItemList.Item[$(ID)][0]
     $data remove storage lib:temp ShopData.BuyItemList.Count[$(ID)][0]

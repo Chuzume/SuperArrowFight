@@ -4,5 +4,5 @@
 #
 # @within function lib:dialog/shop/add_stock/
 
-$data modify storage lib: Dialog.ShopData.BuyItemList.Item append value $(Contents)
-$data modify storage lib: Dialog.ShopData.BuyItemList.Count append value $(Count2)
+$data modify storage lib: $(ActiveDialog).ShopData.BuyItemList.Item append value $(Contents)
+$data modify storage lib: $(ActiveDialog).ShopData.BuyItemList.Count append value $(Count2)
