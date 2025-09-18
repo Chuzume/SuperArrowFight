@@ -7,6 +7,10 @@
 # 個数未設定なら1にすっけどよ…
     execute unless data storage lib: Dialog.Shop.BuyItem.Count run data modify storage lib: Dialog.Shop.BuyItem.Count set value 1
 
+# 個数を積む
+    data modify storage lib: Dialog.Shop.BuyItem.Count2 append from storage lib: Dialog.Shop.BuyItem.Count
+    data modify storage test: Dialog.Shop.BuyItem.Count2 append from storage lib: Dialog.Shop.BuyItem.Count
+
 # item_nameコンポーネントを移す
     data modify storage lib: Dialog.Shop.BuyItem.Name set from storage lib: Dialog.Shop.BuyItem.components."minecraft:custom_name"
 

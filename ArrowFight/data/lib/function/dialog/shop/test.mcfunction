@@ -11,7 +11,7 @@
         data modify storage lib: Dialog.Shop.Sell.count set value 4
         kill @n[type=item,distance=..0.1]
     # 必要なアイテムを設定
-        data modify storage lib: Dialog.Shop.BuyItem set value {id: "minecraft:iron_ingot"}
+        data modify storage lib: Dialog.Shop.BuyItem.Contents append value {id: "minecraft:iron_block"}
         data modify storage lib: Dialog.Shop.BuyItem.Translate set value "item.minecraft.iron_ingot"
         data modify storage lib: Dialog.Shop.BuyItem.Count set value 2
         function lib:dialog/shop/add_buy/
@@ -24,14 +24,14 @@
         data modify storage lib: Dialog.Shop.Sell.count set value 4
         kill @n[type=item,distance=..0.1]
     # 必要なアイテムを設定
-        data modify storage lib: Dialog.Shop.BuyItem set value {id: "minecraft:iron_ingot"}
+        data modify storage lib: Dialog.Shop.BuyItem.Contents append value {id: "minecraft:iron_ingot"}
         data modify storage lib: Dialog.Shop.BuyItem.Translate set value "item.minecraft.iron_ingot"
         data modify storage lib: Dialog.Shop.BuyItem.Count set value 2
         function lib:dialog/shop/add_buy/
     # 必要なアイテムを設定
-        data modify storage lib: Dialog.Shop.BuyItem set value {id: "minecraft:gold_ingot"}
+        data modify storage lib: Dialog.Shop.BuyItem.Contents append value {id: "minecraft:gold_ingot"}
         data modify storage lib: Dialog.Shop.BuyItem.Translate set value "item.minecraft.gold_ingot"
-        data modify storage lib: Dialog.Shop.BuyItem.Count set value 2
+        data modify storage lib: Dialog.Shop.BuyItem.Count set value 1
         function lib:dialog/shop/add_buy/
     # 在庫を追加
         function lib:dialog/shop/add_stock/
@@ -40,7 +40,7 @@
     function lib:dialog/shop/test.m with storage lib: Dialog.Shop
 
 # リセット
-    data remove storage lib: Dialog
+    data remove storage lib: Dialog.Shop
 #dialog show @s {"type":"minecraft:notice","title":{"text":"HogeHoge"},"body":[{"type":"minecraft:item","item":{"id":"gold_ingot","count":4},"description":{"text":"[Buy]","hover_event":{"action":"show_text","value":{"text":"必要材料:\n金インゴット×99\n終インゴット×99"}}},"height":16,"width":16},{"type":"minecraft:plain_message","contents":{"text":"","underlined":true}}]}
 #data modify storage lib: dialog.shop.body set value {"type":"minecraft:notice","title":{"text":"HogeHoge"},"body":[{"type":"minecraft:item","item":{"id":"gold_ingot","count":4},"description":{"text":"[Buy]","hover_event":{"action":"show_text","value":{"text":"必要材料:\n金インゴット×99\n終インゴット×99"}}},"height":16,"width":16},{"type":"minecraft:plain_message","contents":{"text":"","underlined":true}}]}
 #data modify storage lib: dialog.shop.body set value [{"type":"minecraft:plain_message","contents":{"text":"1"}}]

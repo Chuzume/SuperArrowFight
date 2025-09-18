@@ -9,14 +9,14 @@
 #    data modify storage lib: Dialog.Shop.BuyItem set from entity @s SelectedItem
 #    data modify storage lib: Dialog.Shop.BuyItem set from storage test: Dialog.Shop.BuyItemList[0]
 
-# Countは消す
-    data remove storage lib:temp Dialog.Shop.BuyItem.count
-
 # 手持ちをストレージに
-    data modify storage lib:temp Dialog.Shop.Inventory set from entity @s Inventory
+    data modify storage lib:temp Shop.Inventory set from entity @s Inventory
 
-# 
-    data modify storage lib:temp Shop.ShopData set from storage lib: Dialog.ShopData
+# 失敗時に戻す用のインベントリのバックアップを作る
+    data modify storage lib:temp Shop.BackupInventory set from storage lib:temp Shop.Inventory
+
+# ダイアログのショップデータを、好き勝手編集が可能な仮データとして取得
+    data modify storage lib:temp ShopData set from storage lib: Dialog.ShopData
 
 # トリガーが何番だったか確認
 # 今はテストなので固定
