@@ -9,8 +9,8 @@
 
 # タグ消す
     data remove storage lib:temp Shop.Cleanse[{components:{"minecraft:custom_data":{Shopping:true}}}].components."minecraft:custom_data".Shopping
-    data remove storage lib:temp Shop.Cleanse[{components:{"minecraft:custom_data":{}}}].components."minecraft:custom_data"
-    
+    #data remove storage lib:temp Shop.Cleanse[{components:{"minecraft:custom_data":{}}}].components."minecraft:custom_data"
+
 # 箱に移す
     data modify block 511 148 491 Items set from storage lib:temp Shop.Cleanse
 

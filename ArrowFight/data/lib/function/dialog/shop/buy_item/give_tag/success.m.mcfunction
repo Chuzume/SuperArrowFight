@@ -25,7 +25,7 @@ $tellraw @p {"storage":"lib:temp","nbt":"ShopData.BuyItemList.Item[$(ID)]"}
     $data remove storage lib:temp ShopData.BuyItemList.Count[$(ID)][0]
 
 # 要素が空なら終わり
-    $execute unless data storage lib:temp ShopData.BuyItemList.Item[$(ID)][0] run say もうないね
+    $execute unless data storage lib:temp ShopData.BuyItemList.Item[$(ID)][0] run function lib:dialog/shop/buy_item/give_item/1.m with storage lib:temp Shop
 
 # 再スタート
     $execute if data storage lib:temp ShopData.BuyItemList.Item[$(ID)][0] run say まだあるわね…

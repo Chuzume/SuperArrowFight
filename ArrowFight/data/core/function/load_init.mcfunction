@@ -72,6 +72,9 @@
         #scoreboard objectives add ClickCarrotEvent used:carrot_on_a_stick {"text":"イベント: クリック 人参棒"}
         scoreboard objectives add UseBowEvent used:bow {"text":"イベント: 弓の使用"}
 
+    #> トリガー
+        scoreboard objectives add Trigger.DialogShop trigger
+
     #> その他スコアボード
         scoreboard objectives add StopRegeneration dummy {"text":"ヘルス再生停止"}
 
