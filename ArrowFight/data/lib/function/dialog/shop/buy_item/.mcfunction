@@ -1,8 +1,11 @@
 #> lib:dialog/shop/buy_item/
 #
-# 
+# 購入処理
 #
-# @within function lib:dialog/shop/test
+# @within function world_manager:event/dialog/tick
+
+# トリガーを有効化
+    scoreboard players enable @s Trigger.DialogShop
 
 # OMDを宣言
     function oh_my_dat:please
@@ -19,9 +22,11 @@
 # ダイアログのショップデータを、好き勝手編集が可能な仮データとして取得
     function lib:dialog/shop/buy_item/m with storage lib:temp Shop
 
-# トリガーが何番だったか確認
+# トリガーが何番だったか確認、ただしリストの最初は0なので、1マイナスして取得
+    execute store result storage lib:temp Shop.ID int 1 run scoreboard players operation @s Trigger.DialogShop -= $1 Const
+
 # 今はテストなので固定
-    execute store result storage lib:temp Shop.ID int 1 run scoreboard players set $Temp Temporary 1
+    #execute store result storage lib:temp Shop.ID int 1 run scoreboard players set $Temp Temporary 1
 
 # マクロで対象アイテムにタグ付与
     function lib:dialog/shop/buy_item/give_tag/1.m with storage lib:temp Shop
@@ -30,3 +35,4 @@
     say End
     data remove storage lib:temp Shop
     data remove storage lib:temp ShopData
+    scoreboard players set @s Trigger.DialogShop 0

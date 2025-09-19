@@ -4,6 +4,6 @@
 #
 # @within function lib:dialog/shop/add_buy/
 
-$data modify storage lib: Dialog.Shop.BuyItemResult append value $(Name)
-#data modify storage lib: Dialog.Shop.BuyItemResult.extra set value {"extra":[{"text":" ×$(Count)"},{"text":"\n"}]}
-$data modify storage lib: Dialog.Shop.BuyItemResult append value {"text":" ×$(Count)\n"}
+$data modify storage lib: Shop.BuyItemResult append value $(Name)
+#data modify storage lib: Shop.BuyItemResult.extra set value {"extra":[{"text":" ×$(Count)"},{"text":"\n"}]}
+$data modify storage lib: Shop.BuyItemResult append value {"text":" ×$(Count)\n"}
