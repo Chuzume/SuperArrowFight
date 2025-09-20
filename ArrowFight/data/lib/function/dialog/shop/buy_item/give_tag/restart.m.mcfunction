@@ -4,9 +4,6 @@
 #
 # @within function lib:dialog/shop/buy_item/give_tag/success.m
 
-say 1 （リスタート）
-
-
 # 何番を参照すればいいんかな
     $data modify storage lib:temp Shop.Item set from storage lib:temp ShopData.BuyItemList.Item[$(ID)][0]
     $data modify storage lib:temp Shop.Count set from storage lib:temp ShopData.BuyItemList.Count[$(ID)][0]

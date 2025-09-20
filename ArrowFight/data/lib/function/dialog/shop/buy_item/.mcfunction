@@ -19,6 +19,11 @@
 # 失敗時に戻す用のインベントリのバックアップを作る
     data modify storage lib:temp Shop.BackupInventory set from storage lib:temp Shop.Inventory
 
+# はみ出し部分はちょっと面倒
+    function lib:dialog/shop/buy_item/extra/to_box
+    data modify storage lib:temp Shop.Inventory2 set from block 1 0 0 Items
+    data modify storage lib:temp Shop.BackupInventory2 set from block 1 0 0 Items
+
 # ダイアログのショップデータを、好き勝手編集が可能な仮データとして取得
     function lib:dialog/shop/buy_item/m with storage lib:temp Shop
 
@@ -32,7 +37,6 @@
     function lib:dialog/shop/buy_item/give_tag/1.m with storage lib:temp Shop
 
 # 全てが終わったらリセットするのさ
-    say End
     data remove storage lib:temp Shop
     data remove storage lib:temp ShopData
     scoreboard players set @s Trigger.DialogShop 0

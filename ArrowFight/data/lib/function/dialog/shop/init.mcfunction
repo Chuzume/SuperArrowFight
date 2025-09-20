@@ -14,4 +14,4 @@
     function lib:dialog/shop/reset_shop_data.m with storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4]
 
 # リセット
-    data remove storage lib: ShopID
+    data remove storage lib: Shop.ID

@@ -25,6 +25,8 @@
     execute if score @s StopRegeneration matches 1.. run scoreboard players remove @s StopRegeneration 1
     execute if score @s StopRegeneration matches 0 run function core:tick/player/regeneration/re_active
 
+# ダイアログ処理
+    function core:tick/player/dialog/tick
 
 # Triggers
 #    execute if entity @s[scores={FirstJoinEvent=1}] run function core:handler/first_join
