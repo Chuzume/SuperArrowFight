@@ -4,10 +4,11 @@
 #
 # @within function lib:dialog/shop/buy_item/give_tag/1.m
 
-
 # マクロで該当のアイテムにタグを付与、あとでコレを消すことでカウントする
 # そのアイテムを持っているかチェックしておかないと、持ってない場合一個渡されてしまう
+    $execute if data storage lib:temp Shop.Inventory[$(Item)] run data modify storage lib:temp Shop.Inventory[{components:{"minecraft:custom_data":{}}}].components."minecraft:custom_data".has_cusotm_data set value true
     $execute if data storage lib:temp Shop.Inventory[$(Item)] run data modify storage lib:temp Shop.Inventory[$(Item)].components."minecraft:custom_data".Shopping set value true
+    $execute if data storage lib:temp Shop.Inventory2[$(Item)] run data modify storage lib:temp Shop.Inventory[{components:{"minecraft:custom_data":{}}}].components."minecraft:custom_data".has_cusotm_data set value true
     $execute if data storage lib:temp Shop.Inventory2[$(Item)] run data modify storage lib:temp Shop.Inventory2[$(Item)].components."minecraft:custom_data".Shopping set value true
 
 # 箱に移す
@@ -21,7 +22,7 @@
 #tellraw @p {"entity":"@s","nbt":"Inventory"}
 
 # カウントする
-    execute store result score $Count Temporary run clear @s *[custom_data={Shopping:true}] 0
+    execute store result score $Count Temporary run clear @s *[custom_data~{Shopping:true}] 0
 
 # 個数未満、買えない
     $execute unless score $Count Temporary matches $(Count).. run function lib:dialog/shop/buy_item/give_tag/failure

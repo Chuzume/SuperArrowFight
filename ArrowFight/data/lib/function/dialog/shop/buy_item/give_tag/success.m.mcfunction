@@ -10,9 +10,6 @@
 # 個数リセット
     scoreboard players reset $Count Temporary
 
-# 浄化
-    function lib:dialog/shop/buy_item/give_tag/cleanse_tag
-
 # 現在の手持ちをストレージに
     data modify storage lib:temp Shop.Inventory set from entity @s Inventory
 
