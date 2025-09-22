@@ -1,6 +1,6 @@
-#> lib:dialog/shop/buy_item/give_tag/failure
+#> lib:dialog/shop/buy_item/give_tag/failure/
 #
-# 購入できなかったときの処理。手持ちを実行開始時点のものに戻す
+# 
 #
 # @within function lib:dialog/shop/buy_item/give_tag/2.m
 
@@ -17,3 +17,9 @@
 # 箱の中身を回収
     loot replace entity @s contents mine 0 0 0 debug_stick
     function lib:dialog/shop/buy_item/extra/to_inventory
+
+## ダイアログ名を先に指定しておく
+#    data modify storage lib: Shop.Name set value {"color":"red","fallback":"Projectile Shop","translate":"dialog.shop.arrow_shop.name","underlined":false}
+#
+## ダイアログ再オープン
+#    function lib:dialog/shop/buy_item/give_tag/failure/re_open.m with storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4]

@@ -25,7 +25,7 @@
     execute store result score $Count Temporary run clear @s *[custom_data~{Shopping:true}] 0
 
 # 個数未満、買えない
-    $execute unless score $Count Temporary matches $(Count).. run function lib:dialog/shop/buy_item/give_tag/failure
+    $execute unless score $Count Temporary matches $(Count).. run function lib:dialog/shop/buy_item/give_tag/failure/
     $execute unless score $Count Temporary matches $(Count).. run return fail
 
 # 個数以上だったら

@@ -2,7 +2,7 @@
 #
 # 
 #
-# @within function lib:dialog/shop/buy_item/extra/to_box
+# @within function lib:dialog/shop/buy_item/**
 
 # はみ出し部分
     item replace entity @s container.27 from block 1 0 0 container.0
