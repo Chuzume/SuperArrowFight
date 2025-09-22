@@ -1,7 +1,7 @@
 {
-  "criteria": {
-    "enter": {
-      "trigger": "minecraft:entity_hurt_player"
+    "criteria": {
+        "enter": {
+            "trigger": "minecraft:entity_hurt_player"
+        }
     }
-  }
 }
