@@ -1,0 +1,64 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_horse_armor",
+          "functions": [
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": ""
+                }
+              ],
+              "mode": "append"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "translate": "item.super_arrow_fight.arrow_shop_opner.description.line_1",
+                  "fallback": "Spawns a swarm of creepers on impact",
+                  "with": [
+                    {
+                      "translate": "key.mouse.right"
+                    }
+                  ],
+                  "color": "white",
+                  "italic": false
+                }
+              ],
+              "mode": "append"
+            },
+            {
+              "function": "minecraft:set_components",
+              "components": {
+                "minecraft:custom_data": {
+                  "ItemID": "other.dialog_shop_open"
+                },
+                "minecraft:item_model": "minecraft:ender_chest",
+                "!minecraft:attribute_modifiers": {},
+                "minecraft:consumable": {
+                  "consume_seconds": 2147483647,
+                  "animation": "none"
+                }
+              },
+              "conditions": []
+            },
+            {
+              "function": "minecraft:set_name",
+              "name": {
+                "translate": "item.super_arrow_fight.arrow_shop_opner",
+                "fallback": "Creeper Bullet",
+                "italic": false
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
