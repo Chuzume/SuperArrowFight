@@ -10,12 +10,12 @@
     data modify storage lib:temp Shop.Cleanse2 set from block 1 0 0 Items
 
 # タグ消す
-    data remove storage lib:temp Shop.Cleanse[{components:{"minecraft:custom_data":{Shopping:true,has_cusotm_data:true}}}].components."minecraft:custom_data".Shopping
+    data remove storage lib:temp Shop.Cleanse[{components:{"minecraft:custom_data":{Shopping:true,has_custom_data:true}}}].components."minecraft:custom_data".Shopping
     data remove storage lib:temp Shop.Cleanse[{components:{"minecraft:custom_data":{Shopping:true}}}].components."minecraft:custom_data"
-    data remove storage lib:temp Shop.Cleanse[{components:{"minecraft:custom_data":{has_cusotm_data:true}}}].components."minecraft:custom_data".has_cusotm_data
-    data remove storage lib:temp Shop.Cleanse2[{components:{"minecraft:custom_data":{Shopping:true,has_cusotm_data:true}}}].components."minecraft:custom_data".Shopping
+    data remove storage lib:temp Shop.Cleanse[{components:{"minecraft:custom_data":{has_custom_data:true}}}].components."minecraft:custom_data".has_custom_data
+    data remove storage lib:temp Shop.Cleanse2[{components:{"minecraft:custom_data":{Shopping:true,has_custom_data:true}}}].components."minecraft:custom_data".Shopping
     data remove storage lib:temp Shop.Cleanse2[{components:{"minecraft:custom_data":{Shopping:true}}}].components."minecraft:custom_data"
-    data remove storage lib:temp Shop.Cleanse2[{components:{"minecraft:custom_data":{has_cusotm_data:true}}}].components."minecraft:custom_data".has_cusotm_data
+    data remove storage lib:temp Shop.Cleanse2[{components:{"minecraft:custom_data":{has_custom_data:true}}}].components."minecraft:custom_data".has_custom_data
 
 # 箱に移す
     data modify block 0 0 0 Items set from storage lib:temp Shop.Cleanse

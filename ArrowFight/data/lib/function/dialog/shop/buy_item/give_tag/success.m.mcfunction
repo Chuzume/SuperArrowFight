@@ -5,10 +5,13 @@
 # @within function lib:dialog/shop/buy_item/give_tag/2.m
 
 # 該当のアイテムを削除
-    $clear @s *[custom_data={Shopping:true}] $(Count)
+    $clear @s *[custom_data~{Shopping:true}] $(Count)
 
 # 個数リセット
     scoreboard players reset $Count Temporary
+
+# 浄化
+    function lib:dialog/shop/buy_item/give_tag/cleanse_tag
 
 # 現在の手持ちをストレージに
     data modify storage lib:temp Shop.Inventory set from entity @s Inventory

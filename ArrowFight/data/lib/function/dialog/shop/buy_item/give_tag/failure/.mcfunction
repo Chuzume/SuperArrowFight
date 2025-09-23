@@ -4,9 +4,6 @@
 #
 # @within function lib:dialog/shop/buy_item/give_tag/2.m
 
-# 浄化
-    function lib:dialog/shop/buy_item/give_tag/cleanse_tag
-
 # サウンド
     playsound minecraft:block.note_block.bass ui @s ~ ~ ~ 2 1
 

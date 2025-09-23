@@ -4,11 +4,13 @@
 #
 # @within function lib:dialog/shop/buy_item/give_tag/1.m
 
+# まず該当のアイテムがカスタムタグ持ってるか見る
+    $execute if data storage lib:temp Shop.Inventory[$(Item)] run data modify storage lib:temp Shop.Inventory[{components:{"minecraft:custom_data":{}}}].components."minecraft:custom_data".has_custom_data set value true
+    $execute if data storage lib:temp Shop.Inventory2[$(Item)] run data modify storage lib:temp Shop.Inventory2[{components:{"minecraft:custom_data":{}}}].components."minecraft:custom_data".has_custom_data set value true
+
 # マクロで該当のアイテムにタグを付与、あとでコレを消すことでカウントする
 # そのアイテムを持っているかチェックしておかないと、持ってない場合一個渡されてしまう
-    $execute if data storage lib:temp Shop.Inventory[$(Item)] run data modify storage lib:temp Shop.Inventory[{components:{"minecraft:custom_data":{}}}].components."minecraft:custom_data".has_cusotm_data set value true
     $execute if data storage lib:temp Shop.Inventory[$(Item)] run data modify storage lib:temp Shop.Inventory[$(Item)].components."minecraft:custom_data".Shopping set value true
-    $execute if data storage lib:temp Shop.Inventory2[$(Item)] run data modify storage lib:temp Shop.Inventory[{components:{"minecraft:custom_data":{}}}].components."minecraft:custom_data".has_cusotm_data set value true
     $execute if data storage lib:temp Shop.Inventory2[$(Item)] run data modify storage lib:temp Shop.Inventory2[$(Item)].components."minecraft:custom_data".Shopping set value true
 
 # 箱に移す
