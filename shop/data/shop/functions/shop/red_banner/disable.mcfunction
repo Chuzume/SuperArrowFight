@@ -1,5 +1,0 @@
-#Disable glow
-item replace entity @s enderchest.22 with red_banner{HideFlags:33,BlockEntityTag:{Base:1,Patterns:[{Color:3,Pattern:"lud"}]},unench:1b,display:{Lore:["{\"text\":\" \"}","[{\"text\":\"     Click to \",\"color\":\"gray\",\"italic\":false},{\"text\":\"Enable\",\"color\":\"green\",\"italic\":false},{\"text\":\"!\",\"color\":\"gray\",\"italic\":false}]","{\"text\":\" \"}","{\"text\":\"      Particles are\",\"color\":\"dark_gray\"}","{\"text\":\"      disabled while\",\"color\":\"dark_gray\"}","{\"text\":\"      holding sneak\",\"color\":\"dark_gray\"}","{\"text\":\" \"}"],Name:"{\"text\":\"Team Pride Particle Trail\",\"color\":\"red\",\"italic\":\"false\"}"}}
-tag @s add shop_redEnch
-execute as @s at @s run playsound minecraft:entity.arrow.hit_player master @s ~ ~ ~ 0.2 0.5
-title @s actionbar [{"text":"Disabled ","color":"red"},{"text":"Team ","color":"aqua"},{"text":"Pride","color":"red"},{"text":" Particle Trail","color":"gray"}]

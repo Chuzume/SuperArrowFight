@@ -1,5 +1,0 @@
-#Enable glow
-item replace entity @s enderchest.16 with blaze_powder{ench:1b,HideFlags:1,Enchantments:[{id:"unbreaking",lvl:0}],display:{Lore:["{\"text\":\" \"}","[{\"text\":\"  Click to \",\"color\":\"gray\",\"italic\":false},{\"text\":\"Disable\",\"color\":\"red\",\"italic\":false},{\"text\":\"!\",\"color\":\"gray\",\"italic\":false}]","{\"text\":\" \"}","{\"text\":\"   Particles are\",\"color\":\"dark_gray\"}","{\"text\":\"   disabled while\",\"color\":\"dark_gray\"}","{\"text\":\"   holding sneak\",\"color\":\"dark_gray\"}","{\"text\":\" \"}"],Name:"{\"text\":\"Flame Particle Trail\",\"color\":\"green\",\"italic\":\"false\"}"}}
-tag @s remove shop_powderEnch
-execute as @s at @s run playsound minecraft:entity.arrow.hit_player master @s ~ ~ ~ 0.2 1.5
-title @s actionbar [{"text":"Enabled ","color":"green"},{"text":"Flame","color":"gold"},{"text":" Particle Trail","color":"gray"}]
