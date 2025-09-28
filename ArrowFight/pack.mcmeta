@@ -12,7 +12,87 @@
             {
                 "namespace": "minecraft",
                 "path": "recipe/dispenser"
-            }
+            },
+            {
+                "namespace": "minecraft",
+                "path": "recipe/oak_boat"
+            },
+            {
+                "namespace": "minecraft",
+                "path": "recipe/spruce_boat"
+            },
+            {
+                "namespace": "minecraft",
+                "path": "recipe/birch_boat"
+            },
+            {
+                "namespace": "minecraft",
+                "path": "recipe/jungle_boat"
+            },
+            {
+                "namespace": "minecraft",
+                "path": "recipe/acacia_boat"
+            },
+            {
+                "namespace": "minecraft",
+                "path": "recipe/dark_oak_boat"
+            },
+            {
+                "namespace": "minecraft",
+                "path": "recipe/pale_oak_boat"
+            },
+            {
+                "namespace": "minecraft",
+                "path": "recipe/mangrove_boat"
+            },
+            {
+                "namespace": "minecraft",
+                "path": "recipe/cherry_boat"
+            },
+            {
+                "namespace": "minecraft",
+                "path": "recipe/bamboo_raft"
+            },
+            {
+                "namespace": "minecraft",
+                "path": "recipe/oak_chest_boat"
+            },
+            {
+                "namespace": "minecraft",
+                "path": "recipe/spruce_chest_boat"
+            },
+            {
+                "namespace": "minecraft",
+                "path": "recipe/birch_chest_boat"
+            },
+            {
+                "namespace": "minecraft",
+                "path": "recipe/jungle_chest_boat"
+            },
+            {
+                "namespace": "minecraft",
+                "path": "recipe/acacia_chest_boat"
+            },
+            {
+                "namespace": "minecraft",
+                "path": "recipe/dark_oak_chest_boat"
+            },
+            {
+                "namespace": "minecraft",
+                "path": "recipe/pale_oak_chest_boat"
+            },
+            {
+                "namespace": "minecraft",
+                "path": "recipe/mangrovechest_boat"
+            },
+            {
+                "namespace": "minecraft",
+                "path": "recipe/cherry_chest_boat"
+            },
+            {
+                "namespace": "minecraft",
+                "path": "recipe/bamboo_chest_raft"
+            },            
         ]
     }
 }
