@@ -18,6 +18,7 @@
 # 思い当たるEntityにタグ付与
     tag @e[type=small_fireball,distance=..128] add VanishOnExitArena
     tag @e[type=falling_block,distance=..128] add VanishOnExitArena
+    tag @e[type=item,distance=..128] add VanishOnExitArena
 
 # フィールドの外に飛び出た対象をキルする
     execute as @e[tag=VanishOnExitArena,predicate=!world_manager:area/battle_field/kill_object,distance=..128] at @s run function world_manager:event/game/vanish_object

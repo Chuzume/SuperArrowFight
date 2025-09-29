@@ -7,7 +7,7 @@
 #   world_manager:event/game/end_game/setdata
 
 # 演出一応つけとく？
-    particle minecraft:poof ~ ~ ~ 0 0 0 0.1 5 force @a[distance=..64]
+    particle minecraft:poof ~ ~ ~ 0 0 0 0.1 3 force @a[distance=..64]
 
 # 奈落へGO!
     tp @s ~ -128 ~

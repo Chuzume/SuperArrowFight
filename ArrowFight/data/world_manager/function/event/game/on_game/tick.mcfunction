@@ -16,11 +16,6 @@
 # 死亡したプレイヤーに実行させる
     execute as @a[tag=GameJoinedPlayer,scores={DeathEvent=1..},distance=..128] run function world_manager:event/game/on_game/death/
 
-# しばらくすると再生が消える
-    #execute if score $Game Game.Tick matches 6000 as @a[tag=GameJoinedPlayer,distance=..128] run function world_manager:event/game/on_game/clear_regeneration
-# しばらくすると場所も見える
-    #execute if score $Game Game.Tick matches 9000 as @a[tag=GameJoinedPlayer,distance=..128] run function world_manager:event/game/on_game/give_glowing
-
 # デスマッチだ～！
     execute if score $Game Game.Tick matches 9000.. run function world_manager:event/game/on_game/death_match/tick
 
