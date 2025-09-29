@@ -1,8 +1,8 @@
-#> asset:object/system.random_team/tick/active
+#> asset:object/system.random_team/on_interact/success
 #
-# チームランダム振り分け
+# 
 #
-# @within function asset:object/system.random_team/tick/
+# @within function asset:object/system.random_team/on_interact/
 
 # 演出
     playsound minecraft:block.wooden_door.open block @a ~ ~ ~ 1 1

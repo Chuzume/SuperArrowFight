@@ -1,8 +1,8 @@
-#> asset:object/system.book_how_to_play/tick/show_message
+#> asset:object/system.book_how_to_play/on_interact/
 #
-# 
+# 継承先などから実行される処理
 #
-# @within function asset:object/system.book_how_to_play/tick/
+# @within asset_manager:object/call_method/run_method.m
 
 # サウンド
     execute on target run playsound minecraft:item.book.page_turn block @s ~ ~ ~ 1 1
