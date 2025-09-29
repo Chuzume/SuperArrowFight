@@ -1,0 +1,89 @@
+{
+    "type": "minecraft:notice",
+    "title": {
+        "translate": "dialog.credit.title",
+        "fallback": "Credit",
+        "color": "white",
+        "underlined": false
+    },
+    "body": [
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "translate": "dialog.credit.original_map_creator",
+                "fallback": "Original Map Creators",
+                "color": "gold"
+            }
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "PvPqnda\n",
+                "extra": [
+                    {
+                        "text": "Hielke\n"
+                    },
+                    {
+                        "text": "                              ",
+                        "underlined": true
+                    }
+                ]
+            }
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "translate": "dialog.credit.map_remake",
+                "fallback": "Map Remake",
+                "color": "gold"
+            }
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "Chuzume\n",
+                "extra": [
+                    {
+                        "text": "                              ",
+                        "underlined": true
+                    }
+                ]
+            }
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "translate": "dialog.credit.framework",
+                "fallback": "Framework",
+                "color": "gold"
+            }
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "The Sky Blessing Team\n",
+                "extra": [
+                    {
+                        "text": "                              ",
+                        "underlined": true
+                    }
+                ]
+            }
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "translate": "dialog.credit.tree_build_templates",
+                "fallback": "Tree Build Templates",
+                "color": "gold"
+            }
+        },
+        {
+            "type": "minecraft:plain_message",
+            "contents": {
+                "text": "exsilit\n"
+            }
+        }
+    ],
+    "pause": false
+}
