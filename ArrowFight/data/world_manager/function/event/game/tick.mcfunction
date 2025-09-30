@@ -22,6 +22,3 @@
 
 # フィールドの外に飛び出た対象をキルする
     execute as @e[tag=VanishOnExitArena,predicate=!world_manager:area/battle_field/kill_object,distance=..128] at @s run function world_manager:event/game/vanish_object
-
-# ボートを破壊する
-    execute as @e[type=#minecraft:boat,predicate=world_manager:area/battle_field/no_boat,distance=..128] at @s run function world_manager:event/game/break_boat
