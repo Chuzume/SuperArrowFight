@@ -14,6 +14,3 @@
 
 # そこら辺のやつの方を向く
     rotate @s facing entity @p[distance=..16] feet
-
-# 飛び上がる
-    data modify entity @s Motion[1] set value 0.2d
