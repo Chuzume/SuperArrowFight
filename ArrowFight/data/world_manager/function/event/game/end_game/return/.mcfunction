@@ -4,6 +4,9 @@
 #
 # @within function world_manager:event/game/end_game/tick
 
+# オブジェクト類をキル
+    kill @e[tag=VanishOnExitArena,distance=..128]
+
 # テレポート
     tp @s 500 126 496
 
