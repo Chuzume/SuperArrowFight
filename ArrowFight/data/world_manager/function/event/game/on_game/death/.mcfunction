@@ -4,9 +4,6 @@
 #
 # @within function world_manager:event/game/on_game/tick
 
-# テレポート
-    tp @s 500 126 495 0.0 0.0
-
 # タグ解除
     tag @s remove GameJoinedPlayer
 
@@ -18,6 +15,9 @@
 
 # ロビーモードにする
     function player_manager:mode/lobby
+
+# テレポート
+    tp @s 500 126 495 0.0 0.0
 
 # タイトル表示
     title @s times 0 20 10
