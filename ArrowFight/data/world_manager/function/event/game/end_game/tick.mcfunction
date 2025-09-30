@@ -4,6 +4,9 @@
 #
 # @within function world_manager:event/game/tick
 
+# サウンド
+    execute if score $Game Game.Tick matches 40 at @a run playsound minecraft:item.goat_horn.sound.1 block @p ~ ~ ~ 1 2
+
 # タイトル表示
     execute if score $Game Game.Tick matches 40.. if data storage world_manager: Game{WinTeam:"Blue"} as @a[distance=..128] run function world_manager:event/game/end_game/title/blue/
     execute if score $Game Game.Tick matches 40.. if data storage world_manager: Game{WinTeam:"Red"} as @a[distance=..128] run function world_manager:event/game/end_game/title/red/
