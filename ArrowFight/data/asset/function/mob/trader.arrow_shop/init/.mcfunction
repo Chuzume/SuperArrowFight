@@ -22,6 +22,10 @@
 #    execute if data storage world_manager: Game{LoadedMap:mountains} run data modify entity @s VillagerData.type set value "minecraft:taiga"
 #    execute if data storage world_manager: Game{LoadedMap:cliff} run data modify entity @s VillagerData.type set value "minecraft:savanna"
 
+# チーム所属
+    execute if predicate world_manager:area/battle_field/blue_island run team join Team.Blue @s
+    execute if predicate world_manager:area/battle_field/red_island run team join Team.Red @s
+
 # 商品
     # 通常矢
         loot replace entity @s villager.0 loot asset:item/generic_arrow
