@@ -1,6 +1,8 @@
 {
     "pack": {
-        "pack_format": 71,
+        "pack_format": 81,
+        "min_format": 88,
+		"max_format": 88,
         "description": "Data pack for Arrow Fight"
     },
         "filter": {
