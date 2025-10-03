@@ -121,8 +121,8 @@
         team modify Team.Spectator collisionRule pushOtherTeams
         team modify Team.Spectator color gray
 
-# flowevilleマップを生成する
-    data modify storage world_manager: GenerateMap.MapID set value flowerville
+# ロード中のマップをflowevilleとして設定
+    data modify storage world_manager: Game.LoadedMap set value flowerville
 
 # ロビーのオブジェクトを削除
     kill @e[tag=AssetObject]
