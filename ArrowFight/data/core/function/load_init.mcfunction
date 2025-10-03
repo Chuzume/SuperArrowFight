@@ -125,6 +125,10 @@
     data modify storage world_manager: GenerateMap.MapID set value flowerville
     data modify storage world_manager: GenerateMap.Active set value true
 
+# ロビーのオブジェクトを削除
+    kill @e[tag=AssetObject]
+    kill @e[tag=LobbyHologram]
+
 # ロビーのオブジェクトを設置
     execute positioned 500 127 501 rotated 0 0 run function api:object/summon.m {ID:system.game_start_button}
     execute positioned 500 127 509 rotated 0 0 run function api:object/summon.m {ID:system.map_select_button}
