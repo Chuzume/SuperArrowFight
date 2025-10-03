@@ -4,16 +4,6 @@
 #
 # @within function core:load
 
-# フォースロード
-    forceload add 0 0 0 0
-
-# 箱置く
-    setblock 0 0 0 red_shulker_box
-    setblock 1 0 0 red_shulker_box
-
-# 原点を召喚
-    summon marker 0.0 0.0 0.0 {UUID:[I;0,0,0,0]}
-
 # スコアボード作成
     scoreboard objectives add MobUUID dummy {"text":"汎用固有MobID"}
     scoreboard objectives add ObjectID dummy {"text":"ObjectAssetのID"}
@@ -88,6 +78,9 @@
     #> その他スコアボード
         scoreboard objectives add StopRegeneration dummy {"text":"ヘルス再生停止"}
 
+# Romの初期化
+    function rom:init
+
 # ゲームルール定義
     gamerule keepInventory false
     gamerule spectatorsGenerateChunks false
@@ -128,6 +121,10 @@
         team modify Team.Spectator collisionRule pushOtherTeams
         team modify Team.Spectator color gray
 
+# flowevilleマップを生成する
+    data modify storage world_manager: GenerateMap.MapID set value flowerville
+    data modify storage world_manager: GenerateMap.Active set value true
+
 # ロビーのオブジェクトを設置
     execute positioned 500 127 501 rotated 0 0 run function api:object/summon.m {ID:system.game_start_button}
     execute positioned 500 127 509 rotated 0 0 run function api:object/summon.m {ID:system.map_select_button}
@@ -137,10 +134,6 @@
     summon text_display 492 127.5 501 {view_range:0.25f,billboard:"vertical",shadow:1b,Tags:["LobbyHologram","TeamJoinHologram"],text:{"fallback":" Join §b§n Blue Team ","translate":"lobby.hologram.join_blue"},background:16711680}
     summon text_display 508 127.5 501 {view_range:0.25f,billboard:"vertical",shadow:1b,Tags:["LobbyHologram","TeamJoinHologram"],text:{"fallback":" Join §c§n Red Team ","translate":"lobby.hologram.join_red"},background:16711680}
     summon text_display 500 127.5 488 {view_range:0.25f,billboard:"vertical",shadow:1b,Tags:["LobbyHologram"],text:{"fallback":" Join §n Spectator §r ","translate":"lobby.hologram.join_spectator"},background:16711680}
-
-# flowevilleマップを生成する
-    data modify storage world_manager: GenerateMap.MapID set value flowerville
-    data modify storage world_manager: GenerateMap.Active set value true
 
 # 初期ロードが終わったことをストレージに書いておく
     data modify storage world_manager: Game.Init set value true
