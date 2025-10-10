@@ -91,7 +91,7 @@
 
 # ゲームルール定義
     gamerule keepInventory false
-    gamerule spectatorsGenerateChunks false
+    gamerule spectatorsGenerateChunks true
     gamerule commandModificationBlockLimit 2147483647
     gamerule doDaylightCycle false
     gamerule doImmediateRespawn true
