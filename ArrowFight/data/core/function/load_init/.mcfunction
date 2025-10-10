@@ -1,8 +1,12 @@
-#> core:load_init
+#> core:load_init/
 #
 # 
 #
 # @within function core:load
+
+# ロビーのオブジェクトを削除
+    kill @e[tag=AssetObject]
+    kill @e[tag=LobbyHologram]
 
 # スコアボード作成
     scoreboard objectives add MobUUID dummy {"text":"汎用固有MobID"}
@@ -77,9 +81,13 @@
 
     #> その他スコアボード
         scoreboard objectives add StopRegeneration dummy {"text":"ヘルス再生停止"}
+        scoreboard objectives add DelayLoad dummy {"text":"遅延ロード"}
 
 # Romの初期化
     function rom:init
+
+# フォースロード
+    forceload add 0 0
 
 # ゲームルール定義
     gamerule keepInventory false
@@ -92,6 +100,7 @@
     gamerule naturalRegeneration false
     gamerule reducedDebugInfo true
     gamerule playersNetherPortalDefaultDelay 2147483647
+    gamerule doMobSpawning false
 
 # チーム作成と設定
     # 赤チーム
@@ -120,6 +129,9 @@
         team modify Team.Spectator friendlyFire false
         team modify Team.Spectator collisionRule pushOtherTeams
         team modify Team.Spectator color gray
+
+# ロードされて数秒後に実行する
+    schedule function core:load_init/deferred_execution 5s replace
 
 # 初期ロードが終わったことをストレージに書いておく
     data modify storage world_manager: Game.Init set value true
