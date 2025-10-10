@@ -6,8 +6,8 @@
 
 # クリーパーだ！
     execute positioned ~ ~ ~ run function asset:object/projectile.creeper_bullet/hit/summon
-    execute positioned ~0.1 ~ ~ run function asset:object/projectile.creeper_bullet/hit/summon
-    execute positioned ~-0.1 ~ ~ run function asset:object/projectile.creeper_bullet/hit/summon
+    execute positioned ~ ~ ~0.1 run function asset:object/projectile.creeper_bullet/hit/summon
+    execute positioned ~ ~ ~-0.1 run function asset:object/projectile.creeper_bullet/hit/summon
     # execute positioned ~ ~ ~0.1 run function asset:object/projectile.creeper_bullet/hit/summon
     # execute positioned ~ ~ ~-0.1 run function asset:object/projectile.creeper_bullet/hit/summon
 
